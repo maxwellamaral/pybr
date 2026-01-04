@@ -7,8 +7,11 @@ repository: maxwellamaral/pybr
 lang: pt-BR
 
 # Tema do GitHub Pages
-remote_theme: pages-themes/cayman@v0.2.0
+# remote_theme: pages-themes/cayman@v0.2.0
 # Alternativas: jekyll-theme-minimal, jekyll-theme-slate, jekyll-theme-modernist
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin    : "neon" # "default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
 
 # Configurações adicionais
 markdown: kramdown
