@@ -2,7 +2,7 @@
 
 ## Descrição
 
-PyBR é um transpilador que permite escrever código Python usando palavras-chave e funções nativas em português. O projeto traduz código escrito em português para Python válido, permitindo que estudantes e desenvolvedores pratiquem programação em Python com uma sintaxe mais acessível para falantes de português.
+PyBR é um transpilador que permite escrever código Python usando palavras-chave e funções nativas em português. O projeto traduz código escrito em português para Python válido, permitindo que estudantes e desenvolvedores pratiquem programação em Python com uma sintaxe mais acessível para falantes de português. Bom para as aulas introdutórias de programação e algoritmos!
 
 O transpilador utiliza o módulo `tokenize` do Python para analisar o código fonte, traduzindo apenas os tokens de identificadores (palavras-chave e nomes de funções) enquanto preserva strings, comentários e a estrutura do código.
 
