@@ -1,0 +1,102 @@
+% Configuração para renderizar emojis no PDF
+% Usar com: pandoc arquivo.md -o arquivo.pdf --pdf-engine=xelatex -H header.tex
+
+% Definir fontes que suportam Unicode e emojis
+\usepackage{fontspec}
+\usepackage{xunicode}
+
+% Configuração de capa personalizada
+\usepackage{titling}
+\usepackage{graphicx}
+
+% Redefinir a página de título para uma capa mais bonita
+\renewcommand{\maketitlehooka}{%
+  \begin{center}
+  \vspace*{2cm}
+}
+\renewcommand{\maketitlehookb}{%
+  \vspace{1cm}
+}
+\renewcommand{\maketitlehookc}{%
+  \vspace{1cm}
+  \Large
+  \textbf{Tutorial Completo para Iniciantes}\\[0.5cm]
+  \large
+  Aprenda programação em Python usando português
+  \vspace{2cm}
+  \end{center}
+}
+\renewcommand{\maketitlehookd}{%
+  \vfill
+  \begin{center}
+  \large
+  PyBR - Python Brasileiro\\
+  \texttt{https://github.com/maxwellamaral/pybr}
+  \end{center}
+  \vspace{1cm}
+}
+
+% Fonte principal do documento
+\setmainfont{DejaVu Serif}
+
+% Fonte para código/monospace
+\setmonofont{DejaVu Sans Mono}
+
+% Configurar fallback para caracteres especiais (emojis)
+% No Windows: Segoe UI Emoji
+% No Mac: Apple Color Emoji  
+% No Linux: Noto Color Emoji
+\newfontfamily\emojifont{Segoe UI Emoji}[Scale=MatchLowercase]
+
+% Redefinir comandos para usar a fonte de emoji quando necessário
+\usepackage{newunicodechar}
+
+% Configurar alguns emojis comuns
+\newunicodechar{🚀}{\emojifont 🚀}
+\newunicodechar{💻}{\emojifont 💻}
+\newunicodechar{🪟}{\emojifont 🪟}
+\newunicodechar{🍎}{\emojifont 🍎}
+\newunicodechar{🐧}{\emojifont 🐧}
+\newunicodechar{📝}{\emojifont 📝}
+\newunicodechar{💡}{\emojifont 💡}
+\newunicodechar{❓}{\emojifont ❓}
+\newunicodechar{🎓}{\emojifont 🎓}
+\newunicodechar{🎉}{\emojifont 🎉}
+\newunicodechar{🐍}{\emojifont 🐍}
+\newunicodechar{⚠}{\emojifont ⚠}
+\newunicodechar{✅}{\emojifont ✅}
+\newunicodechar{🎯}{\emojifont 🎯}
+\newunicodechar{📖}{\emojifont 📖}
+\newunicodechar{🔑}{\emojifont 🔑}
+\newunicodechar{📦}{\emojifont 📦}
+\newunicodechar{🔢}{\emojifont 🔢}
+\newunicodechar{💾}{\emojifont 💾}
+\newunicodechar{📁}{\emojifont 📁}
+\newunicodechar{✓}{\emojifont ✓}
+\newunicodechar{✗}{\emojifont ✗}
+\newunicodechar{📈}{\emojifont 📈}
+\newunicodechar{📉}{\emojifont 📉}
+\newunicodechar{🏆}{\emojifont 🏆}
+\newunicodechar{😊}{\emojifont 😊}
+\newunicodechar{😐}{\emojifont 😐}
+\newunicodechar{😔}{\emojifont 😔}
+\newunicodechar{❌}{\emojifont ❌}
+\newunicodechar{📚}{\emojifont 📚}
+\newunicodechar{⚡}{\emojifont ⚡}
+\newunicodechar{✨}{\emojifont ✨}
+\newunicodechar{📊}{\emojifont 📊}
+
+% Configurações adicionais para melhor renderização
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Tutorial PyBR},
+    pdfauthor={PyBR},
+}
+
+% Melhorar espaçamento
+\usepackage{setspace}
+\setstretch{1.2}
