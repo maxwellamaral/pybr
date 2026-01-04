@@ -8,6 +8,8 @@ O transpilador utiliza o módulo `tokenize` do Python para analisar o código fo
 
 **🎓 Novo para programação?** Consulte nosso [Tutorial Completo para Iniciantes](tutorial-iniciantes.md) com exemplos práticos e 22 arquivos prontos para testar!
 
+**🌐 Site Oficial:** [pybr.github.io](https://seu-usuario.github.io/pybr/) - Tutoriais e documentação online
+
 ## Funcionalidades
 
 - **Palavras-chave em Português**: Use `se`, `senao`, `para`, `enquanto`, `definir`, `classe` etc.

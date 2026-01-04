@@ -1,0 +1,43 @@
+# Configuração do GitHub Pages para PyBR
+title: PyBR - Python em Português
+description: Aprenda a programar em Python usando palavras em português
+baseurl: "" # Para repositório principal, deixe vazio. Para projeto, use "/nome-repo"
+url: "http://localhost:4000" # Para dev local. GitHub Pages preenche automaticamente
+repository: maxwellamaral/pybr # Altere para seu repositório GitHub
+
+# Tema do GitHub Pages
+theme: jekyll-theme-cayman
+# Alternativas: jekyll-theme-minimal, jekyll-theme-slate, jekyll-theme-modernist
+
+# Configurações adicionais
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Plugins do GitHub Pages (automáticos)
+plugins:
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+
+# Configuração de links relativos
+relative_links:
+  enabled: true
+  collections: true
+
+# Títulos automáticos
+titles_from_headings:
+  enabled: true
+  strip_title: true
+  collections: true
+
+# Excluir arquivos da compilação
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Dockerfile
+  - docker-compose.yml
+  - .dockerignore
+  - README-DOCKER.md

@@ -1,0 +1,1964 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Tutorial Completo - PyBR | PyBR - Python em Português</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Tutorial Completo - PyBR" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Aprenda a programar em Python usando palavras em português" />
+<meta property="og:description" content="Aprenda a programar em Python usando palavras em português" />
+<link rel="canonical" href="http://0.0.0.0:4000/tutorial-completo.html" />
+<meta property="og:url" content="http://0.0.0.0:4000/tutorial-completo.html" />
+<meta property="og:site_name" content="PyBR - Python em Português" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Tutorial Completo - PyBR" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Aprenda a programar em Python usando palavras em português","headline":"Tutorial Completo - PyBR","url":"http://0.0.0.0:4000/tutorial-completo.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">Tutorial Completo - PyBR</h1>
+      <h2 class="project-tagline">Aprenda a programar em Python usando palavras em português</h2>
+      
+        <a href="https://github.com/maxwellamaral/pybr" class="btn">View on GitHub</a>
+      
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h1 id="aprenda-a-programar-com-pybr---guia-completo-para-iniciantes">Aprenda a Programar com PyBR - Guia Completo para Iniciantes</h1>
+
+<h2 id="bem-vindo-ao-mundo-da-programação-">Bem-vindo ao Mundo da Programação! 🚀</h2>
+
+<p>Este guia foi criado especialmente para você que nunca programou antes e quer aprender de forma fácil e em português! Com o <strong>PyBR</strong>, você vai aprender a programar usando palavras em português ao invés do inglês tradicional do Python.</p>
+
+<hr />
+
+<h2 id="índice">Índice</h2>
+
+<ol>
+  <li><a href="#usando-o-terminal---guia-para-iniciantes">Usando o Terminal - Guia para Iniciantes</a></li>
+  <li><a href="#instalando-o-python">Instalando o Python</a></li>
+  <li><a href="#como-executar-o-pybr">Como Executar o PyBR</a></li>
+  <li><a href="#o-que-é-programação">O que é Programação?</a></li>
+  <li><a href="#seu-primeiro-programa">Seu Primeiro Programa</a></li>
+  <li><a href="#variáveis---a-memória-do-computador">Variáveis - A Memória do Computador</a></li>
+  <li><a href="#cálculos-e-operações-matemáticas">Cálculos e Operações Matemáticas</a></li>
+  <li><a href="#entrada-e-saída-de-dados">Entrada e Saída de Dados</a></li>
+  <li><a href="#tomando-decisões---estruturas-condicionais">Tomando Decisões - Estruturas Condicionais</a></li>
+  <li><a href="#repetindo-ações---laços-de-repetição">Repetindo Ações - Laços de Repetição</a></li>
+  <li><a href="#organizando-o-código---funções">Organizando o Código - Funções</a></li>
+  <li><a href="#criando-objetos---classes">Criando Objetos - Classes</a></li>
+  <li><a href="#projetos-práticos">Projetos Práticos</a></li>
+</ol>
+
+<hr />
+
+<h2 id="-usando-o-terminal---guia-para-iniciantes">💻 Usando o Terminal - Guia para Iniciantes</h2>
+
+<p>Se você nunca usou o <strong>Terminal</strong> (também chamado de <strong>Linha de Comando</strong> ou <strong>Prompt de Comando</strong>), não se preocupe! É mais simples do que parece.</p>
+
+<h3 id="o-que-é-o-terminal">O que é o Terminal?</h3>
+
+<p>O Terminal é uma interface de texto onde você digita comandos para o computador executar. É como conversar com o computador através de texto ao invés de clicar com o mouse.</p>
+
+<p><strong>Por que usar?</strong> Programadores usam o Terminal porque é rápido, poderoso e permite automatizar tarefas!</p>
+
+<hr />
+
+<h3 id="-no-windows">🪟 No Windows</h3>
+
+<h4 id="como-abrir-o-terminal-no-windows">Como Abrir o Terminal no Windows:</h4>
+
+<p><strong>Opção 1: Pelo Menu Iniciar</strong></p>
+<ol>
+  <li>Clique no botão <strong>Iniciar</strong> (ícone do Windows)</li>
+  <li>Digite <code class="language-plaintext highlighter-rouge">cmd</code> ou <code class="language-plaintext highlighter-rouge">powershell</code></li>
+  <li>Pressione <strong>Enter</strong></li>
+</ol>
+
+<p><strong>Opção 2: Atalho de Teclado</strong></p>
+<ol>
+  <li>Pressione <code class="language-plaintext highlighter-rouge">Windows + R</code></li>
+  <li>Digite <code class="language-plaintext highlighter-rouge">cmd</code> ou <code class="language-plaintext highlighter-rouge">powershell</code></li>
+  <li>Pressione <strong>Enter</strong></li>
+</ol>
+
+<p><strong>Opção 3: No VS Code</strong></p>
+<ol>
+  <li>Abra o VS Code</li>
+  <li>Pressione <code class="language-plaintext highlighter-rouge">Ctrl + `</code> (acento grave)</li>
+  <li>O terminal aparecerá na parte inferior</li>
+</ol>
+
+<h4 id="comandos-básicos-no-windows">Comandos Básicos no Windows:</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Ver onde você está (diretório atual)</span>
+<span class="nb">cd</span>
+
+<span class="c"># Listar arquivos e pastas</span>
+<span class="nb">dir</span>
+
+<span class="c"># Entrar em uma pasta</span>
+<span class="nb">cd </span>nome_da_pasta
+
+<span class="c"># Voltar uma pasta acima</span>
+<span class="nb">cd</span> ..
+
+<span class="c"># Ir para uma pasta específica (exemplo)</span>
+<span class="nb">cd </span>C:<span class="se">\U</span>sers<span class="se">\S</span>euNome<span class="se">\D</span>ownloads
+
+<span class="c"># Limpar a tela</span>
+cls
+
+<span class="c"># Ver conteúdo de um arquivo</span>
+<span class="nb">type </span>arquivo.txt
+</code></pre></div></div>
+
+<h4 id="navegando-até-a-pasta-do-pybr-exemplo-no-windows">Navegando até a Pasta do PyBR (Exemplo no Windows):</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Se você salvou na pasta Downloads</span>
+<span class="nb">cd </span>C:<span class="se">\U</span>sers<span class="se">\S</span>euNome<span class="se">\D</span>ownloads<span class="se">\p</span>ybr
+
+<span class="c"># Ou se está no Desktop</span>
+<span class="nb">cd </span>C:<span class="se">\U</span>sers<span class="se">\S</span>euNome<span class="se">\D</span>esktop<span class="se">\p</span>ybr
+
+<span class="c"># Verificar se está na pasta certa (deve listar pybr.py)</span>
+<span class="nb">dir</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="-no-maclinux">🍎 No Mac/Linux</h3>
+
+<h4 id="como-abrir-o-terminal-no-mac">Como Abrir o Terminal no Mac:</h4>
+
+<p><strong>Opção 1: Spotlight</strong></p>
+<ol>
+  <li>Pressione <code class="language-plaintext highlighter-rouge">Command + Espaço</code></li>
+  <li>Digite <code class="language-plaintext highlighter-rouge">terminal</code></li>
+  <li>Pressione <strong>Enter</strong></li>
+</ol>
+
+<p><strong>Opção 2: Finder</strong></p>
+<ol>
+  <li>Abra <strong>Finder</strong></li>
+  <li>Vá em <strong>Aplicativos</strong> → <strong>Utilitários</strong> → <strong>Terminal</strong></li>
+</ol>
+
+<h4 id="como-abrir-o-terminal-no-linux">Como Abrir o Terminal no Linux:</h4>
+
+<p><strong>Opção 1: Atalho de Teclado</strong></p>
+<ul>
+  <li>Pressione <code class="language-plaintext highlighter-rouge">Ctrl + Alt + T</code></li>
+</ul>
+
+<p><strong>Opção 2: Menu de Aplicativos</strong></p>
+<ul>
+  <li>Procure por “Terminal” no menu de aplicativos</li>
+</ul>
+
+<h4 id="comandos-básicos-no-maclinux">Comandos Básicos no Mac/Linux:</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Ver onde você está (diretório atual)</span>
+<span class="nb">pwd</span>
+
+<span class="c"># Listar arquivos e pastas</span>
+<span class="nb">ls</span>
+
+<span class="c"># Listar com detalhes</span>
+<span class="nb">ls</span> <span class="nt">-la</span>
+
+<span class="c"># Entrar em uma pasta</span>
+<span class="nb">cd </span>nome_da_pasta
+
+<span class="c"># Voltar uma pasta acima</span>
+<span class="nb">cd</span> ..
+
+<span class="c"># Ir para sua pasta pessoal</span>
+<span class="nb">cd</span> ~
+
+<span class="c"># Ir para uma pasta específica (exemplo)</span>
+<span class="nb">cd</span> ~/Downloads/pybr
+
+<span class="c"># Limpar a tela</span>
+clear
+
+<span class="c"># Ver conteúdo de um arquivo</span>
+<span class="nb">cat </span>arquivo.txt
+</code></pre></div></div>
+
+<h4 id="navegando-até-a-pasta-do-pybr-exemplo-no-maclinux">Navegando até a Pasta do PyBR (Exemplo no Mac/Linux):</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Se você salvou na pasta Downloads</span>
+<span class="nb">cd</span> ~/Downloads/pybr
+
+<span class="c"># Ou se está no Desktop</span>
+<span class="nb">cd</span> ~/Desktop/pybr
+
+<span class="c"># Verificar se está na pasta certa (deve listar pybr.py)</span>
+<span class="nb">ls</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="-dicas-importantes-para-usar-o-terminal">📝 Dicas Importantes para Usar o Terminal</h3>
+
+<h4 id="1-copiar-e-colar-no-terminal">1. <strong>Copiar e Colar no Terminal</strong></h4>
+
+<p><strong>Windows (CMD):</strong></p>
+<ul>
+  <li>Copiar: Selecione o texto e pressione <code class="language-plaintext highlighter-rouge">Enter</code></li>
+  <li>Colar: Clique com botão direito</li>
+</ul>
+
+<p><strong>Windows (PowerShell) e Mac/Linux:</strong></p>
+<ul>
+  <li>Copiar: <code class="language-plaintext highlighter-rouge">Ctrl + C</code> (Windows) ou <code class="language-plaintext highlighter-rouge">Command + C</code> (Mac)</li>
+  <li>Colar: <code class="language-plaintext highlighter-rouge">Ctrl + V</code> (Windows) ou <code class="language-plaintext highlighter-rouge">Command + V</code> (Mac)</li>
+  <li>No Linux: <code class="language-plaintext highlighter-rouge">Ctrl + Shift + C</code> e <code class="language-plaintext highlighter-rouge">Ctrl + Shift + V</code></li>
+</ul>
+
+<h4 id="2-autocompletar-com-tab">2. <strong>Autocompletar com TAB</strong></h4>
+
+<p>Digite o início de um nome de arquivo ou pasta e pressione <strong>TAB</strong> para completar automaticamente!</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Digite:</span>
+<span class="nb">cd </span>Doc[TAB]
+
+<span class="c"># Completa para:</span>
+<span class="nb">cd </span>Documents
+</code></pre></div></div>
+
+<h4 id="3-histórico-de-comandos">3. <strong>Histórico de Comandos</strong></h4>
+
+<p>Use as <strong>setas ↑ ↓</strong> do teclado para navegar pelos comandos que você já digitou.</p>
+
+<h4 id="4-cancelar-um-comando">4. <strong>Cancelar um Comando</strong></h4>
+
+<p>Se um programa travou ou você quer parar a execução:</p>
+<ul>
+  <li>Pressione <code class="language-plaintext highlighter-rouge">Ctrl + C</code></li>
+</ul>
+
+<h4 id="5-caminho-absoluto-vs-relativo">5. <strong>Caminho Absoluto vs Relativo</strong></h4>
+
+<p><strong>Caminho Absoluto</strong> - Especifica o caminho completo desde a raiz:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Windows</span>
+C:<span class="se">\U</span>sers<span class="se">\S</span>euNome<span class="se">\p</span>ybr<span class="se">\e</span>xercicios<span class="se">\0</span>1-ola-mundo.pybr
+
+<span class="c"># Mac/Linux</span>
+/Users/SeuNome/pybr/exercicios/01-ola-mundo.pybr
+</code></pre></div></div>
+
+<p><strong>Caminho Relativo</strong> - Relativo à pasta atual:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Se você já está na pasta pybr</span>
+exercicios/01-ola-mundo.pybr
+
+<span class="c"># Ou com ./ (mesma coisa)</span>
+./exercicios/01-ola-mundo.pybr
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="-executando-seu-primeiro-comando-pybr">🚀 Executando Seu Primeiro Comando PyBR</h3>
+
+<p>Agora que você sabe usar o Terminal, vamos executar um programa PyBR!</p>
+
+<p><strong>Passo a passo completo:</strong></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 1. Navegue até a pasta do PyBR (ajuste o caminho conforme necessário)</span>
+<span class="nb">cd </span>caminho/para/pybr
+
+<span class="c"># 2. Verifique se está no lugar certo</span>
+<span class="c"># Windows:</span>
+<span class="nb">dir</span>
+<span class="c"># Mac/Linux:</span>
+<span class="nb">ls</span>
+
+<span class="c"># Você deve ver: pybr.py, exercicios/, etc.</span>
+
+<span class="c"># 3. Execute seu primeiro programa!</span>
+python pybr.py exercicios/01-ola-mundo.pybr
+
+<span class="c"># 4. Ou inicie o modo interativo</span>
+python pybr.py
+</code></pre></div></div>
+
+<p><strong>Resultado esperado:</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Olá, Mundo!
+Meu nome é João
+Estou aprendendo a programar!
+PyBR é demais!
+</code></pre></div></div>
+
+<p>💡 <strong>Nota:</strong> Se o comando <code class="language-plaintext highlighter-rouge">python</code> não funcionar, você precisa instalar o Python primeiro! Veja a próxima seção.</p>
+
+<hr />
+
+<h3 id="-problemas-comuns-e-soluções">❓ Problemas Comuns e Soluções</h3>
+
+<h4 id="python-não-é-reconhecido-como-comando">“python não é reconhecido como comando”</h4>
+
+<p><strong>Solução:</strong> Python não está instalado ou não está no PATH. Veja a próxima seção <strong>“Instalando o Python”</strong> para resolver isso!</p>
+
+<h4 id="não-encontrou-o-arquivo-pybrpy">“Não encontrou o arquivo pybr.py”</h4>
+
+<p><strong>Solução:</strong> Você não está na pasta correta.</p>
+
+<ol>
+  <li>Use <code class="language-plaintext highlighter-rouge">cd</code> para navegar até a pasta onde está o PyBR</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">dir</code> (Windows) ou <code class="language-plaintext highlighter-rouge">ls</code> (Mac/Linux) para confirmar que vê o arquivo <code class="language-plaintext highlighter-rouge">pybr.py</code></li>
+</ol>
+
+<h4 id="permissão-negada-maclinux">“Permissão negada” (Mac/Linux)</h4>
+
+<p><strong>Solução:</strong> Alguns arquivos precisam de permissão de execução.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Dê permissão de execução</span>
+<span class="nb">chmod</span> +x pybr.py
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="-resumo---comandos-essenciais">🎓 Resumo - Comandos Essenciais</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ação</th>
+      <th>Windows</th>
+      <th>Mac/Linux</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Onde estou?</td>
+      <td><code class="language-plaintext highlighter-rouge">cd</code></td>
+      <td><code class="language-plaintext highlighter-rouge">pwd</code></td>
+    </tr>
+    <tr>
+      <td>Listar arquivos</td>
+      <td><code class="language-plaintext highlighter-rouge">dir</code></td>
+      <td><code class="language-plaintext highlighter-rouge">ls</code></td>
+    </tr>
+    <tr>
+      <td>Entrar em pasta</td>
+      <td><code class="language-plaintext highlighter-rouge">cd pasta</code></td>
+      <td><code class="language-plaintext highlighter-rouge">cd pasta</code></td>
+    </tr>
+    <tr>
+      <td>Voltar</td>
+      <td><code class="language-plaintext highlighter-rouge">cd ..</code></td>
+      <td><code class="language-plaintext highlighter-rouge">cd ..</code></td>
+    </tr>
+    <tr>
+      <td>Limpar tela</td>
+      <td><code class="language-plaintext highlighter-rouge">cls</code></td>
+      <td><code class="language-plaintext highlighter-rouge">clear</code></td>
+    </tr>
+    <tr>
+      <td>Executar PyBR</td>
+      <td><code class="language-plaintext highlighter-rouge">python pybr.py arquivo.pybr</code></td>
+      <td><code class="language-plaintext highlighter-rouge">python pybr.py arquivo.pybr</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Pronto!</strong> Agora você sabe usar o Terminal e está pronto para instalar o Python! 🎉</p>
+
+<hr />
+
+<h2 id="-instalando-o-python">🐍 Instalando o Python</h2>
+
+<p>Antes de começar a programar com PyBR, você precisa ter o <strong>Python</strong> instalado no seu computador. O Python é a linguagem de programação que o PyBR traduz!</p>
+
+<h3 id="verificando-se-o-python-já-está-instalado">Verificando se o Python já está instalado</h3>
+
+<p>Primeiro, vamos verificar se você já tem o Python instalado:</p>
+
+<p><strong>Abra o Terminal</strong> (que você aprendeu na seção anterior) e digite:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python <span class="nt">--version</span>
+</code></pre></div></div>
+
+<p><strong>Ou tente:</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 <span class="nt">--version</span>
+</code></pre></div></div>
+
+<p><strong>Ou no Windows:</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>py <span class="nt">--version</span>
+</code></pre></div></div>
+
+<p>Se aparecer algo como <code class="language-plaintext highlighter-rouge">Python 3.11.5</code> ou <code class="language-plaintext highlighter-rouge">Python 3.x.x</code>, <strong>parabéns!</strong> Você já tem o Python instalado e pode pular para a próxima seção.</p>
+
+<p>Se aparecer uma mensagem de erro como “comando não encontrado” ou “não é reconhecido”, continue lendo para instalar.</p>
+
+<hr />
+
+<h3 id="-instalando-no-windows">🪟 Instalando no Windows</h3>
+
+<h4 id="passo-1-baixar-o-python">Passo 1: Baixar o Python</h4>
+
+<ol>
+  <li>Acesse o site oficial: <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></li>
+  <li>Clique no botão grande amarelo <strong>“Download Python 3.x.x”</strong></li>
+  <li>O download do instalador começará automaticamente</li>
+</ol>
+
+<h4 id="passo-2-executar-o-instalador">Passo 2: Executar o Instalador</h4>
+
+<ol>
+  <li>Abra o arquivo baixado (normalmente está na pasta <strong>Downloads</strong>)</li>
+  <li><strong>⚠️ IMPORTANTE:</strong> Marque a caixa <strong>“Add Python to PATH”</strong> no início da instalação
+    <ul>
+      <li>Essa opção é ESSENCIAL para usar o Python no terminal!</li>
+    </ul>
+  </li>
+  <li>Clique em <strong>“Install Now”</strong></li>
+  <li>Aguarde a instalação (pode demorar alguns minutos)</li>
+  <li>Clique em <strong>“Close”</strong> quando terminar</li>
+</ol>
+
+<h4 id="passo-3-verificar-a-instalação">Passo 3: Verificar a Instalação</h4>
+
+<p>Abra um <strong>NOVO</strong> Terminal (feche o anterior se estiver aberto) e digite:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python <span class="nt">--version</span>
+</code></pre></div></div>
+
+<p>Deve aparecer a versão do Python instalada, exemplo: <code class="language-plaintext highlighter-rouge">Python 3.11.5</code></p>
+
+<p><strong>Se não funcionar, tente:</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>py <span class="nt">--version</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="-instalando-no-mac">🍎 Instalando no Mac</h3>
+
+<h4 id="opção-1-usando-o-site-oficial-recomendado">Opção 1: Usando o Site Oficial (Recomendado)</h4>
+
+<p><strong>Passo 1: Baixar o Python</strong></p>
+
+<ol>
+  <li>Acesse: <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></li>
+  <li>Clique em <strong>“Download Python 3.x.x”</strong> para Mac</li>
+  <li>Baixe o instalador <code class="language-plaintext highlighter-rouge">.pkg</code></li>
+</ol>
+
+<p><strong>Passo 2: Instalar</strong></p>
+
+<ol>
+  <li>Abra o arquivo <code class="language-plaintext highlighter-rouge">.pkg</code> baixado</li>
+  <li>Siga o assistente de instalação:
+    <ul>
+      <li>Clique em <strong>“Continue”</strong> nas telas iniciais</li>
+      <li>Aceite a licença</li>
+      <li>Escolha o local de instalação (deixe o padrão)</li>
+      <li>Clique em <strong>“Install”</strong></li>
+    </ul>
+  </li>
+  <li>Digite sua senha de administrador quando solicitado</li>
+  <li>Clique em <strong>“Close”</strong> quando terminar</li>
+</ol>
+
+<p><strong>Passo 3: Verificar</strong></p>
+
+<p>Abra o Terminal e digite:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 <span class="nt">--version</span>
+</code></pre></div></div>
+
+<p>No Mac, geralmente usamos <code class="language-plaintext highlighter-rouge">python3</code> ao invés de <code class="language-plaintext highlighter-rouge">python</code>.</p>
+
+<h4 id="opção-2-usando-homebrew-para-usuários-avançados">Opção 2: Usando Homebrew (Para Usuários Avançados)</h4>
+
+<p>Se você já usa o Homebrew:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew <span class="nb">install </span>python3
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="-instalando-no-linux">🐧 Instalando no Linux</h3>
+
+<p>A maioria das distribuições Linux já vem com Python instalado. Mas se precisar instalar ou atualizar:</p>
+
+<h4 id="ubuntudebian">Ubuntu/Debian</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Atualizar lista de pacotes</span>
+<span class="nb">sudo </span>apt update
+
+<span class="c"># Instalar Python 3</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>python3 python3-pip
+
+<span class="c"># Verificar instalação</span>
+python3 <span class="nt">--version</span>
+</code></pre></div></div>
+
+<h4 id="fedora">Fedora</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Instalar Python 3</span>
+<span class="nb">sudo </span>dnf <span class="nb">install </span>python3 python3-pip
+
+<span class="c"># Verificar instalação</span>
+python3 <span class="nt">--version</span>
+</code></pre></div></div>
+
+<h4 id="arch-linux">Arch Linux</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Instalar Python 3</span>
+<span class="nb">sudo </span>pacman <span class="nt">-S</span> python python-pip
+
+<span class="c"># Verificar instalação</span>
+python <span class="nt">--version</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="-testando-a-instalação-completa">✅ Testando a Instalação Completa</h3>
+
+<p>Agora vamos testar se tudo está funcionando corretamente!</p>
+
+<h4 id="teste-1-versão-do-python">Teste 1: Versão do Python</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Windows</span>
+python <span class="nt">--version</span>
+
+<span class="c"># Mac/Linux</span>
+python3 <span class="nt">--version</span>
+</code></pre></div></div>
+
+<p><strong>Resultado esperado:</strong> <code class="language-plaintext highlighter-rouge">Python 3.x.x</code> (qualquer versão 3.6 ou superior)</p>
+
+<h4 id="teste-2-executar-python-interativo">Teste 2: Executar Python Interativo</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Windows</span>
+python
+
+<span class="c"># Mac/Linux</span>
+python3
+</code></pre></div></div>
+
+<p>Você deve ver algo assim:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Python 3.11.5 (tags/v3.11.5:..., Aug  7 2023, 10:30:00)
+[GCC 11.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+&gt;&gt;&gt;
+</code></pre></div></div>
+
+<p>Digite <code class="language-plaintext highlighter-rouge">exit()</code> e pressione Enter para sair.</p>
+
+<h4 id="teste-3-executar-um-comando-python">Teste 3: Executar um Comando Python</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Windows</span>
+python <span class="nt">-c</span> <span class="s2">"print('Python funcionando!')"</span>
+
+<span class="c"># Mac/Linux</span>
+python3 <span class="nt">-c</span> <span class="s2">"print('Python funcionando!')"</span>
+</code></pre></div></div>
+
+<p><strong>Resultado esperado:</strong> <code class="language-plaintext highlighter-rouge">Python funcionando!</code></p>
+
+<hr />
+
+<h3 id="-configurando-aliases-opcional---maclinux">🎯 Configurando Aliases (Opcional - Mac/Linux)</h3>
+
+<p>No Mac e Linux, é comum ter que digitar <code class="language-plaintext highlighter-rouge">python3</code> ao invés de <code class="language-plaintext highlighter-rouge">python</code>. Para facilitar, você pode criar um alias:</p>
+
+<p><strong>Bash (padrão no Ubuntu):</strong></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s2">"alias python=python3"</span> <span class="o">&gt;&gt;</span> ~/.bashrc
+<span class="nb">source</span> ~/.bashrc
+</code></pre></div></div>
+
+<p><strong>Zsh (padrão no Mac moderno):</strong></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s2">"alias python=python3"</span> <span class="o">&gt;&gt;</span> ~/.zshrc
+<span class="nb">source</span> ~/.zshrc
+</code></pre></div></div>
+
+<p>Agora você pode usar apenas <code class="language-plaintext highlighter-rouge">python</code> ao invés de <code class="language-plaintext highlighter-rouge">python3</code>!</p>
+
+<hr />
+
+<h3 id="-problemas-comuns-e-soluções-1">❓ Problemas Comuns e Soluções</h3>
+
+<h4 id="windows-python-não-é-reconhecido-como-comando">Windows: “Python não é reconhecido como comando”</h4>
+
+<p><strong>Causa:</strong> Python não foi adicionado ao PATH durante a instalação.</p>
+
+<p><strong>Solução 1 - Reinstalar:</strong></p>
+<ol>
+  <li>Desinstale o Python pelo Painel de Controle</li>
+  <li>Reinstale marcando <strong>“Add Python to PATH”</strong></li>
+</ol>
+
+<p><strong>Solução 2 - Adicionar manualmente ao PATH:</strong></p>
+<ol>
+  <li>Procure onde o Python foi instalado (geralmente <code class="language-plaintext highlighter-rouge">C:\Users\SeuNome\AppData\Local\Programs\Python\Python3XX</code>)</li>
+  <li>Adicione esse caminho às variáveis de ambiente do Windows</li>
+  <li>Tutorial: <a href="https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/">Adicionar ao PATH no Windows</a></li>
+</ol>
+
+<h4 id="mac-python-2x-aparece-ao-invés-de-python-3">Mac: “Python 2.x aparece ao invés de Python 3”</h4>
+
+<p><strong>Causa:</strong> Mac vem com Python 2 pré-instalado.</p>
+
+<p><strong>Solução:</strong> Sempre use <code class="language-plaintext highlighter-rouge">python3</code> ao invés de <code class="language-plaintext highlighter-rouge">python</code>, ou configure um alias.</p>
+
+<h4 id="linux-permissão-negada">Linux: “Permissão negada”</h4>
+
+<p><strong>Causa:</strong> Alguns comandos precisam de privilégios de administrador.</p>
+
+<p><strong>Solução:</strong> Use <code class="language-plaintext highlighter-rouge">sudo</code> antes do comando:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>python3
+</code></pre></div></div>
+
+<h4 id="erro-pip-não-encontrado">Erro: “pip não encontrado”</h4>
+
+<p><strong>Solução:</strong> Instale o pip (gerenciador de pacotes Python):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Windows</span>
+python <span class="nt">-m</span> ensurepip <span class="nt">--upgrade</span>
+
+<span class="c"># Mac/Linux</span>
+python3 <span class="nt">-m</span> ensurepip <span class="nt">--upgrade</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="-resumo---comandos-python-essenciais">🎓 Resumo - Comandos Python Essenciais</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Comando</th>
+      <th>Windows</th>
+      <th>Mac/Linux</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Verificar versão</td>
+      <td><code class="language-plaintext highlighter-rouge">python --version</code></td>
+      <td><code class="language-plaintext highlighter-rouge">python3 --version</code></td>
+    </tr>
+    <tr>
+      <td>Abrir Python interativo</td>
+      <td><code class="language-plaintext highlighter-rouge">python</code></td>
+      <td><code class="language-plaintext highlighter-rouge">python3</code></td>
+    </tr>
+    <tr>
+      <td>Executar arquivo</td>
+      <td><code class="language-plaintext highlighter-rouge">python arquivo.py</code></td>
+      <td><code class="language-plaintext highlighter-rouge">python3 arquivo.py</code></td>
+    </tr>
+    <tr>
+      <td>Instalar pacote</td>
+      <td><code class="language-plaintext highlighter-rouge">pip install pacote</code></td>
+      <td><code class="language-plaintext highlighter-rouge">pip3 install pacote</code></td>
+    </tr>
+    <tr>
+      <td>Sair do Python</td>
+      <td><code class="language-plaintext highlighter-rouge">exit()</code></td>
+      <td><code class="language-plaintext highlighter-rouge">exit()</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Perfeito!</strong> 🎉 Agora você tem o Python instalado e testado, está pronto para usar o PyBR!</p>
+
+<hr />
+
+<h2 id="como-executar-o-pybr">Como Executar o PyBR</h2>
+
+<p>Agora que você tem o Python instalado e sabe usar o Terminal, está pronto para executar programas PyBR!</p>
+
+<h3 id="o-que-você-precisa">O que você precisa</h3>
+
+<p>✅ <strong>Python 3.6 ou superior</strong> - Você já instalou na seção anterior!<br />
+✅ <strong>Arquivos do PyBR</strong> - O transpiler <code class="language-plaintext highlighter-rouge">pybr.py</code> e os exemplos<br />
+✅ <strong>Terminal aberto</strong> - Para executar os comandos</p>
+
+<h3 id="baixando-o-pybr">Baixando o PyBR</h3>
+
+<ol>
+  <li>Baixe ou clone o projeto PyBR do repositório</li>
+  <li>Navegue até a pasta do projeto no terminal:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>caminho/para/pasta/pybr
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h3 id="formas-de-executar-código-pybr">Formas de Executar Código PyBR</h3>
+
+<h4 id="opção-1-modo-interativo-repl---recomendado-para-iniciantes"><strong>Opção 1: Modo Interativo (REPL) - Recomendado para Iniciantes</strong></h4>
+
+<p>O REPL é perfeito para <strong>testar comandos rapidamente</strong> e experimentar os exemplos deste tutorial!</p>
+
+<p>Para iniciar o modo interativo, digite no terminal:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python pybr.py
+</code></pre></div></div>
+
+<p>Você verá algo assim:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PyBR - Python em Português
+Digite 'sair()' para encerrar
+&gt;&gt;&gt; 
+</code></pre></div></div>
+
+<p>Agora você pode digitar comandos diretamente:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; imprimir("Olá, Mundo!")
+Olá, Mundo!
+&gt;&gt;&gt; x = 10
+&gt;&gt;&gt; imprimir(x * 2)
+20
+&gt;&gt;&gt; sair()
+</code></pre></div></div>
+
+<p>💡 <strong>Dica:</strong> Use o REPL para testar cada exemplo pequeno deste tutorial!</p>
+
+<h4 id="opção-2-criar-e-executar-arquivos-pybr"><strong>Opção 2: Criar e Executar Arquivos .pybr</strong></h4>
+
+<p>Para programas maiores, crie um arquivo de texto com a extensão <code class="language-plaintext highlighter-rouge">.pybr</code>:</p>
+
+<p><strong>Passo 1:</strong> Crie um arquivo chamado <code class="language-plaintext highlighter-rouge">meu_programa.pybr</code> (pode usar qualquer editor de texto ou VS Code)</p>
+
+<p><strong>Passo 2:</strong> Escreva seu código PyBR no arquivo:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># meu_programa.pybr
+</span><span class="n">imprimir</span><span class="p">(</span><span class="s">"Meu primeiro programa!"</span><span class="p">)</span>
+
+<span class="n">nome</span> <span class="o">=</span> <span class="n">entrada</span><span class="p">(</span><span class="s">"Qual é seu nome? "</span><span class="p">)</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Olá, </span><span class="si">{</span><span class="n">nome</span><span class="si">}</span><span class="s">!"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><strong>Passo 3:</strong> Execute o arquivo no terminal:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python pybr.py meu_programa.pybr
+</code></pre></div></div>
+
+<h4 id="opção-3-usar-o-vs-code-com-syntax-highlighting"><strong>Opção 3: Usar o VS Code com Syntax Highlighting</strong></h4>
+
+<p>Para uma melhor experiência de desenvolvimento:</p>
+
+<ol>
+  <li>Instale o Visual Studio Code</li>
+  <li>Instale a extensão PyBR (veja instruções no README.md principal)</li>
+  <li>Crie arquivos <code class="language-plaintext highlighter-rouge">.pybr</code> com destaque de sintaxe colorido</li>
+  <li>Execute pelo terminal integrado do VS Code</li>
+</ol>
+
+<h3 id="como-usar-este-tutorial">Como Usar Este Tutorial</h3>
+
+<p><strong>Para cada exemplo neste tutorial, você pode:</strong></p>
+
+<ol>
+  <li><strong>Exemplos curtos (1-3 linhas):</strong> Digite no REPL interativo
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; imprimir("Testando!")
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Executar os arquivos prontos:</strong> Use os arquivos <code class="language-plaintext highlighter-rouge">.pybr</code> da pasta <code class="language-plaintext highlighter-rouge">exercicios/</code>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python pybr.py exercicios/01-ola-mundo.pybr
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Exemplos médios:</strong> Copie e cole no REPL (algumas linhas por vez)</p>
+  </li>
+  <li><strong>Exemplos longos e projetos:</strong> Crie um arquivo <code class="language-plaintext highlighter-rouge">.pybr</code>, cole o código e execute</li>
+</ol>
+
+<h3 id="testando-sua-instalação">Testando Sua Instalação</h3>
+
+<p>Vamos testar se tudo está funcionando! Execute este código:</p>
+
+<p><strong>No REPL:</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; imprimir("PyBR funcionando!")
+&gt;&gt;&gt; para i em intervalo(3):
+...     imprimir(f"Contagem: {i}")
+...
+</code></pre></div></div>
+
+<p><strong>Resultado esperado:</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PyBR funcionando!
+Contagem: 0
+Contagem: 1
+Contagem: 2
+</code></pre></div></div>
+
+<p>Se você viu essa saída, está tudo pronto! 🎉</p>
+
+<h3 id="-arquivos-de-exemplo-prontos">📁 Arquivos de Exemplo Prontos</h3>
+
+<p>Todos os exemplos deste tutorial estão disponíveis como arquivos <code class="language-plaintext highlighter-rouge">.pybr</code> na pasta <code class="language-plaintext highlighter-rouge">exercicios/</code>. Você pode executá-los diretamente:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Exemplo: executar o primeiro programa</span>
+python pybr.py exercicios/01-ola-mundo.pybr
+
+<span class="c"># Exemplo: executar a calculadora de IMC</span>
+python pybr.py exercicios/05-calculadora-imc.pybr
+
+<span class="c"># Exemplo: executar o jogo de adivinhação</span>
+python pybr.py exercicios/11-jogo-adivinhacao.pybr
+</code></pre></div></div>
+
+<p><strong>Dica:</strong> Olhe o ícone 💾 no início de cada seção para saber qual arquivo corresponde àquele conteúdo!</p>
+
+<hr />
+
+<h2 id="o-que-é-programação">O que é Programação?</h2>
+
+<p><strong>Programar</strong> é dar instruções ao computador, como se você estivesse escrevendo uma receita de bolo! Assim como em uma receita você diz “misture os ingredientes”, “asse por 30 minutos”, na programação você diz ao computador “calcule isso”, “mostre aquilo”, “repita esta ação”.</p>
+
+<p>O computador é muito rápido, mas precisa de instruções <strong>muito detalhadas</strong>. Ele faz exatamente o que você mandar - nem mais, nem menos!</p>
+
+<hr />
+
+<h2 id="seu-primeiro-programa">Seu Primeiro Programa</h2>
+
+<p>💾 <strong>Arquivo de exemplo:</strong> <code class="language-plaintext highlighter-rouge">exercicios/01-ola-mundo.pybr</code></p>
+
+<p>Vamos começar com o clássico “Olá, Mundo!”:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">imprimir</span><span class="p">(</span><span class="s">"Olá, Mundo!"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><strong>O que acontece aqui?</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">imprimir()</code> é uma <strong>função</strong> que mostra texto na tela</li>
+  <li>O texto entre aspas <code class="language-plaintext highlighter-rouge">"Olá, Mundo!"</code> é o que será mostrado</li>
+  <li>As aspas dizem ao computador: “isso é texto, não é código”</li>
+</ul>
+
+<h3 id="experimente-você-mesmo">Experimente você mesmo:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">imprimir</span><span class="p">(</span><span class="s">"Meu nome é João"</span><span class="p">)</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="s">"Estou aprendendo a programar!"</span><span class="p">)</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="s">"PyBR é demais!"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Cada <code class="language-plaintext highlighter-rouge">imprimir()</code> mostra uma linha diferente na tela.</p>
+
+<hr />
+
+<h2 id="variáveis---a-memória-do-computador">Variáveis - A Memória do Computador</h2>
+
+<p>💾 <strong>Arquivo de exemplo:</strong> <code class="language-plaintext highlighter-rouge">exercicios/02-variaveis.pybr</code></p>
+
+<h3 id="o-que-são-variáveis">O que são Variáveis?</h3>
+
+<p>Imagine que o computador tem milhares de caixinhas onde pode guardar informações. As <strong>variáveis</strong> são como etiquetas que você cola nessas caixinhas para lembrar o que tem dentro.</p>
+
+<p><strong>Por que existem?</strong></p>
+<ul>
+  <li>Para <strong>guardar</strong> informações que você vai usar depois</li>
+  <li>Para <strong>reutilizar</strong> valores sem ter que digitá-los novamente</li>
+  <li>Para fazer o programa <strong>lembrar</strong> de coisas</li>
+</ul>
+
+<h3 id="como-criar-variáveis">Como criar variáveis:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Guardando um nome
+</span><span class="n">nome</span> <span class="o">=</span> <span class="s">"Maria"</span>
+
+<span class="c1"># Guardando uma idade
+</span><span class="n">idade</span> <span class="o">=</span> <span class="mi">25</span>
+
+<span class="c1"># Guardando um preço
+</span><span class="n">preco</span> <span class="o">=</span> <span class="mf">19.90</span>
+
+<span class="c1"># Usando as variáveis
+</span><span class="n">imprimir</span><span class="p">(</span><span class="n">nome</span><span class="p">)</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">idade</span><span class="p">)</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">preco</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><strong>Explicando:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">nome</code> é a etiqueta da caixinha</li>
+  <li><code class="language-plaintext highlighter-rouge">=</code> significa “guarde nesta caixinha”</li>
+  <li><code class="language-plaintext highlighter-rouge">"Maria"</code> é o valor que vai ser guardado</li>
+</ul>
+
+<h3 id="analogia-do-mundo-real">Analogia do Mundo Real:</h3>
+
+<p>Pense nas variáveis como gavetas etiquetadas:</p>
+<ul>
+  <li><strong>Gaveta “nome”</strong>: contém “Maria”</li>
+  <li><strong>Gaveta “idade”</strong>: contém 25</li>
+  <li><strong>Gaveta “preco”</strong>: contém 19.90</li>
+</ul>
+
+<h3 id="tipos-de-dados">Tipos de Dados:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># TEXTO (chamamos de "string")
+</span><span class="n">cidade</span> <span class="o">=</span> <span class="s">"São Paulo"</span>
+<span class="n">mensagem</span> <span class="o">=</span> <span class="s">"Bem-vindo!"</span>
+
+<span class="c1"># NÚMEROS INTEIROS
+</span><span class="n">quantidade</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">ano</span> <span class="o">=</span> <span class="mi">2026</span>
+
+<span class="c1"># NÚMEROS DECIMAIS
+</span><span class="n">altura</span> <span class="o">=</span> <span class="mf">1.75</span>
+<span class="n">temperatura</span> <span class="o">=</span> <span class="mf">23.5</span>
+
+<span class="c1"># VERDADEIRO ou FALSO (chamamos de "booleano")
+</span><span class="n">esta_chovendo</span> <span class="o">=</span> <span class="n">Falso</span>
+<span class="n">esta_ensolarado</span> <span class="o">=</span> <span class="n">Verdadeiro</span>
+</code></pre></div></div>
+
+<h3 id="mudando-o-valor-de-uma-variável">Mudando o valor de uma variável:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">saldo</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">saldo</span><span class="p">)</span>  <span class="c1"># Mostra: 100
+</span>
+<span class="n">saldo</span> <span class="o">=</span> <span class="mi">150</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">saldo</span><span class="p">)</span>  <span class="c1"># Mostra: 150
+</span>
+<span class="n">saldo</span> <span class="o">=</span> <span class="n">saldo</span> <span class="o">+</span> <span class="mi">50</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">saldo</span><span class="p">)</span>  <span class="c1"># Mostra: 200
+</span></code></pre></div></div>
+
+<hr />
+
+<h2 id="cálculos-e-operações-matemáticas">Cálculos e Operações Matemáticas</h2>
+
+<p>💾 <strong>Arquivo de exemplo:</strong> <code class="language-plaintext highlighter-rouge">exercicios/03-calculos.pybr</code></p>
+
+<p>O computador é uma super calculadora! Veja o que você pode fazer:</p>
+
+<h3 id="operações-básicas">Operações Básicas:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># ADIÇÃO (+)
+</span><span class="n">soma</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">+</span> <span class="mi">5</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">soma</span><span class="p">)</span>  <span class="c1"># Mostra: 15
+</span>
+<span class="c1"># SUBTRAÇÃO (-)
+</span><span class="n">diferenca</span> <span class="o">=</span> <span class="mi">20</span> <span class="o">-</span> <span class="mi">8</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">diferenca</span><span class="p">)</span>  <span class="c1"># Mostra: 12
+</span>
+<span class="c1"># MULTIPLICAÇÃO (*)
+</span><span class="n">produto</span> <span class="o">=</span> <span class="mi">6</span> <span class="o">*</span> <span class="mi">7</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">produto</span><span class="p">)</span>  <span class="c1"># Mostra: 42
+</span>
+<span class="c1"># DIVISÃO (/)
+</span><span class="n">resultado</span> <span class="o">=</span> <span class="mi">15</span> <span class="o">/</span> <span class="mi">3</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">resultado</span><span class="p">)</span>  <span class="c1"># Mostra: 5.0
+</span>
+<span class="c1"># DIVISÃO INTEIRA (//)
+</span><span class="n">resultado_inteiro</span> <span class="o">=</span> <span class="mi">17</span> <span class="o">//</span> <span class="mi">5</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">resultado_inteiro</span><span class="p">)</span>  <span class="c1"># Mostra: 3
+</span>
+<span class="c1"># RESTO DA DIVISÃO (%)
+</span><span class="n">resto</span> <span class="o">=</span> <span class="mi">17</span> <span class="o">%</span> <span class="mi">5</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">resto</span><span class="p">)</span>  <span class="c1"># Mostra: 2
+</span>
+<span class="c1"># POTÊNCIA (**)
+</span><span class="n">potencia</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">**</span> <span class="mi">3</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">potencia</span><span class="p">)</span>  <span class="c1"># Mostra: 8 (2 elevado a 3)
+</span></code></pre></div></div>
+
+<h3 id="calculadora-de-compras">Calculadora de Compras:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Preços dos produtos
+</span><span class="n">preco_arroz</span> <span class="o">=</span> <span class="mf">25.90</span>
+<span class="n">preco_feijao</span> <span class="o">=</span> <span class="mf">8.50</span>
+<span class="n">preco_acucar</span> <span class="o">=</span> <span class="mf">4.20</span>
+
+<span class="c1"># Calculando o total
+</span><span class="n">total</span> <span class="o">=</span> <span class="n">preco_arroz</span> <span class="o">+</span> <span class="n">preco_feijao</span> <span class="o">+</span> <span class="n">preco_acucar</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="s">"Total da compra: R$"</span><span class="p">)</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+
+<span class="c1"># Calculando com desconto de 10%
+</span><span class="n">desconto</span> <span class="o">=</span> <span class="n">total</span> <span class="o">*</span> <span class="mf">0.10</span>
+<span class="n">total_com_desconto</span> <span class="o">=</span> <span class="n">total</span> <span class="o">-</span> <span class="n">desconto</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="s">"Total com desconto: R$"</span><span class="p">)</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">total_com_desconto</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="ordem-das-operações-como-na-matemática">Ordem das Operações (como na matemática):</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># O computador segue a mesma ordem da matemática
+</span><span class="n">resultado</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">4</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">resultado</span><span class="p">)</span>  <span class="c1"># Mostra: 14 (primeiro 3*4, depois +2)
+</span>
+<span class="c1"># Use parênteses para mudar a ordem
+</span><span class="n">resultado</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span> <span class="o">*</span> <span class="mi">4</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">resultado</span><span class="p">)</span>  <span class="c1"># Mostra: 20 (primeiro 2+3, depois *4)
+</span></code></pre></div></div>
+
+<hr />
+
+<h2 id="entrada-e-saída-de-dados">Entrada e Saída de Dados</h2>
+
+<p>💾 <strong>Arquivos de exemplo:</strong> <code class="language-plaintext highlighter-rouge">exercicios/04-entrada-saida.pybr</code> e <code class="language-plaintext highlighter-rouge">exercicios/05-calculadora-imc.pybr</code></p>
+
+<h3 id="saída---mostrando-informações">Saída - Mostrando Informações:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Forma básica
+</span><span class="n">imprimir</span><span class="p">(</span><span class="s">"Olá!"</span><span class="p">)</span>
+
+<span class="c1"># Mostrando variáveis
+</span><span class="n">nome</span> <span class="o">=</span> <span class="s">"Carlos"</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">nome</span><span class="p">)</span>
+
+<span class="c1"># Juntando texto e variáveis (f-strings)
+</span><span class="n">idade</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Meu nome é </span><span class="si">{</span><span class="n">nome</span><span class="si">}</span><span class="s"> e tenho </span><span class="si">{</span><span class="n">idade</span><span class="si">}</span><span class="s"> anos"</span><span class="p">)</span>
+
+<span class="c1"># Mostrando várias coisas na mesma linha
+</span><span class="n">imprimir</span><span class="p">(</span><span class="s">"A soma de 5 + 3 é:"</span><span class="p">,</span> <span class="mi">5</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="entrada---recebendo-informações-do-usuário">Entrada - Recebendo Informações do Usuário:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Pedindo o nome do usuário
+</span><span class="n">nome</span> <span class="o">=</span> <span class="n">entrada</span><span class="p">(</span><span class="s">"Digite seu nome: "</span><span class="p">)</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Olá, </span><span class="si">{</span><span class="n">nome</span><span class="si">}</span><span class="s">!"</span><span class="p">)</span>
+
+<span class="c1"># Pedindo a idade (lembre-se de converter para número)
+</span><span class="n">idade_texto</span> <span class="o">=</span> <span class="n">entrada</span><span class="p">(</span><span class="s">"Digite sua idade: "</span><span class="p">)</span>
+<span class="n">idade</span> <span class="o">=</span> <span class="n">inteiro</span><span class="p">(</span><span class="n">idade_texto</span><span class="p">)</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Você tem </span><span class="si">{</span><span class="n">idade</span><span class="si">}</span><span class="s"> anos"</span><span class="p">)</span>
+
+<span class="c1"># Forma mais curta (convertendo direto)
+</span><span class="n">idade</span> <span class="o">=</span> <span class="n">inteiro</span><span class="p">(</span><span class="n">entrada</span><span class="p">(</span><span class="s">"Digite sua idade: "</span><span class="p">))</span>
+</code></pre></div></div>
+
+<h3 id="programa-interativo-completo">Programa Interativo Completo:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Calculadora de IMC (Índice de Massa Corporal)
+</span><span class="n">imprimir</span><span class="p">(</span><span class="s">"=== Calculadora de IMC ==="</span><span class="p">)</span>
+
+<span class="n">nome</span> <span class="o">=</span> <span class="n">entrada</span><span class="p">(</span><span class="s">"Qual é seu nome? "</span><span class="p">)</span>
+<span class="n">peso</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">entrada</span><span class="p">(</span><span class="s">"Qual é seu peso em kg? "</span><span class="p">))</span>
+<span class="n">altura</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">entrada</span><span class="p">(</span><span class="s">"Qual é sua altura em metros? "</span><span class="p">))</span>
+
+<span class="n">imc</span> <span class="o">=</span> <span class="n">peso</span> <span class="o">/</span> <span class="p">(</span><span class="n">altura</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+
+<span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="se">\n</span><span class="si">{</span><span class="n">nome</span><span class="si">}</span><span class="s">, seu IMC é: </span><span class="si">{</span><span class="n">imc</span><span class="si">:</span><span class="p">.</span><span class="mi">2</span><span class="n">f</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><strong>Explicação:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">entrada()</code> sempre recebe texto</li>
+  <li>Para fazer cálculos, precisamos converter com <code class="language-plaintext highlighter-rouge">inteiro()</code> ou <code class="language-plaintext highlighter-rouge">float()</code></li>
+  <li><code class="language-plaintext highlighter-rouge">{imc:.2f}</code> mostra o número com 2 casas decimais</li>
+  <li><code class="language-plaintext highlighter-rouge">\n</code> cria uma linha em branco</li>
+</ul>
+
+<hr />
+
+<h2 id="tomando-decisões---estruturas-condicionais">Tomando Decisões - Estruturas Condicionais</h2>
+
+<p>💾 <strong>Arquivos de exemplo:</strong> <code class="language-plaintext highlighter-rouge">exercicios/06-condicionais.pybr</code> e <code class="language-plaintext highlighter-rouge">exercicios/07-sistema-login.pybr</code></p>
+
+<p>Programas precisam tomar decisões! É como um fluxograma: “SE isso acontecer, faça aquilo”.</p>
+
+<h3 id="estrutura-se-if">Estrutura SE (if):</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">idade</span> <span class="o">=</span> <span class="mi">18</span>
+
+<span class="n">se</span> <span class="n">idade</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"Você é maior de idade"</span><span class="p">)</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"Pode tirar carteira de motorista"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><strong>Importante:</strong></p>
+<ul>
+  <li>Depois do <code class="language-plaintext highlighter-rouge">:</code> você deve dar um <strong>TAB</strong> (identação)</li>
+  <li>Tudo que estiver identado só acontece se a condição for verdadeira</li>
+</ul>
+
+<h3 id="estrutura-se-senão-if-else">Estrutura SE-SENÃO (if-else):</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">idade</span> <span class="o">=</span> <span class="mi">15</span>
+
+<span class="n">se</span> <span class="n">idade</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"Você é maior de idade"</span><span class="p">)</span>
+<span class="n">senao</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"Você é menor de idade"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="estrutura-se-senãose-senão-if-elif-else">Estrutura SE-SENÃOSE-SENÃO (if-elif-else):</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">nota</span> <span class="o">=</span> <span class="mi">75</span>
+
+<span class="n">se</span> <span class="n">nota</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"Conceito: A - Excelente!"</span><span class="p">)</span>
+<span class="n">senaose</span> <span class="n">nota</span> <span class="o">&gt;=</span> <span class="mi">70</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"Conceito: B - Bom!"</span><span class="p">)</span>
+<span class="n">senaose</span> <span class="n">nota</span> <span class="o">&gt;=</span> <span class="mi">50</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"Conceito: C - Regular"</span><span class="p">)</span>
+<span class="n">senao</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"Conceito: D - Insuficiente"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="operadores-de-comparação">Operadores de Comparação:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># == (igual a)
+</span><span class="n">se</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"São iguais"</span><span class="p">)</span>
+
+<span class="c1"># != (diferente de)
+</span><span class="n">se</span> <span class="mi">5</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"São diferentes"</span><span class="p">)</span>
+
+<span class="c1"># &gt; (maior que)
+</span><span class="n">se</span> <span class="mi">10</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"10 é maior que 5"</span><span class="p">)</span>
+
+<span class="c1"># &lt; (menor que)
+</span><span class="n">se</span> <span class="mi">3</span> <span class="o">&lt;</span> <span class="mi">7</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"3 é menor que 7"</span><span class="p">)</span>
+
+<span class="c1"># &gt;= (maior ou igual)
+</span><span class="n">se</span> <span class="mi">5</span> <span class="o">&gt;=</span> <span class="mi">5</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"Verdadeiro"</span><span class="p">)</span>
+
+<span class="c1"># &lt;= (menor ou igual)
+</span><span class="n">se</span> <span class="mi">4</span> <span class="o">&lt;=</span> <span class="mi">8</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"Verdadeiro"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="operadores-lógicos">Operadores Lógicos:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># E (and) - ambas condições devem ser verdadeiras
+</span><span class="n">idade</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">tem_carteira</span> <span class="o">=</span> <span class="n">Verdadeiro</span>
+
+<span class="n">se</span> <span class="n">idade</span> <span class="o">&gt;=</span> <span class="mi">18</span> <span class="n">e</span> <span class="n">tem_carteira</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"Pode dirigir!"</span><span class="p">)</span>
+
+<span class="c1"># OU (or) - pelo menos uma condição deve ser verdadeira
+</span><span class="n">dia</span> <span class="o">=</span> <span class="s">"sábado"</span>
+
+<span class="n">se</span> <span class="n">dia</span> <span class="o">==</span> <span class="s">"sábado"</span> <span class="n">ou</span> <span class="n">dia</span> <span class="o">==</span> <span class="s">"domingo"</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"É fim de semana!"</span><span class="p">)</span>
+
+<span class="c1"># NÃO (not) - inverte a condição
+</span><span class="n">chovendo</span> <span class="o">=</span> <span class="n">Falso</span>
+
+<span class="n">se</span> <span class="n">nao</span> <span class="n">chovendo</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"Vamos ao parque!"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="exemplo-prático---sistema-de-login">Exemplo Prático - Sistema de Login:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">usuario_correto</span> <span class="o">=</span> <span class="s">"admin"</span>
+<span class="n">senha_correta</span> <span class="o">=</span> <span class="s">"1234"</span>
+
+<span class="n">usuario</span> <span class="o">=</span> <span class="n">entrada</span><span class="p">(</span><span class="s">"Digite o usuário: "</span><span class="p">)</span>
+<span class="n">senha</span> <span class="o">=</span> <span class="n">entrada</span><span class="p">(</span><span class="s">"Digite a senha: "</span><span class="p">)</span>
+
+<span class="n">se</span> <span class="n">usuario</span> <span class="o">==</span> <span class="n">usuario_correto</span> <span class="n">e</span> <span class="n">senha</span> <span class="o">==</span> <span class="n">senha_correta</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"✓ Login realizado com sucesso!"</span><span class="p">)</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"Bem-vindo ao sistema!"</span><span class="p">)</span>
+<span class="n">senao</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"✗ Usuário ou senha incorretos!"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="repetindo-ações---laços-de-repetição">Repetindo Ações - Laços de Repetição</h2>
+
+<p>💾 <strong>Arquivos de exemplo:</strong> <code class="language-plaintext highlighter-rouge">exercicios/08-lacos-para.pybr</code>, <code class="language-plaintext highlighter-rouge">exercicios/09-tabuada.pybr</code>, <code class="language-plaintext highlighter-rouge">exercicios/10-enquanto.pybr</code>, <code class="language-plaintext highlighter-rouge">exercicios/11-jogo-adivinhacao.pybr</code> e <code class="language-plaintext highlighter-rouge">exercicios/12-listas.pybr</code></p>
+
+<p>Imagine ter que escrever <code class="language-plaintext highlighter-rouge">imprimir("Olá")</code> 100 vezes… Os laços de repetição fazem isso automaticamente!</p>
+
+<h3 id="laço-para-for---número-definido-de-repetições">Laço PARA (for) - Número Definido de Repetições:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Contando de 0 a 4
+</span><span class="n">para</span> <span class="n">i</span> <span class="n">em</span> <span class="n">intervalo</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+<span class="c1"># Resultado:
+# 0
+# 1
+# 2
+# 3
+# 4
+</span></code></pre></div></div>
+
+<p><strong>Explicação:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">para</code> inicia o laço</li>
+  <li><code class="language-plaintext highlighter-rouge">i</code> é a variável que vai mudando (pode ter qualquer nome)</li>
+  <li><code class="language-plaintext highlighter-rouge">em</code> indica onde buscar os valores</li>
+  <li><code class="language-plaintext highlighter-rouge">intervalo(5)</code> gera números de 0 a 4</li>
+</ul>
+
+<h3 id="personalizando-o-intervalo">Personalizando o intervalo:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># De 1 a 10
+</span><span class="n">para</span> <span class="n">numero</span> <span class="n">em</span> <span class="n">intervalo</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>
+
+<span class="c1"># De 0 a 10, pulando de 2 em 2
+</span><span class="n">para</span> <span class="n">numero</span> <span class="n">em</span> <span class="n">intervalo</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>  <span class="c1"># Mostra: 0, 2, 4, 6, 8, 10
+</span>
+<span class="c1"># Contagem regressiva
+</span><span class="n">para</span> <span class="n">numero</span> <span class="n">em</span> <span class="n">intervalo</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>  <span class="c1"># Mostra: 10, 9, 8, ..., 1
+</span></code></pre></div></div>
+
+<h3 id="laço-enquanto-while---repete-enquanto-condição-for-verdadeira">Laço ENQUANTO (while) - Repete Enquanto Condição For Verdadeira:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">contador</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">enquanto</span> <span class="n">contador</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Contador: </span><span class="si">{</span><span class="n">contador</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+    <span class="n">contador</span> <span class="o">=</span> <span class="n">contador</span> <span class="o">+</span> <span class="mi">1</span>
+
+<span class="c1"># Resultado:
+# Contador: 0
+# Contador: 1
+# Contador: 2
+# Contador: 3
+# Contador: 4
+</span></code></pre></div></div>
+
+<p><strong>Cuidado!</strong> Se a condição nunca ficar falsa, o programa fica preso em um loop infinito!</p>
+
+<h3 id="exemplo-prático---tabuada">Exemplo Prático - Tabuada:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">numero</span> <span class="o">=</span> <span class="n">inteiro</span><span class="p">(</span><span class="n">entrada</span><span class="p">(</span><span class="s">"Digite um número para ver a tabuada: "</span><span class="p">))</span>
+
+<span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="se">\n</span><span class="s">=== Tabuada do </span><span class="si">{</span><span class="n">numero</span><span class="si">}</span><span class="s"> ==="</span><span class="p">)</span>
+<span class="n">para</span> <span class="n">i</span> <span class="n">em</span> <span class="n">intervalo</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
+    <span class="n">resultado</span> <span class="o">=</span> <span class="n">numero</span> <span class="o">*</span> <span class="n">i</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">numero</span><span class="si">}</span><span class="s"> x </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s"> = </span><span class="si">{</span><span class="n">resultado</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="exemplo-prático---jogo-de-adivinhação">Exemplo Prático - Jogo de Adivinhação:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">numero_secreto</span> <span class="o">=</span> <span class="mi">42</span>
+<span class="n">tentativas</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">imprimir</span><span class="p">(</span><span class="s">"=== Jogo de Adivinhação ==="</span><span class="p">)</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="s">"Tente adivinhar o número entre 1 e 100!"</span><span class="p">)</span>
+
+<span class="n">enquanto</span> <span class="n">Verdadeiro</span><span class="p">:</span>
+    <span class="n">palpite</span> <span class="o">=</span> <span class="n">inteiro</span><span class="p">(</span><span class="n">entrada</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Seu palpite: "</span><span class="p">))</span>
+    <span class="n">tentativas</span> <span class="o">=</span> <span class="n">tentativas</span> <span class="o">+</span> <span class="mi">1</span>
+    
+    <span class="n">se</span> <span class="n">palpite</span> <span class="o">==</span> <span class="n">numero_secreto</span><span class="p">:</span>
+        <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"🎉 Parabéns! Você acertou em </span><span class="si">{</span><span class="n">tentativas</span><span class="si">}</span><span class="s"> tentativas!"</span><span class="p">)</span>
+        <span class="n">quebre</span>  <span class="c1"># Sai do laço
+</span>    <span class="n">senaose</span> <span class="n">palpite</span> <span class="o">&lt;</span> <span class="n">numero_secreto</span><span class="p">:</span>
+        <span class="n">imprimir</span><span class="p">(</span><span class="s">"📈 O número secreto é MAIOR!"</span><span class="p">)</span>
+    <span class="n">senao</span><span class="p">:</span>
+        <span class="n">imprimir</span><span class="p">(</span><span class="s">"📉 O número secreto é MENOR!"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="trabalhando-com-listas">Trabalhando com Listas:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Criando uma lista
+</span><span class="n">frutas</span> <span class="o">=</span> <span class="p">[</span><span class="s">"maçã"</span><span class="p">,</span> <span class="s">"banana"</span><span class="p">,</span> <span class="s">"laranja"</span><span class="p">,</span> <span class="s">"uva"</span><span class="p">]</span>
+
+<span class="c1"># Percorrendo a lista
+</span><span class="n">para</span> <span class="n">fruta</span> <span class="n">em</span> <span class="n">frutas</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Eu gosto de </span><span class="si">{</span><span class="n">fruta</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+
+<span class="c1"># Com índice (posição)
+</span><span class="n">para</span> <span class="n">i</span> <span class="n">em</span> <span class="n">intervalo</span><span class="p">(</span><span class="n">tamanho</span><span class="p">(</span><span class="n">frutas</span><span class="p">)):</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s">. </span><span class="si">{</span><span class="n">frutas</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="organizando-o-código---funções">Organizando o Código - Funções</h2>
+
+<p>💾 <strong>Arquivos de exemplo:</strong> <code class="language-plaintext highlighter-rouge">exercicios/13-funcoes-simples.pybr</code>, <code class="language-plaintext highlighter-rouge">exercicios/14-funcoes-retorno.pybr</code> e <code class="language-plaintext highlighter-rouge">exercicios/15-calculadora-funcoes.pybr</code></p>
+
+<p>Funções são como <strong>receitas reutilizáveis</strong>. Você define uma vez e pode usar várias vezes!</p>
+
+<h3 id="por-que-usar-funções">Por que usar funções?</h3>
+
+<ol>
+  <li><strong>Evitar repetição</strong> - Escreva uma vez, use muitas vezes</li>
+  <li><strong>Organização</strong> - Código mais limpo e fácil de entender</li>
+  <li><strong>Facilitar manutenção</strong> - Alterar em um lugar só</li>
+</ol>
+
+<h3 id="criando-uma-função-simples">Criando uma Função Simples:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Definindo a função
+</span><span class="n">definir</span> <span class="n">saudar</span><span class="p">():</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"Olá, seja bem-vindo!"</span><span class="p">)</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"Tenha um ótimo dia!"</span><span class="p">)</span>
+
+<span class="c1"># Usando a função
+</span><span class="n">saudar</span><span class="p">()</span>
+<span class="n">saudar</span><span class="p">()</span>  <span class="c1"># Podemos chamar quantas vezes quiser
+</span></code></pre></div></div>
+
+<h3 id="funções-com-parâmetros-argumentos">Funções com Parâmetros (Argumentos):</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Função que recebe um nome
+</span><span class="n">definir</span> <span class="n">saudar_pessoa</span><span class="p">(</span><span class="n">nome</span><span class="p">):</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Olá, </span><span class="si">{</span><span class="n">nome</span><span class="si">}</span><span class="s">!"</span><span class="p">)</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"Como você está?"</span><span class="p">)</span>
+
+<span class="c1"># Usando
+</span><span class="n">saudar_pessoa</span><span class="p">(</span><span class="s">"Maria"</span><span class="p">)</span>
+<span class="n">saudar_pessoa</span><span class="p">(</span><span class="s">"João"</span><span class="p">)</span>
+<span class="n">saudar_pessoa</span><span class="p">(</span><span class="s">"Ana"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="funções-com-múltiplos-parâmetros">Funções com Múltiplos Parâmetros:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">definir</span> <span class="n">calcular_media</span><span class="p">(</span><span class="n">nota1</span><span class="p">,</span> <span class="n">nota2</span><span class="p">,</span> <span class="n">nota3</span><span class="p">):</span>
+    <span class="n">soma</span> <span class="o">=</span> <span class="n">nota1</span> <span class="o">+</span> <span class="n">nota2</span> <span class="o">+</span> <span class="n">nota3</span>
+    <span class="n">media</span> <span class="o">=</span> <span class="n">soma</span> <span class="o">/</span> <span class="mi">3</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"A média é: </span><span class="si">{</span><span class="n">media</span><span class="si">:</span><span class="p">.</span><span class="mi">2</span><span class="n">f</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+
+<span class="n">calcular_media</span><span class="p">(</span><span class="mf">7.5</span><span class="p">,</span> <span class="mf">8.0</span><span class="p">,</span> <span class="mf">9.5</span><span class="p">)</span>
+<span class="n">calcular_media</span><span class="p">(</span><span class="mf">6.0</span><span class="p">,</span> <span class="mf">7.0</span><span class="p">,</span> <span class="mf">8.5</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="funções-que-retornam-valores">Funções que RETORNAM Valores:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">definir</span> <span class="n">somar</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="n">resultado</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+    <span class="n">retornar</span> <span class="n">resultado</span>
+
+<span class="c1"># Usando o valor retornado
+</span><span class="n">total</span> <span class="o">=</span> <span class="n">somar</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>  <span class="c1"># Mostra: 15
+</span>
+<span class="c1"># Ou diretamente
+</span><span class="n">imprimir</span><span class="p">(</span><span class="n">somar</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">))</span>  <span class="c1"># Mostra: 50
+</span></code></pre></div></div>
+
+<h3 id="exemplo-completo---calculadora">Exemplo Completo - Calculadora:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">definir</span> <span class="n">somar</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="n">retornar</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+
+<span class="n">definir</span> <span class="n">subtrair</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="n">retornar</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
+
+<span class="n">definir</span> <span class="n">multiplicar</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="n">retornar</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+
+<span class="n">definir</span> <span class="n">dividir</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="n">se</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">retornar</span> <span class="s">"Erro: Divisão por zero!"</span>
+    <span class="n">retornar</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
+
+<span class="c1"># Menu da calculadora
+</span><span class="n">imprimir</span><span class="p">(</span><span class="s">"=== CALCULADORA ==="</span><span class="p">)</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="s">"1. Somar"</span><span class="p">)</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="s">"2. Subtrair"</span><span class="p">)</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="s">"3. Multiplicar"</span><span class="p">)</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="s">"4. Dividir"</span><span class="p">)</span>
+
+<span class="n">opcao</span> <span class="o">=</span> <span class="n">inteiro</span><span class="p">(</span><span class="n">entrada</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Escolha uma opção: "</span><span class="p">))</span>
+<span class="n">num1</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">entrada</span><span class="p">(</span><span class="s">"Digite o primeiro número: "</span><span class="p">))</span>
+<span class="n">num2</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">entrada</span><span class="p">(</span><span class="s">"Digite o segundo número: "</span><span class="p">))</span>
+
+<span class="n">se</span> <span class="n">opcao</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Resultado: </span><span class="si">{</span><span class="n">somar</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">)</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+<span class="n">senaose</span> <span class="n">opcao</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Resultado: </span><span class="si">{</span><span class="n">subtrair</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">)</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+<span class="n">senaose</span> <span class="n">opcao</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Resultado: </span><span class="si">{</span><span class="n">multiplicar</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">)</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+<span class="n">senaose</span> <span class="n">opcao</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Resultado: </span><span class="si">{</span><span class="n">dividir</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">)</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+<span class="n">senao</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"Opção inválida!"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="funções-com-valores-padrão">Funções com Valores Padrão:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">definir</span> <span class="n">fazer_cafe</span><span class="p">(</span><span class="n">tipo</span><span class="o">=</span><span class="s">"normal"</span><span class="p">,</span> <span class="n">acucar</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Fazendo café </span><span class="si">{</span><span class="n">tipo</span><span class="si">}</span><span class="s"> com </span><span class="si">{</span><span class="n">acucar</span><span class="si">}</span><span class="s"> colher(es) de açúcar"</span><span class="p">)</span>
+
+<span class="n">fazer_cafe</span><span class="p">()</span>  <span class="c1"># Usa valores padrão
+</span><span class="n">fazer_cafe</span><span class="p">(</span><span class="s">"expresso"</span><span class="p">)</span>  <span class="c1"># Usa açúcar padrão
+</span><span class="n">fazer_cafe</span><span class="p">(</span><span class="s">"cappuccino"</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># Define tudo
+</span><span class="n">fazer_cafe</span><span class="p">(</span><span class="n">acucar</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># Café sem açúcar
+</span></code></pre></div></div>
+
+<hr />
+
+<h2 id="criando-objetos---classes">Criando Objetos - Classes</h2>
+
+<p>💾 <strong>Arquivos de exemplo:</strong> <code class="language-plaintext highlighter-rouge">exercicios/16-classe-cachorro.pybr</code>, <code class="language-plaintext highlighter-rouge">exercicios/17-classe-conta-bancaria.pybr</code>, <code class="language-plaintext highlighter-rouge">exercicios/18-classe-retangulo.pybr</code> e <code class="language-plaintext highlighter-rouge">exercicios/19-classe-aluno.pybr</code></p>
+
+<p>Classes são como <strong>moldes</strong> para criar objetos. É como uma receita de bolo (classe) que você usa para fazer vários bolos (objetos).</p>
+
+<h3 id="o-que-são-objetos">O que são Objetos?</h3>
+
+<p>Objetos são “coisas” que têm:</p>
+<ul>
+  <li><strong>Características</strong> (atributos) - o que o objeto é</li>
+  <li><strong>Comportamentos</strong> (métodos) - o que o objeto faz</li>
+</ul>
+
+<p><strong>Exemplo do mundo real:</strong></p>
+<ul>
+  <li><strong>Carro</strong> (classe)
+    <ul>
+      <li>Características: cor, modelo, ano, velocidade</li>
+      <li>Comportamentos: acelerar, frear, buzinar</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="criando-sua-primeira-classe">Criando Sua Primeira Classe:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">classe</span> <span class="n">Cachorro</span><span class="p">:</span>
+    <span class="c1"># Método construtor - executado ao criar um cachorro
+</span>    <span class="n">definir</span> <span class="n">__init__</span><span class="p">(</span><span class="n">proprio</span><span class="p">,</span> <span class="n">nome</span><span class="p">,</span> <span class="n">raca</span><span class="p">):</span>
+        <span class="n">proprio</span><span class="p">.</span><span class="n">nome</span> <span class="o">=</span> <span class="n">nome</span>
+        <span class="n">proprio</span><span class="p">.</span><span class="n">raca</span> <span class="o">=</span> <span class="n">raca</span>
+    
+    <span class="c1"># Método - comportamento do cachorro
+</span>    <span class="n">definir</span> <span class="n">latir</span><span class="p">(</span><span class="n">proprio</span><span class="p">):</span>
+        <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">proprio</span><span class="p">.</span><span class="n">nome</span><span class="si">}</span><span class="s">: Au au!"</span><span class="p">)</span>
+    
+    <span class="n">definir</span> <span class="n">apresentar</span><span class="p">(</span><span class="n">proprio</span><span class="p">):</span>
+        <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Olá! Meu nome é </span><span class="si">{</span><span class="n">proprio</span><span class="p">.</span><span class="n">nome</span><span class="si">}</span><span class="s"> e sou um </span><span class="si">{</span><span class="n">proprio</span><span class="p">.</span><span class="n">raca</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+
+<span class="c1"># Criando objetos (instâncias) da classe
+</span><span class="n">rex</span> <span class="o">=</span> <span class="n">Cachorro</span><span class="p">(</span><span class="s">"Rex"</span><span class="p">,</span> <span class="s">"Labrador"</span><span class="p">)</span>
+<span class="n">bob</span> <span class="o">=</span> <span class="n">Cachorro</span><span class="p">(</span><span class="s">"Bob"</span><span class="p">,</span> <span class="s">"Poodle"</span><span class="p">)</span>
+
+<span class="c1"># Usando os métodos
+</span><span class="n">rex</span><span class="p">.</span><span class="n">latir</span><span class="p">()</span>  <span class="c1"># Rex: Au au!
+</span><span class="n">bob</span><span class="p">.</span><span class="n">apresentar</span><span class="p">()</span>  <span class="c1"># Olá! Meu nome é Bob e sou um Poodle
+</span></code></pre></div></div>
+
+<p><strong>Explicação:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">classe</code> define o molde</li>
+  <li><code class="language-plaintext highlighter-rouge">__init__</code> é o construtor - inicializa o objeto</li>
+  <li><code class="language-plaintext highlighter-rouge">proprio</code> se refere ao próprio objeto (como “eu mesmo”)</li>
+  <li><code class="language-plaintext highlighter-rouge">proprio.nome</code> é um atributo do objeto</li>
+</ul>
+
+<h3 id="classe-conta-bancária">Classe Conta Bancária:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">classe</span> <span class="n">ContaBancaria</span><span class="p">:</span>
+    <span class="n">definir</span> <span class="n">__init__</span><span class="p">(</span><span class="n">proprio</span><span class="p">,</span> <span class="n">titular</span><span class="p">,</span> <span class="n">saldo_inicial</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+        <span class="n">proprio</span><span class="p">.</span><span class="n">titular</span> <span class="o">=</span> <span class="n">titular</span>
+        <span class="n">proprio</span><span class="p">.</span><span class="n">saldo</span> <span class="o">=</span> <span class="n">saldo_inicial</span>
+    
+    <span class="n">definir</span> <span class="n">depositar</span><span class="p">(</span><span class="n">proprio</span><span class="p">,</span> <span class="n">valor</span><span class="p">):</span>
+        <span class="n">proprio</span><span class="p">.</span><span class="n">saldo</span> <span class="o">=</span> <span class="n">proprio</span><span class="p">.</span><span class="n">saldo</span> <span class="o">+</span> <span class="n">valor</span>
+        <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Depósito de R$ </span><span class="si">{</span><span class="n">valor</span><span class="si">:</span><span class="p">.</span><span class="mi">2</span><span class="n">f</span><span class="si">}</span><span class="s"> realizado!"</span><span class="p">)</span>
+        <span class="n">proprio</span><span class="p">.</span><span class="n">mostrar_saldo</span><span class="p">()</span>
+    
+    <span class="n">definir</span> <span class="n">sacar</span><span class="p">(</span><span class="n">proprio</span><span class="p">,</span> <span class="n">valor</span><span class="p">):</span>
+        <span class="n">se</span> <span class="n">valor</span> <span class="o">&gt;</span> <span class="n">proprio</span><span class="p">.</span><span class="n">saldo</span><span class="p">:</span>
+            <span class="n">imprimir</span><span class="p">(</span><span class="s">"Saldo insuficiente!"</span><span class="p">)</span>
+        <span class="n">senao</span><span class="p">:</span>
+            <span class="n">proprio</span><span class="p">.</span><span class="n">saldo</span> <span class="o">=</span> <span class="n">proprio</span><span class="p">.</span><span class="n">saldo</span> <span class="o">-</span> <span class="n">valor</span>
+            <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Saque de R$ </span><span class="si">{</span><span class="n">valor</span><span class="si">:</span><span class="p">.</span><span class="mi">2</span><span class="n">f</span><span class="si">}</span><span class="s"> realizado!"</span><span class="p">)</span>
+            <span class="n">proprio</span><span class="p">.</span><span class="n">mostrar_saldo</span><span class="p">()</span>
+    
+    <span class="n">definir</span> <span class="n">mostrar_saldo</span><span class="p">(</span><span class="n">proprio</span><span class="p">):</span>
+        <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Saldo atual de </span><span class="si">{</span><span class="n">proprio</span><span class="p">.</span><span class="n">titular</span><span class="si">}</span><span class="s">: R$ </span><span class="si">{</span><span class="n">proprio</span><span class="p">.</span><span class="n">saldo</span><span class="si">:</span><span class="p">.</span><span class="mi">2</span><span class="n">f</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+
+<span class="c1"># Criando contas
+</span><span class="n">conta_joao</span> <span class="o">=</span> <span class="n">ContaBancaria</span><span class="p">(</span><span class="s">"João"</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="n">conta_maria</span> <span class="o">=</span> <span class="n">ContaBancaria</span><span class="p">(</span><span class="s">"Maria"</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>
+
+<span class="c1"># Operações
+</span><span class="n">conta_joao</span><span class="p">.</span><span class="n">mostrar_saldo</span><span class="p">()</span>
+<span class="n">conta_joao</span><span class="p">.</span><span class="n">depositar</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+<span class="n">conta_joao</span><span class="p">.</span><span class="n">sacar</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+
+<span class="n">conta_maria</span><span class="p">.</span><span class="n">mostrar_saldo</span><span class="p">()</span>
+<span class="n">conta_maria</span><span class="p">.</span><span class="n">sacar</span><span class="p">(</span><span class="mi">600</span><span class="p">)</span>  <span class="c1"># Vai dar erro de saldo insuficiente
+</span></code></pre></div></div>
+
+<h3 id="classe-retângulo---exemplo-matemático">Classe Retângulo - Exemplo Matemático:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">classe</span> <span class="n">Retangulo</span><span class="p">:</span>
+    <span class="n">definir</span> <span class="n">__init__</span><span class="p">(</span><span class="n">proprio</span><span class="p">,</span> <span class="n">largura</span><span class="p">,</span> <span class="n">altura</span><span class="p">):</span>
+        <span class="n">proprio</span><span class="p">.</span><span class="n">largura</span> <span class="o">=</span> <span class="n">largura</span>
+        <span class="n">proprio</span><span class="p">.</span><span class="n">altura</span> <span class="o">=</span> <span class="n">altura</span>
+    
+    <span class="n">definir</span> <span class="n">calcular_area</span><span class="p">(</span><span class="n">proprio</span><span class="p">):</span>
+        <span class="n">area</span> <span class="o">=</span> <span class="n">proprio</span><span class="p">.</span><span class="n">largura</span> <span class="o">*</span> <span class="n">proprio</span><span class="p">.</span><span class="n">altura</span>
+        <span class="n">retornar</span> <span class="n">area</span>
+    
+    <span class="n">definir</span> <span class="n">calcular_perimetro</span><span class="p">(</span><span class="n">proprio</span><span class="p">):</span>
+        <span class="n">perimetro</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="n">proprio</span><span class="p">.</span><span class="n">largura</span> <span class="o">+</span> <span class="n">proprio</span><span class="p">.</span><span class="n">altura</span><span class="p">)</span>
+        <span class="n">retornar</span> <span class="n">perimetro</span>
+    
+    <span class="n">definir</span> <span class="n">mostrar_info</span><span class="p">(</span><span class="n">proprio</span><span class="p">):</span>
+        <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"=== Retângulo ==="</span><span class="p">)</span>
+        <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Largura: </span><span class="si">{</span><span class="n">proprio</span><span class="p">.</span><span class="n">largura</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+        <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Altura: </span><span class="si">{</span><span class="n">proprio</span><span class="p">.</span><span class="n">altura</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+        <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Área: </span><span class="si">{</span><span class="n">proprio</span><span class="p">.</span><span class="n">calcular_area</span><span class="p">()</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+        <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Perímetro: </span><span class="si">{</span><span class="n">proprio</span><span class="p">.</span><span class="n">calcular_perimetro</span><span class="p">()</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+
+<span class="c1"># Criando retângulos
+</span><span class="n">ret1</span> <span class="o">=</span> <span class="n">Retangulo</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">ret2</span> <span class="o">=</span> <span class="n">Retangulo</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+
+<span class="n">ret1</span><span class="p">.</span><span class="n">mostrar_info</span><span class="p">()</span>
+<span class="n">ret2</span><span class="p">.</span><span class="n">mostrar_info</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h3 id="classe-aluno---sistema-escolar">Classe Aluno - Sistema Escolar:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">classe</span> <span class="n">Aluno</span><span class="p">:</span>
+    <span class="n">definir</span> <span class="n">__init__</span><span class="p">(</span><span class="n">proprio</span><span class="p">,</span> <span class="n">nome</span><span class="p">,</span> <span class="n">matricula</span><span class="p">):</span>
+        <span class="n">proprio</span><span class="p">.</span><span class="n">nome</span> <span class="o">=</span> <span class="n">nome</span>
+        <span class="n">proprio</span><span class="p">.</span><span class="n">matricula</span> <span class="o">=</span> <span class="n">matricula</span>
+        <span class="n">proprio</span><span class="p">.</span><span class="n">notas</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="n">definir</span> <span class="n">adicionar_nota</span><span class="p">(</span><span class="n">proprio</span><span class="p">,</span> <span class="n">nota</span><span class="p">):</span>
+        <span class="n">proprio</span><span class="p">.</span><span class="n">notas</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">nota</span><span class="p">)</span>
+        <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Nota </span><span class="si">{</span><span class="n">nota</span><span class="si">}</span><span class="s"> adicionada para </span><span class="si">{</span><span class="n">proprio</span><span class="p">.</span><span class="n">nome</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+    
+    <span class="n">definir</span> <span class="n">calcular_media</span><span class="p">(</span><span class="n">proprio</span><span class="p">):</span>
+        <span class="n">se</span> <span class="n">tamanho</span><span class="p">(</span><span class="n">proprio</span><span class="p">.</span><span class="n">notas</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">retornar</span> <span class="mi">0</span>
+        <span class="n">soma</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">proprio</span><span class="p">.</span><span class="n">notas</span><span class="p">)</span>
+        <span class="n">media</span> <span class="o">=</span> <span class="n">soma</span> <span class="o">/</span> <span class="n">tamanho</span><span class="p">(</span><span class="n">proprio</span><span class="p">.</span><span class="n">notas</span><span class="p">)</span>
+        <span class="n">retornar</span> <span class="n">media</span>
+    
+    <span class="n">definir</span> <span class="n">situacao</span><span class="p">(</span><span class="n">proprio</span><span class="p">):</span>
+        <span class="n">media</span> <span class="o">=</span> <span class="n">proprio</span><span class="p">.</span><span class="n">calcular_media</span><span class="p">()</span>
+        <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="se">\n</span><span class="s">=== Boletim de </span><span class="si">{</span><span class="n">proprio</span><span class="p">.</span><span class="n">nome</span><span class="si">}</span><span class="s"> ==="</span><span class="p">)</span>
+        <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Matrícula: </span><span class="si">{</span><span class="n">proprio</span><span class="p">.</span><span class="n">matricula</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+        <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Notas: </span><span class="si">{</span><span class="n">proprio</span><span class="p">.</span><span class="n">notas</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+        <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Média: </span><span class="si">{</span><span class="n">media</span><span class="si">:</span><span class="p">.</span><span class="mi">2</span><span class="n">f</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+        
+        <span class="n">se</span> <span class="n">media</span> <span class="o">&gt;=</span> <span class="mi">7</span><span class="p">:</span>
+            <span class="n">imprimir</span><span class="p">(</span><span class="s">"Status: APROVADO ✓"</span><span class="p">)</span>
+        <span class="n">senaose</span> <span class="n">media</span> <span class="o">&gt;=</span> <span class="mi">5</span><span class="p">:</span>
+            <span class="n">imprimir</span><span class="p">(</span><span class="s">"Status: RECUPERAÇÃO ⚠"</span><span class="p">)</span>
+        <span class="n">senao</span><span class="p">:</span>
+            <span class="n">imprimir</span><span class="p">(</span><span class="s">"Status: REPROVADO ✗"</span><span class="p">)</span>
+
+<span class="c1"># Usando a classe
+</span><span class="n">aluno1</span> <span class="o">=</span> <span class="n">Aluno</span><span class="p">(</span><span class="s">"Carlos Silva"</span><span class="p">,</span> <span class="s">"2024001"</span><span class="p">)</span>
+<span class="n">aluno1</span><span class="p">.</span><span class="n">adicionar_nota</span><span class="p">(</span><span class="mf">8.5</span><span class="p">)</span>
+<span class="n">aluno1</span><span class="p">.</span><span class="n">adicionar_nota</span><span class="p">(</span><span class="mf">7.0</span><span class="p">)</span>
+<span class="n">aluno1</span><span class="p">.</span><span class="n">adicionar_nota</span><span class="p">(</span><span class="mf">9.0</span><span class="p">)</span>
+<span class="n">aluno1</span><span class="p">.</span><span class="n">situacao</span><span class="p">()</span>
+
+<span class="n">aluno2</span> <span class="o">=</span> <span class="n">Aluno</span><span class="p">(</span><span class="s">"Ana Santos"</span><span class="p">,</span> <span class="s">"2024002"</span><span class="p">)</span>
+<span class="n">aluno2</span><span class="p">.</span><span class="n">adicionar_nota</span><span class="p">(</span><span class="mf">6.0</span><span class="p">)</span>
+<span class="n">aluno2</span><span class="p">.</span><span class="n">adicionar_nota</span><span class="p">(</span><span class="mf">5.5</span><span class="p">)</span>
+<span class="n">aluno2</span><span class="p">.</span><span class="n">adicionar_nota</span><span class="p">(</span><span class="mf">4.0</span><span class="p">)</span>
+<span class="n">aluno2</span><span class="p">.</span><span class="n">situacao</span><span class="p">()</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="projetos-práticos">Projetos Práticos</h2>
+
+<p>💾 <strong>Arquivos de exemplo:</strong> <code class="language-plaintext highlighter-rouge">exercicios/20-projeto-lista-tarefas.pybr</code>, <code class="language-plaintext highlighter-rouge">exercicios/21-projeto-quiz.pybr</code> e <code class="language-plaintext highlighter-rouge">exercicios/22-projeto-conversor-temperatura.pybr</code></p>
+
+<h3 id="projeto-1-lista-de-tarefas">Projeto 1: Lista de Tarefas</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">classe</span> <span class="n">GerenciadorTarefas</span><span class="p">:</span>
+    <span class="n">definir</span> <span class="n">__init__</span><span class="p">(</span><span class="n">proprio</span><span class="p">):</span>
+        <span class="n">proprio</span><span class="p">.</span><span class="n">tarefas</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="n">definir</span> <span class="n">adicionar</span><span class="p">(</span><span class="n">proprio</span><span class="p">,</span> <span class="n">tarefa</span><span class="p">):</span>
+        <span class="n">proprio</span><span class="p">.</span><span class="n">tarefas</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">tarefa</span><span class="p">)</span>
+        <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"✓ Tarefa '</span><span class="si">{</span><span class="n">tarefa</span><span class="si">}</span><span class="s">' adicionada!"</span><span class="p">)</span>
+    
+    <span class="n">definir</span> <span class="n">listar</span><span class="p">(</span><span class="n">proprio</span><span class="p">):</span>
+        <span class="n">se</span> <span class="n">tamanho</span><span class="p">(</span><span class="n">proprio</span><span class="p">.</span><span class="n">tarefas</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">imprimir</span><span class="p">(</span><span class="s">"Nenhuma tarefa na lista!"</span><span class="p">)</span>
+            <span class="n">retornar</span>
+        
+        <span class="n">imprimir</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">=== MINHAS TAREFAS ==="</span><span class="p">)</span>
+        <span class="n">para</span> <span class="n">i</span> <span class="n">em</span> <span class="n">intervalo</span><span class="p">(</span><span class="n">tamanho</span><span class="p">(</span><span class="n">proprio</span><span class="p">.</span><span class="n">tarefas</span><span class="p">)):</span>
+            <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s">. </span><span class="si">{</span><span class="n">proprio</span><span class="p">.</span><span class="n">tarefas</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+    
+    <span class="n">definir</span> <span class="n">remover</span><span class="p">(</span><span class="n">proprio</span><span class="p">,</span> <span class="n">numero</span><span class="p">):</span>
+        <span class="n">se</span> <span class="n">numero</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="n">e</span> <span class="n">numero</span> <span class="o">&lt;=</span> <span class="n">tamanho</span><span class="p">(</span><span class="n">proprio</span><span class="p">.</span><span class="n">tarefas</span><span class="p">):</span>
+            <span class="n">tarefa_removida</span> <span class="o">=</span> <span class="n">proprio</span><span class="p">.</span><span class="n">tarefas</span><span class="p">.</span><span class="n">pop</span><span class="p">(</span><span class="n">numero</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+            <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"✓ Tarefa '</span><span class="si">{</span><span class="n">tarefa_removida</span><span class="si">}</span><span class="s">' removida!"</span><span class="p">)</span>
+        <span class="n">senao</span><span class="p">:</span>
+            <span class="n">imprimir</span><span class="p">(</span><span class="s">"Número inválido!"</span><span class="p">)</span>
+
+<span class="c1"># Programa principal
+</span><span class="n">gerenciador</span> <span class="o">=</span> <span class="n">GerenciadorTarefas</span><span class="p">()</span>
+
+<span class="n">enquanto</span> <span class="n">Verdadeiro</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">=== MENU ==="</span><span class="p">)</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"1. Adicionar tarefa"</span><span class="p">)</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"2. Listar tarefas"</span><span class="p">)</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"3. Remover tarefa"</span><span class="p">)</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"4. Sair"</span><span class="p">)</span>
+    
+    <span class="n">opcao</span> <span class="o">=</span> <span class="n">entrada</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Escolha uma opção: "</span><span class="p">)</span>
+    
+    <span class="n">se</span> <span class="n">opcao</span> <span class="o">==</span> <span class="s">"1"</span><span class="p">:</span>
+        <span class="n">tarefa</span> <span class="o">=</span> <span class="n">entrada</span><span class="p">(</span><span class="s">"Digite a tarefa: "</span><span class="p">)</span>
+        <span class="n">gerenciador</span><span class="p">.</span><span class="n">adicionar</span><span class="p">(</span><span class="n">tarefa</span><span class="p">)</span>
+    <span class="n">senaose</span> <span class="n">opcao</span> <span class="o">==</span> <span class="s">"2"</span><span class="p">:</span>
+        <span class="n">gerenciador</span><span class="p">.</span><span class="n">listar</span><span class="p">()</span>
+    <span class="n">senaose</span> <span class="n">opcao</span> <span class="o">==</span> <span class="s">"3"</span><span class="p">:</span>
+        <span class="n">gerenciador</span><span class="p">.</span><span class="n">listar</span><span class="p">()</span>
+        <span class="n">numero</span> <span class="o">=</span> <span class="n">inteiro</span><span class="p">(</span><span class="n">entrada</span><span class="p">(</span><span class="s">"Digite o número da tarefa para remover: "</span><span class="p">))</span>
+        <span class="n">gerenciador</span><span class="p">.</span><span class="n">remover</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>
+    <span class="n">senaose</span> <span class="n">opcao</span> <span class="o">==</span> <span class="s">"4"</span><span class="p">:</span>
+        <span class="n">imprimir</span><span class="p">(</span><span class="s">"Até logo!"</span><span class="p">)</span>
+        <span class="n">quebre</span>
+    <span class="n">senao</span><span class="p">:</span>
+        <span class="n">imprimir</span><span class="p">(</span><span class="s">"Opção inválida!"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="projeto-2-jogo-de-perguntas-e-respostas">Projeto 2: Jogo de Perguntas e Respostas</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">classe</span> <span class="n">JogoQuiz</span><span class="p">:</span>
+    <span class="n">definir</span> <span class="n">__init__</span><span class="p">(</span><span class="n">proprio</span><span class="p">):</span>
+        <span class="n">proprio</span><span class="p">.</span><span class="n">pontos</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">proprio</span><span class="p">.</span><span class="n">perguntas</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s">"pergunta"</span><span class="p">:</span> <span class="s">"Qual é a capital do Brasil?"</span><span class="p">,</span>
+                <span class="s">"opcoes"</span><span class="p">:</span> <span class="p">[</span><span class="s">"1. Rio de Janeiro"</span><span class="p">,</span> <span class="s">"2. São Paulo"</span><span class="p">,</span> <span class="s">"3. Brasília"</span><span class="p">,</span> <span class="s">"4. Salvador"</span><span class="p">],</span>
+                <span class="s">"resposta"</span><span class="p">:</span> <span class="s">"3"</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s">"pergunta"</span><span class="p">:</span> <span class="s">"Quanto é 5 + 7?"</span><span class="p">,</span>
+                <span class="s">"opcoes"</span><span class="p">:</span> <span class="p">[</span><span class="s">"1. 10"</span><span class="p">,</span> <span class="s">"2. 11"</span><span class="p">,</span> <span class="s">"3. 12"</span><span class="p">,</span> <span class="s">"4. 13"</span><span class="p">],</span>
+                <span class="s">"resposta"</span><span class="p">:</span> <span class="s">"3"</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s">"pergunta"</span><span class="p">:</span> <span class="s">"Qual é a cor do céu?"</span><span class="p">,</span>
+                <span class="s">"opcoes"</span><span class="p">:</span> <span class="p">[</span><span class="s">"1. Verde"</span><span class="p">,</span> <span class="s">"2. Azul"</span><span class="p">,</span> <span class="s">"3. Vermelho"</span><span class="p">,</span> <span class="s">"4. Amarelo"</span><span class="p">],</span>
+                <span class="s">"resposta"</span><span class="p">:</span> <span class="s">"2"</span>
+            <span class="p">}</span>
+        <span class="p">]</span>
+    
+    <span class="n">definir</span> <span class="n">jogar</span><span class="p">(</span><span class="n">proprio</span><span class="p">):</span>
+        <span class="n">imprimir</span><span class="p">(</span><span class="s">"=== QUIZ - TESTE SEUS CONHECIMENTOS ===</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+        
+        <span class="n">para</span> <span class="n">i</span> <span class="n">em</span> <span class="n">intervalo</span><span class="p">(</span><span class="n">tamanho</span><span class="p">(</span><span class="n">proprio</span><span class="p">.</span><span class="n">perguntas</span><span class="p">)):</span>
+            <span class="n">pergunta</span> <span class="o">=</span> <span class="n">proprio</span><span class="p">.</span><span class="n">perguntas</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="se">\n</span><span class="s">Pergunta </span><span class="si">{</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s">: </span><span class="si">{</span><span class="n">pergunta</span><span class="p">[</span><span class="s">'pergunta'</span><span class="p">]</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+            
+            <span class="n">para</span> <span class="n">opcao</span> <span class="n">em</span> <span class="n">pergunta</span><span class="p">[</span><span class="s">'opcoes'</span><span class="p">]:</span>
+                <span class="n">imprimir</span><span class="p">(</span><span class="n">opcao</span><span class="p">)</span>
+            
+            <span class="n">resposta</span> <span class="o">=</span> <span class="n">entrada</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Sua resposta: "</span><span class="p">)</span>
+            
+            <span class="n">se</span> <span class="n">resposta</span> <span class="o">==</span> <span class="n">pergunta</span><span class="p">[</span><span class="s">'resposta'</span><span class="p">]:</span>
+                <span class="n">imprimir</span><span class="p">(</span><span class="s">"✓ Correto!"</span><span class="p">)</span>
+                <span class="n">proprio</span><span class="p">.</span><span class="n">pontos</span> <span class="o">=</span> <span class="n">proprio</span><span class="p">.</span><span class="n">pontos</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="n">senao</span><span class="p">:</span>
+                <span class="n">imprimir</span><span class="p">(</span><span class="s">"✗ Errado!"</span><span class="p">)</span>
+        
+        <span class="n">proprio</span><span class="p">.</span><span class="n">mostrar_resultado</span><span class="p">()</span>
+    
+    <span class="n">definir</span> <span class="n">mostrar_resultado</span><span class="p">(</span><span class="n">proprio</span><span class="p">):</span>
+        <span class="n">total</span> <span class="o">=</span> <span class="n">tamanho</span><span class="p">(</span><span class="n">proprio</span><span class="p">.</span><span class="n">perguntas</span><span class="p">)</span>
+        <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="se">\n</span><span class="s">=== RESULTADO FINAL ==="</span><span class="p">)</span>
+        <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Você acertou </span><span class="si">{</span><span class="n">proprio</span><span class="p">.</span><span class="n">pontos</span><span class="si">}</span><span class="s"> de </span><span class="si">{</span><span class="n">total</span><span class="si">}</span><span class="s"> perguntas"</span><span class="p">)</span>
+        
+        <span class="n">percentual</span> <span class="o">=</span> <span class="p">(</span><span class="n">proprio</span><span class="p">.</span><span class="n">pontos</span> <span class="o">/</span> <span class="n">total</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
+        
+        <span class="n">se</span> <span class="n">percentual</span> <span class="o">==</span> <span class="mi">100</span><span class="p">:</span>
+            <span class="n">imprimir</span><span class="p">(</span><span class="s">"🏆 Perfeito! Você é um gênio!"</span><span class="p">)</span>
+        <span class="n">senaose</span> <span class="n">percentual</span> <span class="o">&gt;=</span> <span class="mi">70</span><span class="p">:</span>
+            <span class="n">imprimir</span><span class="p">(</span><span class="s">"😊 Muito bem! Bom desempenho!"</span><span class="p">)</span>
+        <span class="n">senaose</span> <span class="n">percentual</span> <span class="o">&gt;=</span> <span class="mi">50</span><span class="p">:</span>
+            <span class="n">imprimir</span><span class="p">(</span><span class="s">"😐 Razoável. Estude mais!"</span><span class="p">)</span>
+        <span class="n">senao</span><span class="p">:</span>
+            <span class="n">imprimir</span><span class="p">(</span><span class="s">"😔 Precisa estudar mais!"</span><span class="p">)</span>
+
+<span class="c1"># Iniciando o jogo
+</span><span class="n">jogo</span> <span class="o">=</span> <span class="n">JogoQuiz</span><span class="p">()</span>
+<span class="n">jogo</span><span class="p">.</span><span class="n">jogar</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h3 id="projeto-3-conversor-de-temperaturas">Projeto 3: Conversor de Temperaturas</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">classe</span> <span class="n">ConversorTemperatura</span><span class="p">:</span>
+    <span class="n">definir</span> <span class="n">celsius_para_fahrenheit</span><span class="p">(</span><span class="n">proprio</span><span class="p">,</span> <span class="n">celsius</span><span class="p">):</span>
+        <span class="n">fahrenheit</span> <span class="o">=</span> <span class="p">(</span><span class="n">celsius</span> <span class="o">*</span> <span class="mi">9</span><span class="o">/</span><span class="mi">5</span><span class="p">)</span> <span class="o">+</span> <span class="mi">32</span>
+        <span class="n">retornar</span> <span class="n">fahrenheit</span>
+    
+    <span class="n">definir</span> <span class="n">fahrenheit_para_celsius</span><span class="p">(</span><span class="n">proprio</span><span class="p">,</span> <span class="n">fahrenheit</span><span class="p">):</span>
+        <span class="n">celsius</span> <span class="o">=</span> <span class="p">(</span><span class="n">fahrenheit</span> <span class="o">-</span> <span class="mi">32</span><span class="p">)</span> <span class="o">*</span> <span class="mi">5</span><span class="o">/</span><span class="mi">9</span>
+        <span class="n">retornar</span> <span class="n">celsius</span>
+    
+    <span class="n">definir</span> <span class="n">celsius_para_kelvin</span><span class="p">(</span><span class="n">proprio</span><span class="p">,</span> <span class="n">celsius</span><span class="p">):</span>
+        <span class="n">kelvin</span> <span class="o">=</span> <span class="n">celsius</span> <span class="o">+</span> <span class="mf">273.15</span>
+        <span class="n">retornar</span> <span class="n">kelvin</span>
+    
+    <span class="n">definir</span> <span class="n">kelvin_para_celsius</span><span class="p">(</span><span class="n">proprio</span><span class="p">,</span> <span class="n">kelvin</span><span class="p">):</span>
+        <span class="n">celsius</span> <span class="o">=</span> <span class="n">kelvin</span> <span class="o">-</span> <span class="mf">273.15</span>
+        <span class="n">retornar</span> <span class="n">celsius</span>
+    
+    <span class="n">definir</span> <span class="n">menu</span><span class="p">(</span><span class="n">proprio</span><span class="p">):</span>
+        <span class="n">enquanto</span> <span class="n">Verdadeiro</span><span class="p">:</span>
+            <span class="n">imprimir</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">=== CONVERSOR DE TEMPERATURA ==="</span><span class="p">)</span>
+            <span class="n">imprimir</span><span class="p">(</span><span class="s">"1. Celsius → Fahrenheit"</span><span class="p">)</span>
+            <span class="n">imprimir</span><span class="p">(</span><span class="s">"2. Fahrenheit → Celsius"</span><span class="p">)</span>
+            <span class="n">imprimir</span><span class="p">(</span><span class="s">"3. Celsius → Kelvin"</span><span class="p">)</span>
+            <span class="n">imprimir</span><span class="p">(</span><span class="s">"4. Kelvin → Celsius"</span><span class="p">)</span>
+            <span class="n">imprimir</span><span class="p">(</span><span class="s">"5. Sair"</span><span class="p">)</span>
+            
+            <span class="n">opcao</span> <span class="o">=</span> <span class="n">entrada</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Escolha: "</span><span class="p">)</span>
+            
+            <span class="n">se</span> <span class="n">opcao</span> <span class="o">==</span> <span class="s">"5"</span><span class="p">:</span>
+                <span class="n">imprimir</span><span class="p">(</span><span class="s">"Até logo!"</span><span class="p">)</span>
+                <span class="n">quebre</span>
+            
+            <span class="n">se</span> <span class="n">opcao</span> <span class="n">em</span> <span class="p">[</span><span class="s">"1"</span><span class="p">,</span> <span class="s">"2"</span><span class="p">,</span> <span class="s">"3"</span><span class="p">,</span> <span class="s">"4"</span><span class="p">]:</span>
+                <span class="n">valor</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">entrada</span><span class="p">(</span><span class="s">"Digite a temperatura: "</span><span class="p">))</span>
+                
+                <span class="n">se</span> <span class="n">opcao</span> <span class="o">==</span> <span class="s">"1"</span><span class="p">:</span>
+                    <span class="n">resultado</span> <span class="o">=</span> <span class="n">proprio</span><span class="p">.</span><span class="n">celsius_para_fahrenheit</span><span class="p">(</span><span class="n">valor</span><span class="p">)</span>
+                    <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">valor</span><span class="si">}</span><span class="s">°C = </span><span class="si">{</span><span class="n">resultado</span><span class="si">:</span><span class="p">.</span><span class="mi">2</span><span class="n">f</span><span class="si">}</span><span class="s">°F"</span><span class="p">)</span>
+                <span class="n">senaose</span> <span class="n">opcao</span> <span class="o">==</span> <span class="s">"2"</span><span class="p">:</span>
+                    <span class="n">resultado</span> <span class="o">=</span> <span class="n">proprio</span><span class="p">.</span><span class="n">fahrenheit_para_celsius</span><span class="p">(</span><span class="n">valor</span><span class="p">)</span>
+                    <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">valor</span><span class="si">}</span><span class="s">°F = </span><span class="si">{</span><span class="n">resultado</span><span class="si">:</span><span class="p">.</span><span class="mi">2</span><span class="n">f</span><span class="si">}</span><span class="s">°C"</span><span class="p">)</span>
+                <span class="n">senaose</span> <span class="n">opcao</span> <span class="o">==</span> <span class="s">"3"</span><span class="p">:</span>
+                    <span class="n">resultado</span> <span class="o">=</span> <span class="n">proprio</span><span class="p">.</span><span class="n">celsius_para_kelvin</span><span class="p">(</span><span class="n">valor</span><span class="p">)</span>
+                    <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">valor</span><span class="si">}</span><span class="s">°C = </span><span class="si">{</span><span class="n">resultado</span><span class="si">:</span><span class="p">.</span><span class="mi">2</span><span class="n">f</span><span class="si">}</span><span class="s">K"</span><span class="p">)</span>
+                <span class="n">senaose</span> <span class="n">opcao</span> <span class="o">==</span> <span class="s">"4"</span><span class="p">:</span>
+                    <span class="n">resultado</span> <span class="o">=</span> <span class="n">proprio</span><span class="p">.</span><span class="n">kelvin_para_celsius</span><span class="p">(</span><span class="n">valor</span><span class="p">)</span>
+                    <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">valor</span><span class="si">}</span><span class="s">K = </span><span class="si">{</span><span class="n">resultado</span><span class="si">:</span><span class="p">.</span><span class="mi">2</span><span class="n">f</span><span class="si">}</span><span class="s">°C"</span><span class="p">)</span>
+            <span class="n">senao</span><span class="p">:</span>
+                <span class="n">imprimir</span><span class="p">(</span><span class="s">"Opção inválida!"</span><span class="p">)</span>
+
+<span class="c1"># Executando
+</span><span class="n">conversor</span> <span class="o">=</span> <span class="n">ConversorTemperatura</span><span class="p">()</span>
+<span class="n">conversor</span><span class="p">.</span><span class="n">menu</span><span class="p">()</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="dicas-finais-para-iniciantes">Dicas Finais para Iniciantes</h2>
+
+<h3 id="1-pratique-todos-os-dias">1. <strong>Pratique Todos os Dias</strong></h3>
+<ul>
+  <li>Faça pequenos programas</li>
+  <li>Modifique os exemplos</li>
+  <li>Crie suas próprias versões</li>
+</ul>
+
+<h3 id="2-cometa-erros">2. <strong>Cometa Erros!</strong></h3>
+<ul>
+  <li>Erros são parte do aprendizado</li>
+  <li>Leia as mensagens de erro</li>
+  <li>Tente entender o que deu errado</li>
+</ul>
+
+<h3 id="3-comece-simples">3. <strong>Comece Simples</strong></h3>
+<ul>
+  <li>Não tente fazer tudo de uma vez</li>
+  <li>Divida problemas grandes em partes pequenas</li>
+  <li>Teste cada parte separadamente</li>
+</ul>
+
+<h3 id="4-comente-seu-código">4. <strong>Comente Seu Código</strong></h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Isso é um comentário - explica o que o código faz
+# O computador ignora comentários
+</span>
+<span class="c1"># Calculando a média
+</span><span class="n">nota1</span> <span class="o">=</span> <span class="mf">8.0</span>
+<span class="n">nota2</span> <span class="o">=</span> <span class="mf">7.5</span>
+<span class="n">media</span> <span class="o">=</span> <span class="p">(</span><span class="n">nota1</span> <span class="o">+</span> <span class="n">nota2</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>  <span class="c1"># Soma e divide por 2
+</span></code></pre></div></div>
+
+<h3 id="5-use-nomes-descritivos">5. <strong>Use Nomes Descritivos</strong></h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># ❌ Ruim
+</span><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+
+<span class="c1"># ✓ Bom
+</span><span class="n">idade_joao</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">idade_maria</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">soma_idades</span> <span class="o">=</span> <span class="n">idade_joao</span> <span class="o">+</span> <span class="n">idade_maria</span>
+</code></pre></div></div>
+
+<h3 id="6-teste-frequentemente">6. <strong>Teste Frequentemente</strong></h3>
+<ul>
+  <li>Não escreva muito código sem testar</li>
+  <li>Teste pequenas partes por vez</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">imprimir()</code> para verificar valores</li>
+</ul>
+
+<hr />
+
+<h2 id="próximos-passos">Próximos Passos</h2>
+
+<p>Agora que você aprendeu os fundamentos, você pode:</p>
+
+<ol>
+  <li><strong>Explorar mais recursos do Python/PyBR:</strong>
+    <ul>
+      <li>Listas e dicionários mais complexos</li>
+      <li>Arquivos (ler e escrever)</li>
+      <li>Bibliotecas externas</li>
+    </ul>
+  </li>
+  <li><strong>Criar projetos maiores:</strong>
+    <ul>
+      <li>Sistema de cadastro</li>
+      <li>Jogo de texto</li>
+      <li>Agenda de contatos</li>
+    </ul>
+  </li>
+  <li><strong>Aprender conceitos avançados:</strong>
+    <ul>
+      <li>Herança de classes</li>
+      <li>Tratamento de exceções</li>
+      <li>Programação funcional</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="recursos-adicionais">Recursos Adicionais</h2>
+
+<ul>
+  <li><strong>Pratique no REPL do PyBR:</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python pybr.py
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Execute seus programas:</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python pybr.py meu_programa.pybr
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Use a extensão VS Code</strong> para ter syntax highlighting e facilitar a escrita de código</li>
+</ul>
+
+<hr />
+
+<h2 id="-lista-completa-de-arquivos-de-exemplo">📚 Lista Completa de Arquivos de Exemplo</h2>
+
+<p>Todos os exemplos práticos estão disponíveis na pasta <code class="language-plaintext highlighter-rouge">exercicios/</code>. Execute qualquer um deles com:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python pybr.py exercicios/[nome-do-arquivo].pybr
+</code></pre></div></div>
+
+<h3 id="fundamentos-01-05">Fundamentos (01-05)</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">01-ola-mundo.pybr</code> - Primeiro programa</li>
+  <li><code class="language-plaintext highlighter-rouge">02-variaveis.pybr</code> - Trabalhando com variáveis</li>
+  <li><code class="language-plaintext highlighter-rouge">03-calculos.pybr</code> - Operações matemáticas</li>
+  <li><code class="language-plaintext highlighter-rouge">04-entrada-saida.pybr</code> - Interação com usuário</li>
+  <li><code class="language-plaintext highlighter-rouge">05-calculadora-imc.pybr</code> - Calculadora de IMC</li>
+</ul>
+
+<h3 id="controle-de-fluxo-06-12">Controle de Fluxo (06-12)</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">06-condicionais.pybr</code> - Estruturas condicionais</li>
+  <li><code class="language-plaintext highlighter-rouge">07-sistema-login.pybr</code> - Sistema de login</li>
+  <li><code class="language-plaintext highlighter-rouge">08-lacos-para.pybr</code> - Laço PARA (for)</li>
+  <li><code class="language-plaintext highlighter-rouge">09-tabuada.pybr</code> - Gerador de tabuada</li>
+  <li><code class="language-plaintext highlighter-rouge">10-enquanto.pybr</code> - Laço ENQUANTO (while)</li>
+  <li><code class="language-plaintext highlighter-rouge">11-jogo-adivinhacao.pybr</code> - Jogo interativo</li>
+  <li><code class="language-plaintext highlighter-rouge">12-listas.pybr</code> - Trabalhando com listas</li>
+</ul>
+
+<h3 id="funções-13-15">Funções (13-15)</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">13-funcoes-simples.pybr</code> - Funções básicas</li>
+  <li><code class="language-plaintext highlighter-rouge">14-funcoes-retorno.pybr</code> - Funções com retorno</li>
+  <li><code class="language-plaintext highlighter-rouge">15-calculadora-funcoes.pybr</code> - Calculadora completa</li>
+</ul>
+
+<h3 id="classes-16-19">Classes (16-19)</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">16-classe-cachorro.pybr</code> - Primeira classe</li>
+  <li><code class="language-plaintext highlighter-rouge">17-classe-conta-bancaria.pybr</code> - Sistema bancário</li>
+  <li><code class="language-plaintext highlighter-rouge">18-classe-retangulo.pybr</code> - Cálculos geométricos</li>
+  <li><code class="language-plaintext highlighter-rouge">19-classe-aluno.pybr</code> - Sistema escolar</li>
+</ul>
+
+<h3 id="projetos-20-22">Projetos (20-22)</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">20-projeto-lista-tarefas.pybr</code> - Gerenciador de tarefas</li>
+  <li><code class="language-plaintext highlighter-rouge">21-projeto-quiz.pybr</code> - Jogo de perguntas</li>
+  <li><code class="language-plaintext highlighter-rouge">22-projeto-conversor-temperatura.pybr</code> - Conversor de temperaturas</li>
+</ul>
+
+<p><strong>💡 Dica:</strong> Comece pelos primeiros arquivos e vá progredindo. Cada arquivo é independente e pode ser executado separadamente!</p>
+
+<hr />
+
+<h2 id="exercícios-propostos">Exercícios Propostos</h2>
+
+<h3 id="nível-iniciante">Nível Iniciante:</h3>
+<ol>
+  <li>Faça um programa que pergunte seu nome e idade, e diga quantos anos você terá em 2050</li>
+  <li>Crie uma calculadora de gorjeta (10%, 15% ou 20%)</li>
+  <li>Faça um programa que mostre os números pares de 1 a 20</li>
+</ol>
+
+<h3 id="nível-intermediário">Nível Intermediário:</h3>
+<ol>
+  <li>Crie um conversor de moedas (Real, Dólar, Euro)</li>
+  <li>Faça um programa que calcule o fatorial de um número</li>
+  <li>Crie uma função que verifique se um número é primo</li>
+</ol>
+
+<h3 id="nível-avançado">Nível Avançado:</h3>
+<ol>
+  <li>Crie uma classe <code class="language-plaintext highlighter-rouge">Livro</code> para uma biblioteca</li>
+  <li>Faça um jogo de adivinhação com níveis de dificuldade</li>
+  <li>Crie um sistema de cadastro de produtos com preços</li>
+</ol>
+
+<hr />
+
+<h2 id="parabéns-">Parabéns! 🎉</h2>
+
+<p>Você completou o guia de programação com PyBR! Continue praticando e criando seus próprios projetos. A programação é uma habilidade que melhora com a prática.</p>
+
+<p><strong>Lembre-se:</strong> Todo programador foi iniciante um dia. O importante é não desistir e continuar aprendendo!</p>
+
+<p>Bons códigos! 💻✨</p>
+
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/maxwellamaral/pybr">pybr</a> is maintained by <a href="https://github.com/maxwellamaral">maxwellamaral</a>.</span>
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>
