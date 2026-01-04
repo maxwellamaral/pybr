@@ -1,0 +1,146 @@
+/* Tema de syntax highlighting para PyBR */
+/* Cores inspiradas no tema Monokai com ajustes para PyBR */
+
+code[class*="language-"],
+pre[class*="language-"] {
+    color: #f8f8f2;
+    background: none;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    font-family: 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 0.95em;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    tab-size: 4;
+    hyphens: none;
+}
+
+pre[class*="language-"] {
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+    border-radius: 0.3em;
+    background: #272822;
+}
+
+:not(pre) > code[class*="language-"] {
+    padding: 0.1em 0.3em;
+    border-radius: 0.3em;
+    white-space: normal;
+    background: #272822;
+}
+
+/* Tokens PyBR */
+.token.comment {
+    color: #75715e;
+    font-style: italic;
+}
+
+.token.string,
+.token.fstring {
+    color: #e6db74;
+}
+
+.token.keyword {
+    color: #f92672;
+    font-weight: bold;
+}
+
+.token.boolean,
+.token.constant {
+    color: #ae81ff;
+    font-weight: bold;
+}
+
+.token.builtin {
+    color: #66d9ef;
+    font-weight: bold;
+}
+
+.token.function {
+    color: #a6e22e;
+}
+
+.token.class-name {
+    color: #a6e22e;
+    font-weight: bold;
+}
+
+.token.number {
+    color: #ae81ff;
+}
+
+.token.operator {
+    color: #f92672;
+}
+
+.token.punctuation {
+    color: #f8f8f2;
+}
+
+/* Tema alternativo claro para melhor legibilidade */
+.light-theme code[class*="language-"],
+.light-theme pre[class*="language-"] {
+    color: #24292e;
+    background: none;
+    text-shadow: none;
+}
+
+.light-theme pre[class*="language-"] {
+    background: #f6f8fa;
+    border: 1px solid #d1d5da;
+}
+
+.light-theme :not(pre) > code[class*="language-"] {
+    background: #f6f8fa;
+    border: 1px solid #d1d5da;
+}
+
+.light-theme .token.comment {
+    color: #6a737d;
+}
+
+.light-theme .token.string,
+.light-theme .token.fstring {
+    color: #032f62;
+}
+
+.light-theme .token.keyword {
+    color: #d73a49;
+    font-weight: bold;
+}
+
+.light-theme .token.boolean,
+.light-theme .token.constant {
+    color: #005cc5;
+    font-weight: bold;
+}
+
+.light-theme .token.builtin {
+    color: #6f42c1;
+    font-weight: bold;
+}
+
+.light-theme .token.function {
+    color: #6f42c1;
+}
+
+.light-theme .token.class-name {
+    color: #6f42c1;
+    font-weight: bold;
+}
+
+.light-theme .token.number {
+    color: #005cc5;
+}
+
+.light-theme .token.operator {
+    color: #d73a49;
+}
+
+.light-theme .token.punctuation {
+    color: #24292e;
+}

@@ -4,6 +4,7 @@ description: Aprenda a programar em Python usando palavras em português
 baseurl: "/pybr" # Para projeto no GitHub Pages
 url: "https://maxwellamaral.github.io" # URL base do GitHub Pages
 repository: maxwellamaral/pybr
+lang: pt-BR
 
 # Tema do GitHub Pages
 remote_theme: pages-themes/cayman@v0.2.0
@@ -14,6 +15,8 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    default_lang: pybr
 
 # Plugins do GitHub Pages (automáticos)
 plugins:
