@@ -9,17 +9,18 @@ Este guia foi criado especialmente para você que nunca programou antes e quer a
 ## Índice
 
 1. [Usando o Terminal - Guia para Iniciantes](#usando-o-terminal---guia-para-iniciantes)
-2. [Como Executar o PyBR](#como-executar-o-pybr)
-3. [O que é Programação?](#o-que-é-programação)
-4. [Seu Primeiro Programa](#seu-primeiro-programa)
-5. [Variáveis - A Memória do Computador](#variáveis---a-memória-do-computador)
-6. [Cálculos e Operações Matemáticas](#cálculos-e-operações-matemáticas)
-7. [Entrada e Saída de Dados](#entrada-e-saída-de-dados)
-8. [Tomando Decisões - Estruturas Condicionais](#tomando-decisões---estruturas-condicionais)
-9. [Repetindo Ações - Laços de Repetição](#repetindo-ações---laços-de-repetição)
-10. [Organizando o Código - Funções](#organizando-o-código---funções)
-11. [Criando Objetos - Classes](#criando-objetos---classes)
-12. [Projetos Práticos](#projetos-práticos)
+2. [Instalando o Python](#instalando-o-python)
+3. [Como Executar o PyBR](#como-executar-o-pybr)
+4. [O que é Programação?](#o-que-é-programação)
+5. [Seu Primeiro Programa](#seu-primeiro-programa)
+6. [Variáveis - A Memória do Computador](#variáveis---a-memória-do-computador)
+7. [Cálculos e Operações Matemáticas](#cálculos-e-operações-matemáticas)
+8. [Entrada e Saída de Dados](#entrada-e-saída-de-dados)
+9. [Tomando Decisões - Estruturas Condicionais](#tomando-decisões---estruturas-condicionais)
+10. [Repetindo Ações - Laços de Repetição](#repetindo-ações---laços-de-repetição)
+11. [Organizando o Código - Funções](#organizando-o-código---funções)
+12. [Criando Objetos - Classes](#criando-objetos---classes)
+13. [Projetos Práticos](#projetos-práticos)
 
 ---
 
@@ -250,25 +251,15 @@ Estou aprendendo a programar!
 PyBR é demais!
 ```
 
+💡 **Nota:** Se o comando `python` não funcionar, você precisa instalar o Python primeiro! Veja a próxima seção.
+
 ---
 
 ### ❓ Problemas Comuns e Soluções
 
 #### "python não é reconhecido como comando"
 
-**Solução:** Python não está instalado ou não está no PATH.
-
-1. Verifique se o Python está instalado:
-   ```bash
-   # Tente:
-   python --version
-   # Ou:
-   python3 --version
-   # Ou no Windows:
-   py --version
-   ```
-
-2. Se não funcionar, reinstale o Python de [python.org](https://www.python.org) marcando a opção **"Add Python to PATH"**
+**Solução:** Python não está instalado ou não está no PATH. Veja a próxima seção **"Instalando o Python"** para resolver isso!
 
 #### "Não encontrou o arquivo pybr.py"
 
@@ -299,23 +290,294 @@ chmod +x pybr.py
 | Limpar tela | `cls` | `clear` |
 | Executar PyBR | `python pybr.py arquivo.pybr` | `python pybr.py arquivo.pybr` |
 
-**Pronto!** Agora você sabe usar o Terminal e está pronto para começar a programar! 🎉
+**Pronto!** Agora você sabe usar o Terminal e está pronto para instalar o Python! 🎉
 
 ---
 
-## Como Executar o PyBR
+## 🐍 Instalando o Python
 
-Antes de começar a programar, você precisa saber como executar os códigos deste tutorial!
+Antes de começar a programar com PyBR, você precisa ter o **Python** instalado no seu computador. O Python é a linguagem de programação que o PyBR traduz!
 
-### Requisitos
+### Verificando se o Python já está instalado
 
-Você só precisa ter o **Python 3.6 ou superior** instalado no seu computador. Para verificar se você tem Python instalado, abra o terminal (ou Prompt de Comando no Windows) e digite:
+Primeiro, vamos verificar se você já tem o Python instalado:
+
+**Abra o Terminal** (que você aprendeu na seção anterior) e digite:
 
 ```bash
 python --version
 ```
 
-Se aparecer algo como `Python 3.x.x`, você está pronto! Caso contrário, baixe o Python em [python.org](https://www.python.org).
+**Ou tente:**
+```bash
+python3 --version
+```
+
+**Ou no Windows:**
+```bash
+py --version
+```
+
+Se aparecer algo como `Python 3.11.5` ou `Python 3.x.x`, **parabéns!** Você já tem o Python instalado e pode pular para a próxima seção.
+
+Se aparecer uma mensagem de erro como "comando não encontrado" ou "não é reconhecido", continue lendo para instalar.
+
+---
+
+### 🪟 Instalando no Windows
+
+#### Passo 1: Baixar o Python
+
+1. Acesse o site oficial: [https://www.python.org/downloads/](https://www.python.org/downloads/)
+2. Clique no botão grande amarelo **"Download Python 3.x.x"**
+3. O download do instalador começará automaticamente
+
+#### Passo 2: Executar o Instalador
+
+1. Abra o arquivo baixado (normalmente está na pasta **Downloads**)
+2. **⚠️ IMPORTANTE:** Marque a caixa **"Add Python to PATH"** no início da instalação
+   - Essa opção é ESSENCIAL para usar o Python no terminal!
+3. Clique em **"Install Now"**
+4. Aguarde a instalação (pode demorar alguns minutos)
+5. Clique em **"Close"** quando terminar
+
+#### Passo 3: Verificar a Instalação
+
+Abra um **NOVO** Terminal (feche o anterior se estiver aberto) e digite:
+
+```bash
+python --version
+```
+
+Deve aparecer a versão do Python instalada, exemplo: `Python 3.11.5`
+
+**Se não funcionar, tente:**
+```bash
+py --version
+```
+
+---
+
+### 🍎 Instalando no Mac
+
+#### Opção 1: Usando o Site Oficial (Recomendado)
+
+**Passo 1: Baixar o Python**
+
+1. Acesse: [https://www.python.org/downloads/](https://www.python.org/downloads/)
+2. Clique em **"Download Python 3.x.x"** para Mac
+3. Baixe o instalador `.pkg`
+
+**Passo 2: Instalar**
+
+1. Abra o arquivo `.pkg` baixado
+2. Siga o assistente de instalação:
+   - Clique em **"Continue"** nas telas iniciais
+   - Aceite a licença
+   - Escolha o local de instalação (deixe o padrão)
+   - Clique em **"Install"**
+3. Digite sua senha de administrador quando solicitado
+4. Clique em **"Close"** quando terminar
+
+**Passo 3: Verificar**
+
+Abra o Terminal e digite:
+
+```bash
+python3 --version
+```
+
+No Mac, geralmente usamos `python3` ao invés de `python`.
+
+#### Opção 2: Usando Homebrew (Para Usuários Avançados)
+
+Se você já usa o Homebrew:
+
+```bash
+brew install python3
+```
+
+---
+
+### 🐧 Instalando no Linux
+
+A maioria das distribuições Linux já vem com Python instalado. Mas se precisar instalar ou atualizar:
+
+#### Ubuntu/Debian
+
+```bash
+# Atualizar lista de pacotes
+sudo apt update
+
+# Instalar Python 3
+sudo apt install python3 python3-pip
+
+# Verificar instalação
+python3 --version
+```
+
+#### Fedora
+
+```bash
+# Instalar Python 3
+sudo dnf install python3 python3-pip
+
+# Verificar instalação
+python3 --version
+```
+
+#### Arch Linux
+
+```bash
+# Instalar Python 3
+sudo pacman -S python python-pip
+
+# Verificar instalação
+python --version
+```
+
+---
+
+### ✅ Testando a Instalação Completa
+
+Agora vamos testar se tudo está funcionando corretamente!
+
+#### Teste 1: Versão do Python
+
+```bash
+# Windows
+python --version
+
+# Mac/Linux
+python3 --version
+```
+
+**Resultado esperado:** `Python 3.x.x` (qualquer versão 3.6 ou superior)
+
+#### Teste 2: Executar Python Interativo
+
+```bash
+# Windows
+python
+
+# Mac/Linux
+python3
+```
+
+Você deve ver algo assim:
+
+```
+Python 3.11.5 (tags/v3.11.5:..., Aug  7 2023, 10:30:00)
+[GCC 11.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+```
+
+Digite `exit()` e pressione Enter para sair.
+
+#### Teste 3: Executar um Comando Python
+
+```bash
+# Windows
+python -c "print('Python funcionando!')"
+
+# Mac/Linux
+python3 -c "print('Python funcionando!')"
+```
+
+**Resultado esperado:** `Python funcionando!`
+
+---
+
+### 🎯 Configurando Aliases (Opcional - Mac/Linux)
+
+No Mac e Linux, é comum ter que digitar `python3` ao invés de `python`. Para facilitar, você pode criar um alias:
+
+**Bash (padrão no Ubuntu):**
+
+```bash
+echo "alias python=python3" >> ~/.bashrc
+source ~/.bashrc
+```
+
+**Zsh (padrão no Mac moderno):**
+
+```bash
+echo "alias python=python3" >> ~/.zshrc
+source ~/.zshrc
+```
+
+Agora você pode usar apenas `python` ao invés de `python3`!
+
+---
+
+### ❓ Problemas Comuns e Soluções
+
+#### Windows: "Python não é reconhecido como comando"
+
+**Causa:** Python não foi adicionado ao PATH durante a instalação.
+
+**Solução 1 - Reinstalar:**
+1. Desinstale o Python pelo Painel de Controle
+2. Reinstale marcando **"Add Python to PATH"**
+
+**Solução 2 - Adicionar manualmente ao PATH:**
+1. Procure onde o Python foi instalado (geralmente `C:\Users\SeuNome\AppData\Local\Programs\Python\Python3XX`)
+2. Adicione esse caminho às variáveis de ambiente do Windows
+3. Tutorial: [Adicionar ao PATH no Windows](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/)
+
+#### Mac: "Python 2.x aparece ao invés de Python 3"
+
+**Causa:** Mac vem com Python 2 pré-instalado.
+
+**Solução:** Sempre use `python3` ao invés de `python`, ou configure um alias.
+
+#### Linux: "Permissão negada"
+
+**Causa:** Alguns comandos precisam de privilégios de administrador.
+
+**Solução:** Use `sudo` antes do comando:
+```bash
+sudo apt install python3
+```
+
+#### Erro: "pip não encontrado"
+
+**Solução:** Instale o pip (gerenciador de pacotes Python):
+
+```bash
+# Windows
+python -m ensurepip --upgrade
+
+# Mac/Linux
+python3 -m ensurepip --upgrade
+```
+
+---
+
+### 🎓 Resumo - Comandos Python Essenciais
+
+| Comando | Windows | Mac/Linux |
+|---------|---------|-----------|
+| Verificar versão | `python --version` | `python3 --version` |
+| Abrir Python interativo | `python` | `python3` |
+| Executar arquivo | `python arquivo.py` | `python3 arquivo.py` |
+| Instalar pacote | `pip install pacote` | `pip3 install pacote` |
+| Sair do Python | `exit()` | `exit()` |
+
+**Perfeito!** 🎉 Agora você tem o Python instalado e testado, está pronto para usar o PyBR!
+
+---
+
+## Como Executar o PyBR
+
+Agora que você tem o Python instalado e sabe usar o Terminal, está pronto para executar programas PyBR!
+
+### O que você precisa
+
+✅ **Python 3.6 ou superior** - Você já instalou na seção anterior!  
+✅ **Arquivos do PyBR** - O transpiler `pybr.py` e os exemplos  
+✅ **Terminal aberto** - Para executar os comandos
 
 ### Baixando o PyBR
 
