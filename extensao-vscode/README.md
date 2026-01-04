@@ -11,11 +11,18 @@ PyBR é um transpilador que permite escrever código Python usando palavras-chav
 Destaque de sintaxe completo para:
 
 - **Palavras-chave de controle de fluxo**: `se`, `senao`, `senaose`, `para`, `enquanto`, `retornar`, `quebre`, `continue`, `passar`
-- **Palavras-chave de exceção**: `tente`, `exceto`, `finalmente`, `levantar`
-- **Palavras-chave de definição**: `definir`, `funcao`, `classe`, `importar`, `de`, `como`
+- **Palavras-chave de exceção**: `tente`, `exceto`, `finalmente`, `levantar`, `afirmar`
+- **Palavras-chave de definição**: `definir`, `funcao`, `classe`, `lambda`, `importar`, `de`, `como`
+- **Palavras-chave de contexto**: `com`, `global`
 - **Operadores lógicos**: `e`, `ou`, `nao`, `em`, `eh`
 - **Constantes**: `Verdadeiro`, `Falso`, `Nulo`
-- **Funções nativas**: `imprimir`, `entrada`, `tamanho`, `intervalo`, `inteiro`, `texto`, `lista`, `dicionario`, `abrir`, `ajuda`, `sair`
+- **Funções nativas**:
+  - **Entrada/Saída**: `imprimir`, `entrada`, `abrir`
+  - **Conversão de Tipos**: `inteiro`, `flutuante`, `texto`, `lista`, `dicionario`, `conjunto`, `tupla`
+  - **Manipulação**: `tamanho`, `intervalo`, `tipo`, `enumerar`
+  - **Matemática**: `maximo`, `minimo`, `abs`, `arredondar`
+  - **Ordenação/Iteração**: `ordenar`, `reverter`, `filtrar`, `mapear`, `qualquer`, `todos`
+  - **Utilidades**: `ajuda`, `dir`, `sair`
 - **Comentários**: suporte para `#` e comentários de bloco com `'''` ou `"""`
 - **Strings**: suporte completo para strings simples, duplas e f-strings
 - **Números**: inteiros e decimais
@@ -33,6 +40,11 @@ Snippets prontos para uso rápido:
 - `parai` - Loop para com intervalo
 - `enquanto` - Loop enquanto
 - `tente` - Bloco tente/exceto
+- `tentefinalmente` - Bloco tente/exceto/finalmente completo
+- `lambda` - Função lambda anônima
+- `filtrar` - Filtrar elementos de uma lista
+- `mapear` - Mapear/transformar elementos de uma lista
+- `com` - Bloco com gerenciador de contexto
 - `imprimir` - Comando imprimir
 - `imprimirf` - Imprimir com f-string
 - `principal` - Bloco principal do programa
@@ -184,13 +196,21 @@ Se você utilizar esta extensão em trabalhos acadêmicos ou educacionais, por f
 
 ### 1.0.1
 
-- Adicionado suporte para palavra-chave alternativa `funcao`
-- Novo snippet para `funcao`
-- Syntax highlighting para `funcao`
+- ✨ **Novos Snippets**: `lambda`, `filtrar`, `mapear`, `com`, `tentefinalmente`
+- ✨ **Novas Palavras-chave**: `com`, `global`, `afirmar`, `lambda`
+- ✨ **Novas Funções Nativas** (20 adicionadas):
+  - Conversão: `flutuante`, `conjunto`, `tupla`
+  - Manipulação: `tipo`, `enumerar`
+  - Matemática: `maximo`, `minimo`, `abs`, `arredondar`
+  - Ordenação/Iteração: `ordenar`, `reverter`, `filtrar`, `mapear`, `qualquer`, `todos`
+  - Utilidades: `dir`
+- 🔧 Suporte completo para programação funcional (lambda, filtrar, mapear)
+- 🔧 Syntax highlighting expandido para todas as 31 palavras-chave do PyBR
+- 🔧 Documentação atualizada com todas as funcionalidades
 
 ### 1.0.0
 
-- Lançamento inicial
+- 🎉 Lançamento inicial
 - Syntax highlighting completo para PyBR
 - Snippets para estruturas comuns
 - Configuração de linguagem com auto-fechamento e indentação

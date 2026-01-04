@@ -112,5 +112,46 @@
       "\"\"\""
     ],
     "description": "Cria uma docstring"
+  },
+  "Lambda": {
+    "prefix": "lambda",
+    "body": [
+      "lambda ${1:x}: ${2:x * 2}"
+    ],
+    "description": "Função lambda anônima"
+  },
+  "Filtrar": {
+    "prefix": "filtrar",
+    "body": [
+      "lista(filtrar(lambda ${1:x}: ${2:x > 0}, ${3:lista}))"
+    ],
+    "description": "Filtrar elementos de uma lista"
+  },
+  "Mapear": {
+    "prefix": "mapear",
+    "body": [
+      "lista(mapear(lambda ${1:x}: ${2:x * 2}, ${3:lista}))"
+    ],
+    "description": "Mapear/transformar elementos de uma lista"
+  },
+  "Com (With)": {
+    "prefix": "com",
+    "body": [
+      "com abrir(${1:arquivo}, '${2:r}') como ${3:f}:",
+      "\t${4:passar}"
+    ],
+    "description": "Bloco com gerenciador de contexto"
+  },
+  "Tente/Exceto/Finalmente": {
+    "prefix": "tentefinalmente",
+    "body": [
+      "tente:",
+      "\t${1:passar}",
+      "exceto ${2:Exception} como ${3:e}:",
+      "\t${4:passar}",
+      "finalmente:",
+      "\t${5:passar}"
+    ],
+    "description": "Bloco completo de tratamento de exceções"
   }
 }

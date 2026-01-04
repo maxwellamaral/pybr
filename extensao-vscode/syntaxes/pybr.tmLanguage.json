@@ -157,7 +157,7 @@
       "patterns": [
         {
           "name": "support.function.builtin.pybr",
-          "match": "\\b(imprimir|entrada|tamanho|intervalo|inteiro|texto|lista|dicionario|abrir|ajuda|sair)\\b"
+          "match": "\\b(imprimir|entrada|tamanho|intervalo|inteiro|flutuante|texto|lista|dicionario|conjunto|tupla|tipo|enumerar|maximo|minimo|abs|arredondar|ordenar|reverter|filtrar|mapear|qualquer|todos|abrir|ajuda|dir|sair)\\b"
         }
       ]
     },
