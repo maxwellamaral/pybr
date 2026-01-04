@@ -7,6 +7,14 @@
     ],
     "description": "Define uma nova função"
   },
+  "Função (alternativa)": {
+    "prefix": "funcao",
+    "body": [
+      "funcao ${1:nome_funcao}(${2:parametros}):",
+      "\t${3:passar}"
+    ],
+    "description": "Define uma nova função (alternativa)"
+  },
   "Classe": {
     "prefix": "classe",
     "body": [

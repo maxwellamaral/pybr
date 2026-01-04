@@ -12,7 +12,7 @@ Destaque de sintaxe completo para:
 
 - **Palavras-chave de controle de fluxo**: `se`, `senao`, `senaose`, `para`, `enquanto`, `retornar`, `quebre`, `continue`, `passar`
 - **Palavras-chave de exceção**: `tente`, `exceto`, `finalmente`, `levantar`
-- **Palavras-chave de definição**: `definir`, `classe`, `importar`, `de`, `como`
+- **Palavras-chave de definição**: `definir`, `funcao`, `classe`, `importar`, `de`, `como`
 - **Operadores lógicos**: `e`, `ou`, `nao`, `em`, `eh`
 - **Constantes**: `Verdadeiro`, `Falso`, `Nulo`
 - **Funções nativas**: `imprimir`, `entrada`, `tamanho`, `intervalo`, `inteiro`, `texto`, `lista`, `dicionario`, `abrir`, `ajuda`, `sair`
@@ -25,6 +25,7 @@ Destaque de sintaxe completo para:
 Snippets prontos para uso rápido:
 
 - `definir` - Cria uma função
+- `funcao` - Cria uma função (alternativa)
 - `classe` - Cria uma classe
 - `se` - Estrutura condicional
 - `sesenao` - Estrutura se/senão completa
@@ -87,32 +88,32 @@ se __name__ == "__main__":
 
 ### Método 1: Instalar a partir do arquivo .vsix (Recomendado)
 
-Se você já possui o arquivo `pybr-language-1.0.0.vsix`:
+Se você já possui o arquivo `pybr-language-1.0.1.vsix`:
 
 1. Abra o VS Code
 2. Use uma das opções abaixo:
    - **Via linha de comando**:
      ```bash
-     code --install-extension pybr-language-1.0.0.vsix
+     code --install-extension pybr-language-1.0.1.vsix
      ```
    - **Via interface gráfica**:
      - Abra a aba de Extensões (Ctrl+Shift+X)
      - Clique nos três pontos `...` no topo
      - Selecione "Install from VSIX..."
-     - Navegue até o arquivo `pybr-language-1.0.0.vsix` e selecione-o
+     - Navegue até o arquivo `pybr-language-1.0.1.vsix` e selecione-o
 3. Reinicie o VS Code se necessário
 
 ### Método 2: A partir do Código Fonte
 
 1. Clone ou baixe este repositório
 2. Copie a pasta `extensao-vscode` para:
-   - **Windows**: `%USERPROFILE%\.vscode\extensions\pybr-language-1.0.0`
-   - **macOS/Linux**: `~/.vscode/extensions/pybr-language-1.0.0`
+   - **Windows**: `%USERPROFILE%\.vscode\extensions\pybr-language-1.0.1`
+   - **macOS/Linux**: `~/.vscode/extensions/pybr-language-1.0.1`
 3. Reinicie o VS Code
 
 ### Criar seu próprio pacote .vsix
 
-Para gerar o arquivo `pybr-language-1.0.0.vsix`:
+Para gerar o arquivo `pybr-language-1.0.1.vsix`:
 
 ```bash
 # Instale o vsce (VS Code Extension Manager)
@@ -122,7 +123,7 @@ npm install -g @vscode/vsce
 cd extensao-vscode
 vsce package
 
-# Isso criará o arquivo pybr-language-1.0.0.vsix
+# Isso criará o arquivo pybr-language-1.0.1.vsix
 ```
 
 ## Temas Recomendados
@@ -180,6 +181,12 @@ Se você utilizar esta extensão em trabalhos acadêmicos ou educacionais, por f
 ```
 
 ## Changelog
+
+### 1.0.1
+
+- Adicionado suporte para palavra-chave alternativa `funcao`
+- Novo snippet para `funcao`
+- Syntax highlighting para `funcao`
 
 ### 1.0.0
 

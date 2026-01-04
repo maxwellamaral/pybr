@@ -25,6 +25,7 @@ class PyBRTranspiler:
             
             # Definições
             'definir': 'def',
+            'funcao': 'def',  # Alternativa para definir funções
             'classe': 'class',
             'global': 'global',
             'importar': 'import',

@@ -57,6 +57,7 @@ class TestPyBRTranspiler(unittest.TestCase):
         
         testes = [
             ('definir', 'def'),
+            ('funcao', 'def'),
             ('classe', 'class'),
             ('importar', 'import'),
             ('de', 'from'),
@@ -140,6 +141,16 @@ class TestPyBRTranspiler(unittest.TestCase):
         """Testa transpilação de uma função simples"""
         codigo_pybr = """
 definir saudacao():
+    imprimir("Olá")
+"""
+        codigo_python = self.transpilador.transpilador(codigo_pybr)
+        self.assertIn('def saudacao', codigo_python)
+        self.assertIn('print', codigo_python)
+
+    def test_transpilacao_funcao_alternativa(self):
+        """Testa transpilação usando palavra-chave 'funcao'"""
+        codigo_pybr = """
+funcao saudacao():
     imprimir("Olá")
 """
         codigo_python = self.transpilador.transpilador(codigo_pybr)
@@ -264,6 +275,18 @@ imprimir(resultado)
 """
         saida = self.capturar_saida(codigo)
         self.assertEqual(saida.strip(), "10")
+
+    def test_execucao_funcao_alternativa(self):
+        """Testa execução usando palavra-chave 'funcao'"""
+        codigo = """
+funcao triplo(x):
+    retornar x * 3
+
+resultado = triplo(5)
+imprimir(resultado)
+"""
+        saida = self.capturar_saida(codigo)
+        self.assertEqual(saida.strip(), "15")
 
     def test_execucao_classe(self):
         """Testa execução de classe"""

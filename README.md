@@ -29,6 +29,7 @@ O transpilador utiliza o módulo `tokenize` do Python para analisar o código fo
 
 ### Definições
 - `definir` → `def`
+- `funcao` → `def` (alternativa)
 - `classe` → `class`
 - `importar` → `import`
 - `de` → `from`
@@ -134,20 +135,20 @@ Para melhorar a experiência de desenvolvimento, está disponível uma extensão
 
 ```bash
 # Instalar a extensão usando o arquivo empacotado
-code --install-extension extensao-vscode/pybr-language-1.0.0.vsix
+code --install-extension extensao-vscode/pybr-language-1.0.1.vsix
 ```
 
 Ou pela interface do VS Code:
 1. Abra a aba de Extensões (Ctrl+Shift+X)
 2. Clique nos três pontos `...` no topo
 3. Selecione "Install from VSIX..."
-4. Navegue até `extensao-vscode/pybr-language-1.0.0.vsix`
+4. Navegue até `extensao-vscode/pybr-language-1.0.1.vsix`
 
 **Opção 2: Copiar manualmente**
 
 Copie a pasta `extensao-vscode` para o diretório de extensões do VS Code:
-- **Windows**: `%USERPROFILE%\.vscode\extensions\pybr-language-1.0.0`
-- **macOS/Linux**: `~/.vscode/extensions/pybr-language-1.0.0`
+- **Windows**: `%USERPROFILE%\.vscode\extensions\pybr-language-1.0.1`
+- **macOS/Linux**: `~/.vscode/extensions/pybr-language-1.0.1`
 
 ### Recursos da Extensão
 

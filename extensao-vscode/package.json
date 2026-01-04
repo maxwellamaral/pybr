@@ -2,7 +2,7 @@
   "name": "pybr-language",
   "displayName": "PyBR - Python Brasileiro",
   "description": "Suporte de sintaxe para PyBR (Python com palavras-chave em português)",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "maxwell-amaral",
   "author": {
     "name": "Maxwell Anderson Ielpo do Amaral"

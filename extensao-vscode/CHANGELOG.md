@@ -2,6 +2,13 @@
 
 Todas as mudanças notáveis nesta extensão serão documentadas neste arquivo.
 
+## [1.0.1] - 2026-01-04
+
+### Adicionado
+- Suporte para palavra-chave alternativa `funcao` para definir funções
+- Snippet para `funcao`
+- Syntax highlighting para `funcao`
+
 ## [1.0.0] - 2026-01-04
 
 ### Adicionado
