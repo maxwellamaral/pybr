@@ -44,15 +44,9 @@ python pybr.py
 
 ## 📚 Conceitos Fundamentais
 
----
+### 1. Seu Primeiro Programa
 
-## Seu Primeiro Programa
-
-Vamos criar seu primeiro programa PyBR!
-
-### Passo 1: Criar o Arquivo
-
-Crie um arquivo chamado `ola.pybr` com este conteúdo:
+Crie um arquivo chamado `ola.pybr`:
 
 ```python
 # Meu primeiro programa em PyBR!
@@ -61,75 +55,21 @@ imprimir("Bem-vindo ao PyBR!")
 imprimir("Programar é incrível!")
 ```
 
-### Passo 2: Executar
-
-No terminal, na pasta do PyBR, digite:
+Execute:
 
 ```bash
 python pybr.py ola.pybr
 ```
 
-### Resultado
-
-```
-Olá, Mundo!
-Bem-vindo ao PyBR!
-Programar é incrível!
-```
-
-### O que Aprendemos?
-
+💡 **O que aprendemos:**
 - `imprimir()` exibe texto na tela
 - Textos ficam entre aspas `""`
-- Linhas com `#` são comentários (não executam)
+- Linhas com `#` são comentários
 
 📖 [Ver mais exemplos](tutorial-completo#seu-primeiro-programa)
 
 ---
 
-## Variáveis
-
-### 1. Olá Mundo
-
-```python
-imprimir("Olá, Mundo!")
-```
-
-💡 `imprimir()` mostra texto na tela  
-📖 [Mais sobre primeiro programadade2`, `_valor`
-
-❌ **Não pode:**
-- Começar com número
-- Usar espaços
-- Usar palavras reservadas (se, para, etc.)
-
-📖 [Ver mais sobre variáveis](tutorial-completo#variáveis---a-memória-do-computador)
-
----
-
-## Cálculos e Operações
-
-Python é uma calculadora poderosa!
-
-### Operadores Básicos
-
-```python
-# Operações básicas
-soma = 10 + 5          # 15
-subtracao = 10 - 5     # 5
-multiplicacao = 10 * 5 # 50
-divisao = 10 / 5       # 2.0
-
-imprimir("Soma:", soma)
-imprimir("Subtração:", subtracao)
-```
-
-### Operadores Especiais
-
-```python
-potencia = 2 ** 3       # 8 (2 elevado a 3)
-divisao_inteira = 10 // 3  # 3
-resto = 10 % 3          # 1 (resto da divisão)
 ### 2. Variáveis
 
 ```python
@@ -141,47 +81,15 @@ ativo = Verdadeiro  # Booleano
 imprimir(f"{nome} tem {idade} anos")
 ```
 
-💡 Variáveis guardam informações para usar depois  
-📖 [Guia completo d!")
-senaose nota >= 5:
-    imprimir("Regular")
-senao:
-    imprimir("Precisa estudar mais")
-```
+💡 Variáveis guardam informações para usar depois
 
-### Operadores de Comparação
+✅ **Pode usar:** `nome`, `idade_pessoa`, `valor2`, `_dado`  
+❌ **Não pode:** começar com número, usar espaços, usar palavras reservadas
 
-```python
-==   # Igual a
-!=   # Diferente de
->    # Maior que
-<    # Menor que
->=   # Maior ou igual
-<=   # Menor ou igual
-```
+📖 [Guia completo de variáveis](tutorial-completo#variáveis---a-memória-do-computador)
 
-### Operadores Lógicos
+---
 
-```python
-# E (ambas condições verdadeiras)
-idade = 20
-tem_carteira = Verdadeiro
-
-se idade >= 18 e tem_carteira:
-    imprimir("Pode dirigir!")
-
-# OU (pelo menos uma verdadeira)
-dia = "sábado"
-se dia == "sábado" ou dia == "domingo":
-    imprimir("Final de semana!")
-
-# NAO (inverte)
-chovendo = Falso
-se nao chovendo:
-    imprimir("Vamos ao parque!")
-```
-
-### Exemplo Completo: Sistema de Login
 ### 3. Operações Matemáticas
 
 ```python
@@ -193,24 +101,10 @@ potencia = 2 ** 3       # 8
 resto = 10 % 3          # 1
 ```
 
-📖 [Operadores completo", i)
-# Resultado: 0, 1, 2, 3, 4
+📖 [Operadores completos](tutorial-completo#operações-matemáticas)
 
-# Intervalo personalizado
-para numero em intervalo(1, 6):
-    imprimir(numero)
-# Resultado: 1, 2, 3, 4, 5
+---
 
-# Com passo (pulando de 2 em 2)
-para par em intervalo(0, 11, 2):
-    imprimir(par)
-# Resultado: 0, 2, 4, 6, 8, 10
-```
-
-### Iterando sobre Listas
-
-```python
-frutas = ["maçã", "banana", "laranja", "uva"]
 ### 4. Entrada e Saída
 
 ```python
@@ -220,57 +114,41 @@ idade = inteiro(entrada("Sua idade: "))
 imprimir(f"Olá, {nome}! Você tem {idade} anos")
 ```
 
-💡 `entrada()` recebe texto, `inteiro()` e `flutuante()` convertem  
-📖 [Entrada/saída detalha
+💡 `entrada()` recebe texto, `inteiro()` e `flutuante()` convertem
+
+📖 [Entrada/saída detalhada](tutorial-completo#entrada-e-saída-de-dados)
+
+---
+
+### 5. Condicionais
 
 ```python
-numero = inteiro(entrada("Digite um número: "))
+nota = flutuante(entrada("Digite sua nota: "))
 
-imprimir(f"\n=== TABUADA DO {numero} ===")
-para i em intervalo(1, 11):
-    resultado = numero * i
-    imprimir(f"{numero} x {i} = {resultado}")
+se nota >= 9:
+    imprimir("Excelente!")
+senaose nota >= 7:
+    imprimir("Bom!")
+senaose nota >= 5:
+    imprimir("Regular")
+senao:
+    imprimir("Precisa estudar mais")
 ```
 
-### Controle de Laços
+**Operadores de Comparação:**  
+`==` `!=` `>` `<` `>=` `<=`
 
-```python
-# quebre - para o laço
-para i em intervalo(10):
-    se i == 5:
-        quebre
-    imprimir(i)
-# Resultado: 0, 1, 2, 3, 4
+**Operadores Lógicos:**  
+`e` (and), `ou` (or), `nao` (not)
 
-# continue - pula para próxima iteração
-para i em intervalo(5):
-    se i == 2:
-        continue
-    imprimir(i)
-# Resultado: 0, 1, 3, 4
-```
+📖 [Condicionais completas](tutorial-completo#condicionais---tomando-decisões)
 
-### Exemplo: Jogo de Adivinhação
+---
 
-```python
-importar aleatorio
-
-numero_secreto = aleatorio.inteiro(1, 100)
-tentativas = 0
-
-imprimir("Adivinhe o número entre 1 e 100!")
-
-enquanto Verdadeiro:
-    palpite = inteiro(entrada("Seu palpite: "))
-    tentativas += 1
-    
-    se palpite == numero_secreto:
-        imprimir(f"🎉 Parabéns! Acertou em {tentativas} tentativas!")
-        quebre
-    senaose palpite < numero_secreto:
 ### 6. Laços de Repetição
 
 **Laço PARA:**
+
 ```python
 # Repetir 5 vezes
 para i em intervalo(5):
@@ -283,6 +161,7 @@ para fruta em frutas:
 ```
 
 **Laço ENQUANTO:**
+
 ```python
 contador = 0
 enquanto contador < 5:
@@ -290,86 +169,12 @@ enquanto contador < 5:
     contador += 1
 ```
 
-**Controle:** `quebre` (sai do laço), `continue` (pula iteração)  
-📖 [Laços completos com exempla Objetos!
+**Controle:** `quebre` (sai do laço), `continue` (pula iteração)
 
-### Conceito
+📖 [Laços completos com exemplos](tutorial-completo#laços-de-repetição)
 
-Classes são como "moldes" para criar objetos. Um objeto agrupa dados (atributos) e ações (métodos).
+---
 
-### Criando uma Classe Simples
-
-```python
-classe Cachorro:
-    definir __init__(self, nome, idade):
-        self.nome = nome
-        self.idade = idade
-    
-    definir latir(self):
-        imprimir(f"{self.nome}: Au au!")
-    
-    definir informacoes(self):
-        imprimir(f"Nome: {self.nome}")
-        imprimir(f"Idade: {self.idade} anos")
-
-# Criar objetos (instâncias)
-rex = Cachorro("Rex", 3)
-bob = Cachorro("Bob", 5)
-
-# Usar os objetos
-rex.latir()           # Rex: Au au!
-rex.informacoes()     # Nome: Rex, Idade: 3 anos
-
-bob.latir()           # Bob: Au au!
-bob.informacoes()     # Nome: Bob, Idade: 5 anos
-```
-
-### Exemplo: Conta Bancária
-
-```python
-classe ContaBancaria:
-    definir __init__(self, titular, saldo_inicial):
-        self.titular = titular
-        self.saldo = saldo_inicial
-    
-    definir depositar(self, valor):
-        self.saldo += valor
-        imprimir(f"✓ Depósito de R${valor:.2f} realizado!")
-    
-    definir sacar(self, valor):
-        se valor <= self.saldo:
-            self.saldo -= valor
-            imprimir(f"✓ Saque de R${valor:.2f} realizado!")
-        senao:
-            imprimir("✗ Saldo insuficiente!")
-    
-    definir exibir_saldo(self):
-        imprimir(f"Titular: {self.titular}")
-        imprimir(f"Saldo: R${self.saldo:.2f}")
-
-# Usando a classe
-conta = ContaBancaria("Maria Silva", 1000.00)
-conta.exibir_saldo()
-conta.depositar(500)
-conta.sacar(200)
-conta.exibir_saldo()
-```
-
-### Exemplo: Retângulo
-
-```python
-classe Retangulo:
-    definir __init__(self, largura, altura):
-        self.largura = largura
-        self.altura = altura
-    
-    definir calcular_area(self):
-        retornar self.largura * self.altura
-    
-    definir calcular_perimetro(self):
-        retornar 2 * (self.largura + self.altura)
-
-ret = Retangulo(5, 3)
 ### 7. Funções
 
 ```python
@@ -391,74 +196,12 @@ saudar_pessoa("Maria")
 total = somar(10, 5)  # 15
 ```
 
-💡 Funções organizam e reutilizam código  
-📖 [Funções completa
-    senao:
-        imprimir("Opção inválida!")
-```
+💡 Funções organizam e reutilizam código
 
-### Projeto 2: Conversor de Temperatura
+📖 [Funções completas](tutorial-completo#funções)
 
-```python
-definir celsius_para_fahrenheit(celsius):
-    retornar (celsius * 9/5) + 32
+---
 
-definir fahrenheit_para_celsius(fahrenheit):
-    retornar (fahrenheit - 32) * 5/9
-
-enquanto Verdadeiro:
-    imprimir("\n=== CONVERSOR DE TEMPERATURA ===")
-    imprimir("1. Celsius → Fahrenheit")
-    imprimir("2. Fahrenheit → Celsius")
-    imprimir("3. Sair")
-    
-    opcao = entrada("\nEscolha: ")
-    
-    se opcao == "1":
-        c = flutuante(entrada("Temperatura em °C: "))
-        f = celsius_para_fahrenheit(c)
-        imprimir(f"{c}°C = {f:.2f}°F")
-    
-    senaose opcao == "2":
-        f = flutuante(entrada("Temperatura em °F: "))
-        c = fahrenheit_para_celsius(f)
-        imprimir(f"{f}°F = {c:.2f}°C")
-    
-    senaose opcao == "3":
-        quebre
-```
-
-### Projeto 3: Quiz
-
-```python
-perguntas = [
-    {
-        "pergunta": "Qual é a capital do Brasil?",
-        "opcoes": ["A) Rio de Janeiro", "B) São Paulo", "C) Brasília"],
-        "resposta": "C"
-    },
-    {
-        "pergunta": "Quanto é 5 + 3?",
-        "opcoes": ["A) 7", "B) 8", "C) 9"],
-        "resposta": "B"
-    },
-    {
-        "pergunta": "Qual é a cor do céu?",
-        "opcoes": ["A) Verde", "B) Azul", "C) Vermelho"],
-        "resposta": "B"
-    }
-]
-
-pontos = 0
-
-imprimir("=== QUIZ ===\n")
-
-para i, item em enumerar(perguntas, 1):
-    imprimir(f"Pergunta {i}: {item['pergunta']}")
-    para opcao em item['opcoes']:
-        imprimir(opcao)
-    
-    resposta = entrada("Sua resposta: ").upper()
 ### 8. Classes e Objetos
 
 ```python
@@ -478,8 +221,13 @@ rex.latir()  # Rex: Au au!
 bob.latir()  # Bob: Au au!
 ```
 
-💡 Classes são moldes para criar objetos com atributos e métodos  
-📖 [Classes e OOP completo🎯 Projetos Práticos
+💡 Classes são moldes para criar objetos com atributos e métodos
+
+📖 [Classes e OOP completo](tutorial-completo#programação-orientada-a-objetos)
+
+---
+
+## 🎯 Projetos Práticos
 
 Combine tudo que aprendeu em projetos reais! Veja exemplos completos de:
 
@@ -489,7 +237,11 @@ Combine tudo que aprendeu em projetos reais! Veja exemplos completos de:
 - 🎲 **Jogo de Adivinhação** - Números aleatórios e loops
 
 📖 [Ver todos os projetos detalhados](tutorial-completo#projetos-práticos)  
-💪 [Praticar com 22 exercícios](exercici📖 Recursos de Aprendizado
+💪 [Praticar com 23 exercícios](exercicios)
+
+---
+
+## 📖 Recursos de Aprendizado
 
 ### Aprofundar Conhecimento
 
@@ -500,9 +252,9 @@ Combine tudo que aprendeu em projetos reais! Veja exemplos completos de:
   - Múltiplos exemplos práticos
   - Analogias e comparações do mundo real
 
-- 💪 **[22 Exercícios Práticos](exercicios)** - Progressão do básico ao avançado
-  - Nível 1: Fundamentos (6 exercícios)
-  - Nível 2: Controle e Estruturas (8 exercícios)
+- 💪 **[23 Exercícios Práticos](exercicios)** - Progressão do básico ao avançado
+  - Nível 1: Fundamentos (8 exercícios)
+  - Nível 2: Controle e Estruturas (7 exercícios)
   - Nível 3: Projetos Completos (8 exercícios)
 
 - 📚 **[Referência Completa](referencia)** - Documentação técnica
@@ -543,4 +295,4 @@ Combine tudo que aprendeu em projetos reais! Veja exemplos completos de:
 
 **Bons estudos e divirta-se programando! 🚀**
 
-[← Início](index) | [📚 Tutorial Completo](tutorial-completo) | [💪 Exercícios](exercicios) | [📖 Referência
+[← Início](index) | [📚 Tutorial Completo](tutorial-completo) | [💪 Exercícios](exercicios) | [📖 Referência](referencia)
