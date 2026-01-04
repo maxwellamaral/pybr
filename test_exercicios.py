@@ -49,6 +49,7 @@ class TestExercicios(unittest.TestCase):
                 input=entrada,
                 capture_output=True,
                 text=True,
+                encoding='utf-8',
                 timeout=timeout
             )
             return resultado.returncode, resultado.stdout, resultado.stderr
