@@ -6,7 +6,7 @@ PyBR é um transpilador que permite escrever código Python usando palavras-chav
 
 O transpilador utiliza o módulo `tokenize` do Python para analisar o código fonte, traduzindo apenas os tokens de identificadores (palavras-chave e nomes de funções) enquanto preserva strings, comentários e a estrutura do código.
 
-**🎓 Novo para programação?** Consulte nosso [Tutorial Completo para Iniciantes](tutorial-iniciantes.md) com exemplos práticos e 22 arquivos prontos para testar!
+**🎓 Novo para programação?** Consulte nosso [Tutorial Completo para Iniciantes](tutorial/tutorial-iniciantes.md) com exemplos práticos e 22 arquivos prontos para testar!
 
 **🌐 Site Oficial:** [pybr.github.io](https://seu-usuario.github.io/pybr/) - Tutoriais e documentação online
 
@@ -125,7 +125,7 @@ cachorro.falar()
 
 ### Tutorial para Iniciantes
 
-Se você **nunca programou antes**, temos um guia completo feito especialmente para você! O arquivo [tutorial-iniciantes.md](tutorial-iniciantes.md) contém:
+Se você **nunca programou antes**, temos um guia completo feito especialmente para você! O arquivo [tutorial-iniciantes.md](tutorial/tutorial-iniciantes.md) contém:
 
 - ✅ Explicação de todos os conceitos básicos de programação
 - ✅ Exemplos práticos e intuitivos
@@ -134,7 +134,7 @@ Se você **nunca programou antes**, temos um guia completo feito especialmente p
 - ✅ Projetos completos: lista de tarefas, quiz, conversor de temperatura
 - ✅ Exercícios propostos em 3 níveis de dificuldade
 
-**Comece por aqui:** [Tutorial Completo para Iniciantes](tutorial-iniciantes.md)
+**Comece por aqui:** [Tutorial Completo para Iniciantes](tutorial/tutorial-iniciantes.md)
 
 ### Arquivos de Exemplo Prontos
 
@@ -157,7 +157,7 @@ Consulte o [README dos exercícios](exercicios/README.md) para a lista completa.
 - `pybr.py` - Arquivo principal contendo o transpilador e REPL
 - `test_pybr.py` - Testes funcionais automatizados
 - `test_exercicios.py` - Testes funcionais dos arquivos de exemplo
-- `tutorial-iniciantes.md` - **Tutorial completo para quem nunca programou antes** 📚
+- `tutorial/` - **Tutorial completo em PDF e Markdown para quem nunca programou antes** 📚
 - `exercicios/` - **22 arquivos de exemplo prontos para executar** 💻
 - `README.md` - Este arquivo
 - `LICENSE` - Licença do projeto
