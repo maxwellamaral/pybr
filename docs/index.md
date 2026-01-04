@@ -698,6 +698,24 @@ R: PyBR é uma ferramenta didática. Para projetos profissionais, recomendamos P
 **P: É open source?**  
 R: Sim! Todo o código está disponível no GitHub sob licença MIT.
 
+## Citação
+
+Se você utilizar este projeto em trabalhos acadêmicos ou educacionais, por favor cite:
+
+```bibtex
+@software{amaral2026pybr,
+  author = {Amaral, Maxwell Anderson Ielpo},
+  title = {PyBR - Python Brasileiro: Um Transpilador Python com Sintaxe em Português},
+  year = {2026},
+  url = {https://github.com/maxwellamaral/pybr},
+  note = {Ferramenta educacional para programação em Python com palavras-chave em português}
+}
+```
+
+## Autor
+
+**Maxwell Anderson Ielpo do Amaral**
+
 ## 📄 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](../LICENSE) para mais detalhes.
