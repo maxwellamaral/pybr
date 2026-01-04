@@ -1,0 +1,171 @@
+# Arquivo de exemplo para testar o syntax highlighting do PyBR
+
+# Importações
+importar sys
+de os importar path como caminho
+
+# Constantes
+VERDADE = Verdadeiro
+MENTIRA = Falso
+NADA = Nulo
+
+# Função simples
+definir saudacao(nome):
+    """Imprime uma saudação personalizada"""
+    imprimir(f"Olá, {nome}! Bem-vindo ao PyBR!")
+    retornar Verdadeiro
+
+# Função com lógica condicional
+definir verificar_par(numero):
+    se numero % 2 == 0:
+        imprimir(f"{numero} é par")
+        retornar Verdadeiro
+    senaose numero % 2 == 1:
+        imprimir(f"{numero} é ímpar")
+        retornar Falso
+    senao:
+        imprimir("Número inválido")
+        retornar Nulo
+
+# Loops
+definir contar_ate(limite):
+    # Loop para com intervalo
+    para i em intervalo(limite):
+        se i == 5:
+            continue
+        se i == 10:
+            quebre
+        imprimir(f"Contando: {i}")
+    
+    # Loop enquanto
+    contador = 0
+    enquanto contador < limite e contador < 100:
+        contador += 1
+        se contador % 10 == 0:
+            imprimir(f"Múltiplo de 10: {contador}")
+
+# Classe
+classe Animal:
+    """Classe base para animais"""
+    
+    definir __init__(proprio, nome, idade):
+        proprio.nome = nome
+        proprio.idade = idade
+    
+    definir falar(proprio):
+        passar
+    
+    definir apresentar(proprio):
+        imprimir(f"Eu sou {proprio.nome} e tenho {proprio.idade} anos")
+
+classe Cachorro(Animal):
+    """Classe derivada para cachorros"""
+    
+    definir __init__(proprio, nome, idade, raca):
+        Animal.__init__(proprio, nome, idade)
+        proprio.raca = raca
+    
+    definir falar(proprio):
+        imprimir("Au au!")
+    
+    definir __str__(proprio):
+        retornar f"Cachorro {proprio.nome} da raça {proprio.raca}"
+
+# Tratamento de exceções
+definir divisao_segura(a, b):
+    tente:
+        resultado = a / b
+        retornar resultado
+    exceto ZeroDivisionError como erro:
+        imprimir(f"Erro: Divisão por zero! {erro}")
+        retornar Nulo
+    exceto TypeError:
+        imprimir("Erro: Tipo inválido!")
+        retornar Nulo
+    finalmente:
+        imprimir("Operação de divisão concluída")
+
+# Operadores lógicos
+definir testar_logica(x, y):
+    se x > 0 e y > 0:
+        imprimir("Ambos positivos")
+    
+    se x > 0 ou y > 0:
+        imprimir("Pelo menos um é positivo")
+    
+    se nao x == y:
+        imprimir("São diferentes")
+    
+    se x em [1, 2, 3, 4, 5]:
+        imprimir("x está na lista")
+    
+    se x eh y:
+        imprimir("x e y são o mesmo objeto")
+
+# Listas e dicionários
+definir estruturas_dados():
+    # Listas
+    numeros = lista(intervalo(10))
+    pares = [n para n em numeros se n % 2 == 0]
+    
+    # Dicionários
+    pessoa = dicionario()
+    pessoa["nome"] = "João"
+    pessoa["idade"] = 25
+    
+    # Iteração
+    para chave, valor em pessoa.items():
+        imprimir(f"{chave}: {valor}")
+
+# Context manager
+definir ler_arquivo(caminho):
+    tente:
+        com abrir(caminho, 'r') como arquivo:
+            conteudo = arquivo.read()
+            retornar conteudo
+    exceto FileNotFoundError:
+        imprimir("Arquivo não encontrado")
+        retornar Nulo
+
+# Lambda
+dobrar = lambda x: x * 2
+triplo = lambda x: x * 3
+
+# Função principal
+definir principal():
+    imprimir("="*50)
+    imprimir("Demonstração de PyBR")
+    imprimir("="*50)
+    
+    # Testando funções
+    saudacao("Mundo")
+    verificar_par(10)
+    
+    # Testando classes
+    rex = Cachorro("Rex", 3, "Labrador")
+    rex.apresentar()
+    rex.falar()
+    imprimir(texto(rex))
+    
+    # Testando loops
+    contar_ate(15)
+    
+    # Testando exceções
+    resultado = divisao_segura(10, 2)
+    imprimir(f"10 / 2 = {resultado}")
+    
+    # Testando operadores
+    testar_logica(5, 10)
+    
+    # Testando estruturas
+    estruturas_dados()
+    
+    # Testando lambdas
+    imprimir(f"Dobro de 5: {dobrar(5)}")
+    imprimir(f"Triplo de 5: {triplo(5)}")
+    
+    imprimir("\nPrograma finalizado com sucesso!")
+
+# Execução
+se __name__ == "__main__":
+    principal()

@@ -1,0 +1,229 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "PyBR",
+  "scopeName": "source.pybr",
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#strings" },
+    { "include": "#keywords" },
+    { "include": "#builtin-functions" },
+    { "include": "#builtin-constants" },
+    { "include": "#function-definitions" },
+    { "include": "#class-definitions" },
+    { "include": "#operators" },
+    { "include": "#numbers" },
+    { "include": "#support" }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.number-sign.pybr",
+          "match": "(#).*$\\n?",
+          "captures": {
+            "1": { "name": "punctuation.definition.comment.pybr" }
+          }
+        },
+        {
+          "name": "comment.block.pybr",
+          "begin": "('''|\"\"\")",
+          "end": "('''|\"\"\")",
+          "beginCaptures": {
+            "1": { "name": "punctuation.definition.comment.begin.pybr" }
+          },
+          "endCaptures": {
+            "1": { "name": "punctuation.definition.comment.end.pybr" }
+          }
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.triple.single.pybr",
+          "begin": "'''",
+          "end": "'''",
+          "patterns": [
+            { "include": "#string-formatting" }
+          ]
+        },
+        {
+          "name": "string.quoted.triple.double.pybr",
+          "begin": "\"\"\"",
+          "end": "\"\"\"",
+          "patterns": [
+            { "include": "#string-formatting" }
+          ]
+        },
+        {
+          "name": "string.quoted.single.pybr",
+          "begin": "f'",
+          "end": "'",
+          "beginCaptures": {
+            "0": { "name": "string.quoted.single.pybr string.interpolated.pybr" }
+          },
+          "patterns": [
+            { "include": "#string-formatting" },
+            { "include": "#string-interpolation" }
+          ]
+        },
+        {
+          "name": "string.quoted.double.pybr",
+          "begin": "f\"",
+          "end": "\"",
+          "beginCaptures": {
+            "0": { "name": "string.quoted.double.pybr string.interpolated.pybr" }
+          },
+          "patterns": [
+            { "include": "#string-formatting" },
+            { "include": "#string-interpolation" }
+          ]
+        },
+        {
+          "name": "string.quoted.single.pybr",
+          "begin": "'",
+          "end": "'",
+          "patterns": [
+            { "include": "#string-formatting" }
+          ]
+        },
+        {
+          "name": "string.quoted.double.pybr",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": [
+            { "include": "#string-formatting" }
+          ]
+        }
+      ]
+    },
+    "string-formatting": {
+      "patterns": [
+        {
+          "name": "constant.character.escape.pybr",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "string-interpolation": {
+      "patterns": [
+        {
+          "name": "meta.embedded.pybr",
+          "begin": "\\{",
+          "end": "\\}",
+          "patterns": [
+            { "include": "$self" }
+          ]
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.flow.pybr",
+          "match": "\\b(se|senao|senaose|para|enquanto|retornar|quebre|continue|passar)\\b"
+        },
+        {
+          "name": "keyword.control.exception.pybr",
+          "match": "\\b(tente|exceto|finalmente|levantar)\\b"
+        },
+        {
+          "name": "keyword.control.import.pybr",
+          "match": "\\b(importar|de|como)\\b"
+        },
+        {
+          "name": "keyword.other.pybr",
+          "match": "\\b(com|global|afirmar|lambda)\\b"
+        },
+        {
+          "name": "keyword.operator.logical.pybr",
+          "match": "\\b(e|ou|nao|em|eh)\\b"
+        }
+      ]
+    },
+    "builtin-constants": {
+      "patterns": [
+        {
+          "name": "constant.language.pybr",
+          "match": "\\b(Verdadeiro|Falso|Nulo)\\b"
+        },
+        {
+          "name": "variable.language.special.self.pybr",
+          "match": "\\b(proprio)\\b"
+        }
+      ]
+    },
+    "builtin-functions": {
+      "patterns": [
+        {
+          "name": "support.function.builtin.pybr",
+          "match": "\\b(imprimir|entrada|tamanho|intervalo|inteiro|texto|lista|dicionario|abrir|ajuda|sair)\\b"
+        }
+      ]
+    },
+    "function-definitions": {
+      "patterns": [
+        {
+          "name": "meta.function.pybr",
+          "begin": "\\b(definir)\\s+([a-zA-Z_][a-zA-Z0-9_]*)\\s*\\(",
+          "end": "\\):",
+          "beginCaptures": {
+            "1": { "name": "keyword.declaration.function.pybr" },
+            "2": { "name": "entity.name.function.pybr" }
+          },
+          "patterns": [
+            { "include": "$self" }
+          ]
+        }
+      ]
+    },
+    "class-definitions": {
+      "patterns": [
+        {
+          "name": "meta.class.pybr",
+          "match": "\\b(classe)\\s+([a-zA-Z_][a-zA-Z0-9_]*)",
+          "captures": {
+            "1": { "name": "keyword.declaration.class.pybr" },
+            "2": { "name": "entity.name.type.class.pybr" }
+          }
+        }
+      ]
+    },
+    "operators": {
+      "patterns": [
+        {
+          "name": "keyword.operator.arithmetic.pybr",
+          "match": "\\+|\\-|\\*|\\/|\\/\\/|\\%|\\*\\*"
+        },
+        {
+          "name": "keyword.operator.comparison.pybr",
+          "match": "==|!=|<|>|<=|>="
+        },
+        {
+          "name": "keyword.operator.assignment.pybr",
+          "match": "=|\\+=|\\-=|\\*=|\\/=|\\/\\/=|\\%=|\\*\\*="
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.float.pybr",
+          "match": "\\b\\d+\\.\\d+\\b"
+        },
+        {
+          "name": "constant.numeric.integer.pybr",
+          "match": "\\b\\d+\\b"
+        }
+      ]
+    },
+    "support": {
+      "patterns": [
+        {
+          "name": "support.type.pybr",
+          "match": "\\b(__init__|__str__|__repr__|__len__|__add__|__sub__)\\b"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,45 @@
+MIT License with Attribution Requirement
+
+Copyright (c) 2026 Maxwell Anderson Ielpo do Amaral
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+1. ATTRIBUTION REQUIREMENT (MANDATORY)
+   The above copyright notice and this permission notice shall be included in all
+   copies or substantial portions of the Software.
+   
+   In any public use, distribution, or derivative work, you MUST credit the
+   original author: Maxwell Anderson Ielpo do Amaral
+
+2. EDUCATIONAL USE
+   This extension is primarily intended for educational and didactic purposes,
+   facilitating the learning of Python programming through the use of keywords
+   in Portuguese (Brazilian).
+
+3. MODIFICATIONS
+   If you create derivative works or modifications:
+   - You must clearly indicate that modifications were made
+   - You must maintain attribution to the original author
+   - You may distribute under the terms of this license or a compatible one
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+SUMMARY:
+✓ Free to use for educational and commercial purposes
+✓ Free to modify and distribute
+✓ Free to include in other projects
+✗ MUST credit the original author (Maxwell Anderson Ielpo do Amaral)
+✗ MUST include this license notice in distributions

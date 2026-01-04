@@ -1,0 +1,58 @@
+{
+  "name": "pybr-language",
+  "displayName": "PyBR - Python Brasileiro",
+  "description": "Suporte de sintaxe para PyBR (Python com palavras-chave em português)",
+  "version": "1.0.0",
+  "publisher": "maxwell-amaral",
+  "author": {
+    "name": "Maxwell Anderson Ielpo do Amaral"
+  },
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "python",
+    "português",
+    "brazilian",
+    "pybr",
+    "syntax highlighting"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "pybr",
+        "aliases": [
+          "PyBR",
+          "pybr",
+          "Python Brasileiro"
+        ],
+        "extensions": [
+          ".pybr",
+          ".pybr.py"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "pybr",
+        "scopeName": "source.pybr",
+        "path": "./syntaxes/pybr.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "pybr",
+        "path": "./snippets/pybr-snippets.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxwellamaral/pybr"
+  },
+  "license": "SEE LICENSE IN LICENSE"
+}

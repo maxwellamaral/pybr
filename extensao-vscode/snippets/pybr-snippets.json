@@ -1,0 +1,108 @@
+{
+  "Função": {
+    "prefix": "definir",
+    "body": [
+      "definir ${1:nome_funcao}(${2:parametros}):",
+      "\t${3:passar}"
+    ],
+    "description": "Define uma nova função"
+  },
+  "Classe": {
+    "prefix": "classe",
+    "body": [
+      "classe ${1:NomeDaClasse}:",
+      "\tdefinir __init__(proprio, ${2:parametros}):",
+      "\t\t${3:passar}"
+    ],
+    "description": "Define uma nova classe"
+  },
+  "Se/Senão": {
+    "prefix": "se",
+    "body": [
+      "se ${1:condicao}:",
+      "\t${2:passar}"
+    ],
+    "description": "Estrutura condicional se"
+  },
+  "Se/Senão Completo": {
+    "prefix": "sesenao",
+    "body": [
+      "se ${1:condicao}:",
+      "\t${2:passar}",
+      "senao:",
+      "\t${3:passar}"
+    ],
+    "description": "Estrutura condicional se/senão"
+  },
+  "Para Loop": {
+    "prefix": "para",
+    "body": [
+      "para ${1:item} em ${2:iteravel}:",
+      "\t${3:passar}"
+    ],
+    "description": "Loop para"
+  },
+  "Para Intervalo": {
+    "prefix": "parai",
+    "body": [
+      "para ${1:i} em intervalo(${2:10}):",
+      "\t${3:passar}"
+    ],
+    "description": "Loop para com intervalo"
+  },
+  "Enquanto": {
+    "prefix": "enquanto",
+    "body": [
+      "enquanto ${1:condicao}:",
+      "\t${2:passar}"
+    ],
+    "description": "Loop enquanto"
+  },
+  "Tente/Exceto": {
+    "prefix": "tente",
+    "body": [
+      "tente:",
+      "\t${1:passar}",
+      "exceto ${2:Exception} como ${3:e}:",
+      "\t${4:passar}"
+    ],
+    "description": "Bloco de tratamento de exceções"
+  },
+  "Imprimir": {
+    "prefix": "imprimir",
+    "body": [
+      "imprimir(${1:mensagem})"
+    ],
+    "description": "Imprime uma mensagem"
+  },
+  "Imprimir F-String": {
+    "prefix": "imprimirf",
+    "body": [
+      "imprimir(f\"${1:texto} {${2:variavel}}\")"
+    ],
+    "description": "Imprime usando f-string"
+  },
+  "Principal": {
+    "prefix": "principal",
+    "body": [
+      "se __name__ == \"__main__\":",
+      "\t${1:passar}"
+    ],
+    "description": "Bloco principal do programa"
+  },
+  "Comentário Docstring": {
+    "prefix": "docstring",
+    "body": [
+      "\"\"\"",
+      "${1:Descrição da função ou classe}",
+      "",
+      "Argumentos:",
+      "\t${2:arg}: ${3:descrição}",
+      "",
+      "Retorna:",
+      "\t${4:descrição do retorno}",
+      "\"\"\""
+    ],
+    "description": "Cria uma docstring"
+  }
+}
