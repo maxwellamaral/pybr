@@ -24,8 +24,9 @@ Este guia foi criado especialmente para você que nunca programou antes e quer a
 9. [Tomando Decisões - Estruturas Condicionais](#tomando-decisões---estruturas-condicionais)
 10. [Repetindo Ações - Laços de Repetição](#repetindo-ações---laços-de-repetição)
 11. [Organizando o Código - Funções](#organizando-o-código---funções)
-12. [Criando Objetos - Classes](#criando-objetos---classes)
-13. [Projetos Práticos](#projetos-práticos)
+12. [Funções Avançadas - Lambda, Filtrar e Mapear](#funções-avançadas---lambda-filtrar-e-mapear)
+13. [Criando Objetos - Classes](#criando-objetos---classes)
+14. [Projetos Práticos](#projetos-práticos)
 
 ---
 
@@ -1423,153 +1424,382 @@ fazer_cafe(acucar=0)  # Café sem açúcar
 
 ## Funções Avançadas - Lambda, Filtrar e Mapear
 
-Agora vamos aprender sobre **ferramentas poderosas** para trabalhar com listas de forma eficiente!
+💾 **Arquivo de exemplo:** `exercicios/23-funcoes-avancadas.pybr`
 
-### Funções Lambda (Funções Anônimas):
+Agora vamos aprender sobre **ferramentas poderosas** para trabalhar com listas de forma eficiente! Essas funções são muito usadas na programação real e vão facilitar muito seu trabalho com dados.
 
-Lambda são **funções pequenas** que você cria rapidamente, sem precisar usar `definir`.
+### O que são Funções Lambda?
+
+Lambda são **funções pequenas e rápidas** que você cria em uma linha, sem precisar usar `definir`. São perfeitas para operações simples!
 
 ```python
-# Função normal
+# Função tradicional
 definir dobro(x):
     retornar x * 2
 
-# Mesma função usando lambda
-dobro_lambda = lambda x: x * 2
+# Mesma coisa com lambda - mais compacto!
+dobro = lambda x: x * 2
 
-# Usando
-imprimir(dobro(5))        # 10
-imprimir(dobro_lambda(5)) # 10
+# Usando ambas
+imprimir(dobro(5))  # 10
 ```
 
-**Quando usar lambda?**
-- Para funções simples de uma linha
-- Quando você precisa de uma função rápida e não vai reutilizar muito
+**Sintaxe do lambda:**
+```
+lambda argumentos: expressão
+```
+
+**Exemplos práticos:**
 
 ```python
-# Mais exemplos
-quadrado = lambda x: x * x
-eh_par = lambda n: n % 2 == 0
-saudar = lambda nome: f"Olá, {nome}!"
+# Lambda simples
+dobro = lambda x: x * 2
+imprimir(f"Dobro de 5: {dobro(5)}")  # 10
 
-imprimir(quadrado(4))      # 16
-imprimir(eh_par(7))        # Falso
+quadrado = lambda x: x * x
+imprimir(f"Quadrado de 4: {quadrado(4)}")  # 16
+
+# Lambda com verificação
+eh_par = lambda n: n % 2 == 0
+imprimir(f"8 é par? {eh_par(8)}")  # Verdadeiro
+imprimir(f"7 é par? {eh_par(7)}")  # Falso
+
+# Lambda com strings
+saudar = lambda nome: f"Olá, {nome}!"
 imprimir(saudar("Maria"))  # Olá, Maria!
 ```
 
-### Mapear - Aplicar Função a Todos Elementos:
+**Quando usar lambda?**
+- ✅ Funções simples de uma linha
+- ✅ Funções que você vai usar apenas uma vez
+- ✅ Com `mapear()`, `filtrar()` e outras funções de alto nível
+- ❌ Funções complexas (use `definir` nesses casos)
 
-A função `mapear()` aplica uma função a **cada elemento** de uma lista.
+---
+
+### Mapear - Transformar Todos os Elementos
+
+A função `mapear()` **aplica uma transformação a cada elemento** de uma lista. É como usar uma "varinha mágica" que transforma todos os itens de uma vez!
+
+**Como funciona:**
+```
+mapear(função, lista) → nova lista transformada
+```
+
+**Exemplos básicos:**
 
 ```python
 # Dobrar todos os números
 numeros = [1, 2, 3, 4, 5]
-dobrados = lista(mapear(lambda x: x * 2, numeros))
-imprimir(dobrados)  # [2, 4, 6, 8, 10]
+imprimir(f"Números originais: {numeros}")
 
+dobrados = lista(mapear(lambda x: x * 2, numeros))
+imprimir(f"Números dobrados: {dobrados}")  # [2, 4, 6, 8, 10]
+
+# Elevar ao quadrado
+quadrados = lista(mapear(lambda x: x ** 2, numeros))
+imprimir(f"Números ao quadrado: {quadrados}")  # [1, 4, 9, 16, 25]
+```
+
+**Transformando strings:**
+
+```python
 # Converter para maiúsculas
 nomes = ["ana", "joão", "maria"]
-nomes_maiusculos = lista(mapear(lambda n: n.upper(), nomes))
-imprimir(nomes_maiusculos)  # ['ANA', 'JOÃO', 'MARIA']
+imprimir(f"Nomes originais: {nomes}")
 
-# Calcular quadrados
-numeros = [1, 2, 3, 4]
-quadrados = lista(mapear(lambda x: x ** 2, numeros))
-imprimir(quadrados)  # [1, 4, 9, 16]
+maiusculas = lista(mapear(lambda n: n.upper(), nomes))
+imprimir(f"Em maiúsculas: {maiusculas}")  # ['ANA', 'JOÃO', 'MARIA']
+
+# Adicionar prefixo
+com_prefixo = lista(mapear(lambda n: f"Sr(a). {n}", nomes))
+imprimir(com_prefixo)  # ['Sr(a). ana', 'Sr(a). joão', 'Sr(a). maria']
 ```
 
-### Filtrar - Selecionar Elementos:
-
-A função `filtrar()` **seleciona apenas os elementos** que atendem a uma condição.
+**Aplicações práticas:**
 
 ```python
-# Filtrar números pares
-numeros = [1, 2, 3, 4, 5, 6, 7, 8]
+# Aplicar desconto de 10% em todos os preços
+precos = [100, 50, 75, 200]
+com_desconto = lista(mapear(lambda p: arredondar(p * 0.9, 2), precos))
+imprimir(f"Preços originais: {precos}")
+imprimir(f"Com 10% desconto: {com_desconto}")  # [90.0, 45.0, 67.5, 180.0]
+```
+
+---
+
+### Filtrar - Selecionar Elementos Específicos
+
+A função `filtrar()` **seleciona apenas os elementos que atendem a uma condição**. É como usar um filtro de café que deixa passar só o que você quer!
+
+**Como funciona:**
+```
+filtrar(condição, lista) → nova lista apenas com elementos que passaram no teste
+```
+
+**Exemplos básicos:**
+
+```python
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+imprimir(f"Números: {numeros}")
+
+# Filtrar apenas os pares
 pares = lista(filtrar(lambda x: x % 2 == 0, numeros))
-imprimir(pares)  # [2, 4, 6, 8]
+imprimir(f"Apenas pares: {pares}")  # [2, 4, 6, 8, 10]
 
-# Filtrar números maiores que 5
-maiores_que_5 = lista(filtrar(lambda x: x > 5, numeros))
-imprimir(maiores_que_5)  # [6, 7, 8]
+# Filtrar apenas os ímpares
+impares = lista(filtrar(lambda x: x % 2 != 0, numeros))
+imprimir(f"Apenas ímpares: {impares}")  # [1, 3, 5, 7, 9]
 
+# Filtrar maiores que 5
+maiores = lista(filtrar(lambda x: x > 5, numeros))
+imprimir(f"Maiores que 5: {maiores}")  # [6, 7, 8, 9, 10]
+```
+
+**Filtrando strings:**
+
+```python
 # Filtrar nomes com mais de 4 letras
-nomes = ["Ana", "João", "Maria", "José"]
+nomes = ["Ana", "João", "Maria", "José", "Lu"]
 nomes_longos = lista(filtrar(lambda n: tamanho(n) > 4, nomes))
 imprimir(nomes_longos)  # ['Maria']
+
+# Filtrar nomes que começam com 'J'
+com_j = lista(filtrar(lambda n: n[0] == 'J', nomes))
+imprimir(com_j)  # ['João', 'José']
 ```
 
-### Combinando Filtrar e Mapear:
+---
 
-Você pode **combinar** essas funções para fazer coisas incríveis!
+### Combinando Filtrar e Mapear - O Poder da Composição
+
+A mágica acontece quando você **combina** essas funções! Você pode filtrar E transformar dados em sequência.
 
 ```python
-# Pegar números pares e dobrar seus valores
 numeros = [1, 2, 3, 4, 5, 6, 7, 8]
+imprimir(f"Números: {numeros}")
 
-# Primeiro filtra os pares, depois dobra
+# EXEMPLO 1: Pegar pares e dobrar
+# Passo 1: Filtrar os pares
 pares = filtrar(lambda x: x % 2 == 0, numeros)
+# Passo 2: Dobrar cada um
 dobrados = lista(mapear(lambda x: x * 2, pares))
-imprimir(dobrados)  # [4, 8, 12, 16]
+imprimir(f"Pares dobrados: {dobrados}")  # [4, 8, 12, 16]
 
-# Ou em uma linha só:
+# EXEMPLO 2: Pegar ímpares e elevar ao quadrado
+impares = filtrar(lambda x: x % 2 != 0, numeros)
+quadrados = lista(mapear(lambda x: x ** 2, impares))
+imprimir(f"Ímpares ao quadrado: {quadrados}")  # [1, 9, 25, 49]
+
+# Também pode fazer em uma linha (composição):
 resultado = lista(mapear(lambda x: x * 2, filtrar(lambda x: x % 2 == 0, numeros)))
+imprimir(f"Resultado em uma linha: {resultado}")  # [4, 8, 12, 16]
+```
+
+---
+
+### Exemplo Prático Completo 1: Análise de Notas
+
+Vamos analisar as notas de uma turma de forma profissional!
+
+```python
+imprimir("=== ANÁLISE DE NOTAS DA TURMA ===\n")
+
+# Lista de notas dos alunos
+notas = [8.5, 5.0, 7.5, 4.0, 9.0, 6.5, 3.5, 8.0, 9.5, 5.5]
+imprimir(f"Notas dos alunos: {notas}")
+total_alunos = tamanho(notas)
+imprimir(f"Total de alunos: {total_alunos}")
+
+# --- ESTATÍSTICAS GERAIS ---
+imprimir(f"\n📊 ESTATÍSTICAS:")
+imprimir(f"  Maior nota: {maximo(notas)}")
+imprimir(f"  Menor nota: {minimo(notas)}")
+total_notas = sum(notas)
+media_turma = arredondar(total_notas / tamanho(notas), 2)
+imprimir(f"  Média da turma: {media_turma}")
+
+# --- FILTRAR APROVADOS (>= 6) ---
+imprimir(f"\n✅ APROVADOS (nota >= 6):")
+aprovados = lista(filtrar(lambda n: n >= 6, notas))
+imprimir(f"  Notas: {aprovados}")
+total_aprovados = tamanho(aprovados)
+imprimir(f"  Quantidade: {total_aprovados} alunos")
+
+# --- FILTRAR REPROVADOS (< 6) ---
+imprimir(f"\n❌ REPROVADOS (nota < 6):")
+reprovados = lista(filtrar(lambda n: n < 6, notas))
+imprimir(f"  Notas: {reprovados}")
+total_reprovados = tamanho(reprovados)
+imprimir(f"  Quantidade: {total_reprovados} alunos")
+
+# --- APLICAR PONTO EXTRA ---
+imprimir(f"\n🎁 APLICANDO BÔNUS DE 0.5 PONTOS:")
+# Adiciona 0.5 mas limita em 10 (nota máxima)
+com_bonus = lista(mapear(lambda n: minimo(n + 0.5, 10), notas))
+imprimir(f"  Notas com bônus: {com_bonus}")
+
+# Verificar quantos aprovaram após bônus
+aprovados_bonus = lista(filtrar(lambda n: n >= 6, com_bonus))
+total_aprovados_bonus = tamanho(aprovados_bonus)
+imprimir(f"  Aprovados após bônus: {total_aprovados_bonus} alunos")
+ganho = total_aprovados_bonus - total_aprovados
+imprimir(f"  Alunos que se salvaram com bônus: {ganho}")
+
+# --- NOTAS EXCELENTES ---
+excelentes = lista(filtrar(lambda n: n >= 9, notas))
+imprimir(f"\n🌟 Notas excelentes (>= 9): {excelentes}")
+imprimir(f"  Total: {tamanho(excelentes)} alunos")
+```
+
+---
+
+### Exemplo Prático Completo 2: Sistema de Produtos
+
+Vamos criar um sistema simples de análise de produtos e preços!
+
+```python
+imprimir("=== SISTEMA DE PRODUTOS ===\n")
+
+# Dados dos produtos
+precos = [15.50, 8.00, 22.00, 5.50, 35.00, 12.00]
+nomes = ["Arroz", "Feijão", "Carne", "Macarrão", "Picanha", "Óleo"]
+
+# --- LISTA COMPLETA ---
+imprimir("📋 LISTA DE PRODUTOS:")
+para i em intervalo(tamanho(nomes)):
+    imprimir(f"  {nomes[i]}: R$ {precos[i]:.2f}")
+
+# --- FILTRAR PRODUTOS BARATOS (até R$ 15) ---
+imprimir(f"\n💰 PRODUTOS BARATOS (até R$ 15):")
+# Filtrar índices dos produtos baratos
+indices_baratos = lista(filtrar(
+    lambda i: precos[i] <= 15,
+    intervalo(tamanho(precos))
+))
+
+para i em indices_baratos:
+    imprimir(f"  {nomes[i]}: R$ {precos[i]:.2f}")
+
+# --- APLICAR DESCONTO DE 10% ---
+imprimir(f"\n🏷️ PREÇOS COM 10% DE DESCONTO:")
+precos_com_desconto = lista(mapear(lambda p: arredondar(p * 0.9, 2), precos))
+
+para i em intervalo(tamanho(nomes)):
+    preco_original = precos[i]
+    preco_desconto = precos_com_desconto[i]
+    economia = preco_original - preco_desconto
+    imprimir(f"  {nomes[i]}: R$ {preco_original:.2f} → R$ {preco_desconto:.2f} (economiza R$ {economia:.2f})")
+
+# --- PRODUTOS PREMIUM (acima de R$ 20) ---
+imprimir(f"\n⭐ PRODUTOS PREMIUM (acima de R$ 20):")
+indices_premium = lista(filtrar(
+    lambda i: precos[i] > 20,
+    intervalo(tamanho(precos))
+))
+
+para i em indices_premium:
+    imprimir(f"  {nomes[i]}: R$ {precos[i]:.2f}")
+```
+
+---
+
+### Funções qualquer() e todos()
+
+Duas funções úteis para verificar condições em listas!
+
+**`qualquer()`** - Retorna Verdadeiro se **PELO MENOS UM** elemento é True:
+
+```python
+# Verificar se há alguma nota 10
+notas = [8.5, 5.0, 7.5, 4.0, 9.0]
+tem_nota_dez = qualquer([nota == 10 para nota em notas])
+imprimir(f"Algum aluno tirou 10? {tem_nota_dez}")  # Falso
+
+# Verificar se há notas excelentes (>= 9)
+tem_excelente = qualquer([nota >= 9 para nota em notas])
+imprimir(f"Há notas excelentes (>= 9)? {tem_excelente}")  # Verdadeiro
+
+# Verificar se há números pares
+numeros = [1, 3, 5, 7]
+tem_par = qualquer([n % 2 == 0 para n em numeros])
+imprimir(f"Há números pares? {tem_par}")  # Falso
+```
+
+**`todos()`** - Retorna Verdadeiro se **TODOS** os elementos são True:
+
+```python
+# Verificar se todos tiraram acima de 5
+notas = [8.5, 5.0, 7.5, 4.0, 9.0]
+todos_acima_5 = todos([nota > 5 para nota em notas])
+imprimir(f"Todos tiraram acima de 5? {todos_acima_5}")  # Falso (tem 4.0)
+
+# Verificar se todos foram aprovados (>= 6)
+notas_boas = [7.0, 8.5, 9.0, 6.5]
+todos_aprovados = todos([nota >= 6 para nota em notas_boas])
+imprimir(f"Todos aprovados? {todos_aprovados}")  # Verdadeiro
+
+# Verificar se todos os números são positivos
+numeros = [1, 5, 10, 3]
+todos_positivos = todos([n > 0 para n em numeros])
+imprimir(f"Todos positivos? {todos_positivos}")  # Verdadeiro
+```
+
+---
+
+### Comparação: Forma Tradicional vs Funções Avançadas
+
+Veja como as funções lambda, mapear e filtrar tornam o código mais limpo!
+
+**❌ Forma Tradicional (mais linhas):**
+
+```python
+# Dobrar números pares
+numeros = [1, 2, 3, 4, 5, 6, 7, 8]
+resultado = []
+
+para num em numeros:
+    se num % 2 == 0:  # Se é par
+        resultado.append(num * 2)  # Dobra
+
 imprimir(resultado)  # [4, 8, 12, 16]
 ```
 
-### Exemplo Prático - Processamento de Dados:
+**✅ Com Filtrar e Mapear (mais conciso):**
 
 ```python
-# Lista de produtos com preços
-produtos = [
-    {"nome": "Arroz", "preco": 20},
-    {"nome": "Feijão", "preco": 8},
-    {"nome": "Macarrão", "preco": 5},
-    {"nome": "Carne", "preco": 35},
-    {"nome": "Frango", "preco": 15}
-]
-
-# Filtrar produtos com preço <= 15
-baratos = lista(filtrar(lambda p: p["preco"] <= 15, produtos))
-imprimir("Produtos baratos:")
-para produto em baratos:
-    imprimir(f"  - {produto['nome']}: R$ {produto['preco']}")
-
-# Aplicar desconto de 10% em todos os preços
-com_desconto = lista(mapear(lambda p: {
-    "nome": p["nome"],
-    "preco": arredondar(p["preco"] * 0.9, 2)
-}, produtos))
-
-imprimir("\nPreços com 10% de desconto:")
-para produto em com_desconto:
-    imprimir(f"  - {produto['nome']}: R$ {produto['preco']}")
+numeros = [1, 2, 3, 4, 5, 6, 7, 8]
+resultado = lista(mapear(
+    lambda x: x * 2,
+    filtrar(lambda x: x % 2 == 0, numeros)
+))
+imprimir(resultado)  # [4, 8, 12, 16]
 ```
 
-### Exemplo - Análise de Notas de Alunos:
+**💡 Qual usar?**
+- Use a forma tradicional quando você está **aprendendo** ou quando o código fica **mais claro**
+- Use filtrar/mapear quando você já está **confortável** e quer código **mais elegante e conciso**
 
-```python
-# Notas dos alunos
-notas = [8.5, 5.0, 7.5, 4.0, 9.0, 6.5, 3.5, 8.0]
+---
 
-# Filtrar aprovados (nota >= 6)
-aprovados = lista(filtrar(lambda n: n >= 6, notas))
-imprimir(f"Notas aprovados: {aprovados}")
-imprimir(f"Total aprovados: {tamanho(aprovados)}")
+### Resumo - Funções Avançadas
 
-# Filtrar reprovados (nota < 6)
-reprovados = lista(filtrar(lambda n: n < 6, notas))
-imprimir(f"Notas reprovados: {reprovados}")
-imprimir(f"Total reprovados: {tamanho(reprovados)}")
+| Função | O que faz | Exemplo |
+|--------|-----------|---------|
+| `lambda x: x * 2` | Cria função rápida | Dobrar um número |
+| `mapear(f, lista)` | Aplica função a todos | Transformar valores |
+| `filtrar(f, lista)` | Seleciona elementos | Pegar só os pares |
+| `qualquer(lista)` | Verifica se algum é True | Tem alguma nota 10? |
+| `todos(lista)` | Verifica se todos são True | Todos passaram? |
 
-# Adicionar ponto extra para todos
-com_ponto_extra = lista(mapear(lambda n: minimo(n + 0.5, 10), notas))
-imprimir(f"Com ponto extra: {com_ponto_extra}")
+**Quando usar:**
+- ✅ Processamento de listas grandes
+- ✅ Análise de dados
+- ✅ Transformações em massa
+- ✅ Filtragem de informações
+- ✅ Código mais funcional e declarativo
 
-# Estatísticas
-imprimir(f"\nMédia geral: {arredondar(sum(notas) / tamanho(notas), 2)}")
-imprimir(f"Maior nota: {maximo(notas)}")
-imprimir(f"Menor nota: {minimo(notas)}")
-```
+**Dica de ouro:** Essas funções são muito usadas em **Ciência de Dados** e **Análise de Dados**. Aprender agora vai te dar uma grande vantagem no futuro!
 
 ---
 
@@ -2036,6 +2266,9 @@ python pybr.py exercicios/[nome-do-arquivo].pybr
 - `13-funcoes-simples.pybr` - Funções básicas
 - `14-funcoes-retorno.pybr` - Funções com retorno
 - `15-calculadora-funcoes.pybr` - Calculadora completa
+
+### Funções Avançadas (23)
+- `23-funcoes-avancadas.pybr` - Lambda, filtrar, mapear e análise de dados
 
 ### Classes (16-19)
 - `16-classe-cachorro.pybr` - Primeira classe
