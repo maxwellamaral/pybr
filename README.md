@@ -155,8 +155,7 @@ Consulte o [README dos exercícios](exercicios/README.md) para a lista completa.
 ## Estrutura do Projeto
 
 - `pybr.py` - Arquivo principal contendo o transpilador e REPL
-- `test_pybr.py` - Testes funcionais automatizados
-- `test_exercicios.py` - Testes funcionais dos arquivos de exemplo
+- `tests/` - Testes funcionais automatizados (transpilador e exercícios)
 - `tutorial/` - **Tutorial completo em PDF e Markdown para quem nunca programou antes** 📚
 - `exercicios/` - **22 arquivos de exemplo prontos para executar** 💻
 - `README.md` - Este arquivo
@@ -206,17 +205,17 @@ O projeto inclui duas suítes completas de testes automatizados que validam toda
 
 ```bash
 # Executar todos os testes com relatório detalhado
-python test_pybr.py
+python tests/test_pybr.py
 
 # Ou usar unittest diretamente com verbosidade
-python -m unittest test_pybr.py -v
+python -m unittest tests.test_pybr -v
 ```
 
 ### Executar os Testes dos Exercícios
 
 ```bash
 # Testa todos os 22 arquivos de exemplo
-python test_exercicios.py
+python tests/test_exercicios.py
 ```
 
 Este segundo conjunto de testes valida que todos os arquivos `.pybr` na pasta `exercicios/` estão funcionando corretamente, executando cada um deles e verificando suas saídas.
