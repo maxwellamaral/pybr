@@ -1,0 +1,155 @@
+# Exemplo 23: Funções Avançadas - Lambda, Filtrar e Mapear
+# Aprendendo a usar ferramentas poderosas para processar listas
+
+imprimir("=== FUNÇÕES LAMBDA ===")
+imprimir("\nFunções lambda são funções pequenas e rápidas")
+
+# Lambda simples
+dobro = lambda x: x * 2
+imprimir(f"Dobro de 5: {dobro(5)}")
+
+quadrado = lambda x: x * x
+imprimir(f"Quadrado de 4: {quadrado(4)}")
+
+eh_par = lambda n: n % 2 == 0
+imprimir(f"8 é par? {eh_par(8)}")
+imprimir(f"7 é par? {eh_par(7)}")
+
+# ===========================
+imprimir("\n=== MAPEAR - Aplicar função a todos ===")
+
+# Dobrar todos os números
+numeros = [1, 2, 3, 4, 5]
+imprimir(f"\nNúmeros originais: {numeros}")
+
+dobrados = lista(mapear(lambda x: x * 2, numeros))
+imprimir(f"Números dobrados: {dobrados}")
+
+quadrados = lista(mapear(lambda x: x ** 2, numeros))
+imprimir(f"Números ao quadrado: {quadrados}")
+
+# Mapear com strings
+nomes = ["ana", "joão", "maria"]
+imprimir(f"\nNomes originais: {nomes}")
+
+maiusculas = lista(mapear(lambda n: n.upper(), nomes))
+imprimir(f"Em maiúsculas: {maiusculas}")
+
+# ===========================
+imprimir("\n=== FILTRAR - Selecionar elementos ===")
+
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+imprimir(f"\nNúmeros: {numeros}")
+
+# Filtrar pares
+pares = lista(filtrar(lambda x: x % 2 == 0, numeros))
+imprimir(f"Apenas pares: {pares}")
+
+# Filtrar ímpares
+impares = lista(filtrar(lambda x: x % 2 != 0, numeros))
+imprimir(f"Apenas ímpares: {impares}")
+
+# Filtrar maiores que 5
+maiores = lista(filtrar(lambda x: x > 5, numeros))
+imprimir(f"Maiores que 5: {maiores}")
+
+# ===========================
+imprimir("\n=== COMBINANDO FILTRAR E MAPEAR ===")
+
+numeros = [1, 2, 3, 4, 5, 6, 7, 8]
+imprimir(f"\nNúmeros: {numeros}")
+
+# Pegar pares e dobrar
+pares = filtrar(lambda x: x % 2 == 0, numeros)
+dobrados = lista(mapear(lambda x: x * 2, pares))
+imprimir(f"Pares dobrados: {dobrados}")
+
+# Pegar ímpares e elevar ao quadrado
+impares = filtrar(lambda x: x % 2 != 0, numeros)
+quadrados = lista(mapear(lambda x: x ** 2, impares))
+imprimir(f"Ímpares ao quadrado: {quadrados}")
+
+# ===========================
+imprimir("\n=== EXEMPLO PRÁTICO: Análise de Notas ===")
+
+# Lista de notas
+notas = [8.5, 5.0, 7.5, 4.0, 9.0, 6.5, 3.5, 8.0, 9.5, 5.5]
+imprimir(f"\nNotas dos alunos: {notas}")
+total_alunos = tamanho(notas)
+imprimir(f"Total de alunos: {total_alunos}")
+
+# Estatísticas gerais
+imprimir(f"\nMaior nota: {maximo(notas)}")
+imprimir(f"Menor nota: {minimo(notas)}")
+total_notas = sum(notas)
+media_turma = arredondar(total_notas / tamanho(notas), 2)
+imprimir(f"Média da turma: {media_turma}")
+
+# Filtrar aprovados (>= 6)
+aprovados = lista(filtrar(lambda n: n >= 6, notas))
+imprimir(f"\nNotas dos aprovados: {aprovados}")
+total_aprovados = tamanho(aprovados)
+imprimir(f"Total de aprovados: {total_aprovados}")
+
+# Filtrar reprovados (< 6)
+reprovados = lista(filtrar(lambda n: n < 6, notas))
+imprimir(f"Notas dos reprovados: {reprovados}")
+total_reprovados = tamanho(reprovados)
+imprimir(f"Total de reprovados: {total_reprovados}")
+
+# Dar ponto extra de 0.5 para todos
+imprimir("\n--- Aplicando ponto extra de 0.5 ---")
+com_bonus = lista(mapear(lambda n: minimo(n + 0.5, 10), notas))
+imprimir(f"Notas com bônus: {com_bonus}")
+
+# Verificar quantos aprovaram após bônus
+aprovados_bonus = lista(filtrar(lambda n: n >= 6, com_bonus))
+total_aprovados_bonus = tamanho(aprovados_bonus)
+imprimir(f"Aprovados após bônus: {total_aprovados_bonus}")
+
+# ===========================
+imprimir("\n=== EXEMPLO PRÁTICO: Produtos ===")
+
+# Simulando produtos (usando dicionários)
+precos = [15.50, 8.00, 22.00, 5.50, 35.00, 12.00]
+nomes = ["Arroz", "Feijão", "Carne", "Macarrão", "Picanha", "Óleo"]
+
+imprimir("\n--- Lista de preços ---")
+para i em intervalo(tamanho(nomes)):
+    imprimir(f"{nomes[i]}: R$ {precos[i]:.2f}")
+
+# Filtrar produtos baratos (<= 15)
+indices_baratos = lista(filtrar(
+    lambda i: precos[i] <= 15,
+    intervalo(tamanho(precos))
+))
+
+imprimir("\n--- Produtos baratos (até R$ 15) ---")
+para i em indices_baratos:
+    imprimir(f"{nomes[i]}: R$ {precos[i]:.2f}")
+
+# Aplicar desconto de 10% em todos
+precos_com_desconto = lista(mapear(lambda p: arredondar(p * 0.9, 2), precos))
+
+imprimir("\n--- Preços com 10% de desconto ---")
+para i em intervalo(tamanho(nomes)):
+    imprimir(f"{nomes[i]}: R$ {precos_com_desconto[i]:.2f}")
+
+# ===========================
+imprimir("\n=== QUALQUER e TODOS ===")
+
+# Verificar se algum aluno tirou 10
+tem_nota_dez = qualquer([nota == 10 para nota em notas])
+imprimir(f"\nAlgum aluno tirou 10? {tem_nota_dez}")
+
+# Verificar se todos tiraram acima de 5
+todos_acima_5 = todos([nota > 5 para nota em notas])
+imprimir(f"Todos tiraram acima de 5? {todos_acima_5}")
+
+# Verificar se há notas excelentes (>= 9)
+tem_excelente = qualquer([nota >= 9 para nota em notas])
+imprimir(f"Há notas excelentes (>= 9)? {tem_excelente}")
+
+imprimir("\n=== FIM DO EXERCÍCIO ===")
+imprimir("Agora você conhece ferramentas poderosas para processar dados!")
+imprimir("Lambda, filtrar e mapear são muito úteis na programação real!")

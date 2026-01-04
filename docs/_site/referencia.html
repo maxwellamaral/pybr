@@ -111,6 +111,45 @@
   </tbody>
 </table>
 
+<h3 id="tratamento-de-exceções">Tratamento de Exceções</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>PyBR</th>
+      <th>Python</th>
+      <th>Exemplo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">tente</code></td>
+      <td><code class="language-plaintext highlighter-rouge">try</code></td>
+      <td><code class="language-plaintext highlighter-rouge">tente:</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">exceto</code></td>
+      <td><code class="language-plaintext highlighter-rouge">except</code></td>
+      <td><code class="language-plaintext highlighter-rouge">exceto ValueError:</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">finalmente</code></td>
+      <td><code class="language-plaintext highlighter-rouge">finally</code></td>
+      <td><code class="language-plaintext highlighter-rouge">finalmente:</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">levantar</code></td>
+      <td><code class="language-plaintext highlighter-rouge">raise</code></td>
+      <td><code class="language-plaintext highlighter-rouge">levantar ValueError("Erro")</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">afirmar</code></td>
+      <td><code class="language-plaintext highlighter-rouge">assert</code></td>
+      <td><code class="language-plaintext highlighter-rouge">afirmar x &gt; 0</code></td>
+    </tr>
+  </tbody>
+</table>
+
 <h3 id="definições">Definições</h3>
 
 <table>
@@ -126,6 +165,11 @@
       <td><code class="language-plaintext highlighter-rouge">definir</code></td>
       <td><code class="language-plaintext highlighter-rouge">def</code></td>
       <td><code class="language-plaintext highlighter-rouge">definir funcao(x):</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">funcao</code></td>
+      <td><code class="language-plaintext highlighter-rouge">def</code></td>
+      <td><code class="language-plaintext highlighter-rouge">funcao minhaFuncao(x):</code></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">classe</code></td>
@@ -151,6 +195,21 @@
       <td><code class="language-plaintext highlighter-rouge">como</code></td>
       <td><code class="language-plaintext highlighter-rouge">as</code></td>
       <td><code class="language-plaintext highlighter-rouge">importar pandas como pd</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">com</code></td>
+      <td><code class="language-plaintext highlighter-rouge">with</code></td>
+      <td><code class="language-plaintext highlighter-rouge">com abrir("arquivo.txt") como f:</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">global</code></td>
+      <td><code class="language-plaintext highlighter-rouge">global</code></td>
+      <td><code class="language-plaintext highlighter-rouge">global variavel</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">lambda</code></td>
+      <td><code class="language-plaintext highlighter-rouge">lambda</code></td>
+      <td><code class="language-plaintext highlighter-rouge">lambda x: x * 2</code></td>
     </tr>
   </tbody>
 </table>
@@ -235,6 +294,9 @@
 </span><span class="n">flutuante</span><span class="p">(</span><span class="s">"3.14"</span><span class="p">)</span>     <span class="c1"># float() - converte para decimal
 </span><span class="n">texto</span><span class="p">(</span><span class="mi">123</span><span class="p">)</span>            <span class="c1"># str() - converte para texto
 </span><span class="n">lista</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>        <span class="c1"># list() - converte para lista
+</span><span class="n">dicionario</span><span class="p">()</span>          <span class="c1"># dict() - cria dicionário
+</span><span class="n">conjunto</span><span class="p">({</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">})</span>     <span class="c1"># set() - cria conjunto
+</span><span class="n">tupla</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>        <span class="c1"># tuple() - cria tupla
 </span></code></pre></div></div>
 
 <h3 id="manipulação">Manipulação</h3>
@@ -242,22 +304,34 @@
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">tamanho</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>           <span class="c1"># len() - retorna tamanho
 </span><span class="n">intervalo</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>            <span class="c1"># range() - cria sequência
 </span><span class="n">tipo</span><span class="p">(</span><span class="n">variavel</span><span class="p">)</span>              <span class="c1"># type() - retorna tipo
+</span><span class="n">enumerar</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>             <span class="c1"># enumerate() - enumera elementos
 </span></code></pre></div></div>
 
 <h3 id="matemática">Matemática</h3>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">maximo</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>       <span class="c1"># max() - maior valor
 </span><span class="n">minimo</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>       <span class="c1"># min() - menor valor  
-</span><span class="n">soma</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>         <span class="c1"># sum() - soma elementos
 </span><span class="nb">abs</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">)</span>               <span class="c1"># abs() - valor absoluto
 </span><span class="n">arredondar</span><span class="p">(</span><span class="mf">3.7</span><span class="p">)</span>       <span class="c1"># round() - arredonda
+</span><span class="mi">2</span> <span class="o">**</span> <span class="mi">3</span>                <span class="c1"># potência (2 elevado a 3 = 8)
 </span></code></pre></div></div>
 
-<h3 id="iteração">Iteração</h3>
+<h3 id="iteração-e-filtragem">Iteração e Filtragem</h3>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">enumerar</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>       <span class="c1"># enumerate() - enumera elementos
-</span><span class="n">ordenar</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>        <span class="c1"># sorted() - ordena
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ordenar</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>        <span class="c1"># sorted() - ordena
 </span><span class="n">reverter</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>       <span class="c1"># reversed() - inverte ordem
+</span><span class="n">filtrar</span><span class="p">(</span><span class="n">funcao</span><span class="p">,</span> <span class="n">lista</span><span class="p">)</span> <span class="c1"># filter() - filtra elementos
+</span><span class="n">mapear</span><span class="p">(</span><span class="n">funcao</span><span class="p">,</span> <span class="n">lista</span><span class="p">)</span> <span class="c1"># map() - aplica função a cada elemento
+</span><span class="n">qualquer</span><span class="p">([</span><span class="n">F</span><span class="p">,</span> <span class="n">F</span><span class="p">,</span> <span class="n">V</span><span class="p">])</span>   <span class="c1"># any() - retorna True se algum for True
+</span><span class="n">todos</span><span class="p">([</span><span class="n">V</span><span class="p">,</span> <span class="n">V</span><span class="p">,</span> <span class="n">V</span><span class="p">])</span>      <span class="c1"># all() - retorna True se todos forem True
+</span></code></pre></div></div>
+
+<h3 id="arquivos-e-sistema">Arquivos e Sistema</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">arquivo</span> <span class="o">=</span> <span class="n">abrir</span><span class="p">(</span><span class="s">"dados.txt"</span><span class="p">,</span> <span class="s">"r"</span><span class="p">)</span>  <span class="c1"># open() - abre arquivo
+</span><span class="n">ajuda</span><span class="p">(</span><span class="n">imprimir</span><span class="p">)</span>                     <span class="c1"># help() - mostra ajuda
+</span><span class="nb">dir</span><span class="p">(</span><span class="n">objeto</span><span class="p">)</span>                         <span class="c1"># dir() - lista atributos
+</span><span class="n">sair</span><span class="p">()</span>                              <span class="c1"># exit() - sai do programa
 </span></code></pre></div></div>
 
 <hr />
@@ -468,7 +542,14 @@
 
 <span class="c1"># Tamanho
 </span><span class="n">total</span> <span class="o">=</span> <span class="n">tamanho</span><span class="p">(</span><span class="n">numeros</span><span class="p">)</span>
-</code></pre></div></div>
+
+<span class="c1"># Funções úteis
+</span><span class="n">maior</span> <span class="o">=</span> <span class="n">maximo</span><span class="p">(</span><span class="n">numeros</span><span class="p">)</span>      <span class="c1"># Maior valor
+</span><span class="n">menor</span> <span class="o">=</span> <span class="n">minimo</span><span class="p">(</span><span class="n">numeros</span><span class="p">)</span>      <span class="c1"># Menor valor
+</span><span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">numeros</span><span class="p">)</span>         <span class="c1"># Soma todos (usar sum nativo)
+</span><span class="n">ordenados</span> <span class="o">=</span> <span class="n">ordenar</span><span class="p">(</span><span class="n">numeros</span><span class="p">)</span> <span class="c1"># Lista ordenada
+</span><span class="n">invertidos</span> <span class="o">=</span> <span class="n">lista</span><span class="p">(</span><span class="n">reverter</span><span class="p">(</span><span class="n">numeros</span><span class="p">))</span>  <span class="c1"># Lista invertida
+</span></code></pre></div></div>
 
 <h3 id="dicionários">Dicionários</h3>
 
@@ -488,6 +569,77 @@
 </span><span class="n">para</span> <span class="n">chave</span><span class="p">,</span> <span class="n">valor</span> <span class="n">em</span> <span class="n">pessoa</span><span class="p">.</span><span class="n">items</span><span class="p">():</span>
     <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">chave</span><span class="si">}</span><span class="s">: </span><span class="si">{</span><span class="n">valor</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
 </code></pre></div></div>
+
+<h3 id="tratamento-de-exceções-1">Tratamento de Exceções</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Estrutura básica
+</span><span class="n">tente</span><span class="p">:</span>
+    <span class="n">resultado</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">/</span> <span class="mi">0</span>
+<span class="n">exceto</span> <span class="nb">ZeroDivisionError</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"Erro: divisão por zero!"</span><span class="p">)</span>
+<span class="n">finalmente</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"Bloco executado sempre"</span><span class="p">)</span>
+
+<span class="c1"># Múltiplas exceções
+</span><span class="n">tente</span><span class="p">:</span>
+    <span class="n">numero</span> <span class="o">=</span> <span class="n">inteiro</span><span class="p">(</span><span class="n">entrada</span><span class="p">(</span><span class="s">"Número: "</span><span class="p">))</span>
+    <span class="n">resultado</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">/</span> <span class="n">numero</span>
+<span class="n">exceto</span> <span class="nb">ValueError</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"Valor inválido!"</span><span class="p">)</span>
+<span class="n">exceto</span> <span class="nb">ZeroDivisionError</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"Não pode dividir por zero!"</span><span class="p">)</span>
+<span class="n">exceto</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"Erro desconhecido"</span><span class="p">)</span>
+
+<span class="c1"># Levantando exceções
+</span><span class="n">definir</span> <span class="n">validar_idade</span><span class="p">(</span><span class="n">idade</span><span class="p">):</span>
+    <span class="n">se</span> <span class="n">idade</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">levantar</span> <span class="nb">ValueError</span><span class="p">(</span><span class="s">"Idade não pode ser negativa"</span><span class="p">)</span>
+    <span class="n">se</span> <span class="n">idade</span> <span class="o">&gt;</span> <span class="mi">150</span><span class="p">:</span>
+        <span class="n">levantar</span> <span class="nb">ValueError</span><span class="p">(</span><span class="s">"Idade inválida"</span><span class="p">)</span>
+    <span class="n">retornar</span> <span class="n">Verdadeiro</span>
+</code></pre></div></div>
+
+<h3 id="trabalhando-com-arquivos">Trabalhando com Arquivos</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Lendo arquivo
+</span><span class="n">com</span> <span class="n">abrir</span><span class="p">(</span><span class="s">"dados.txt"</span><span class="p">,</span> <span class="s">"r"</span><span class="p">)</span> <span class="n">como</span> <span class="n">arquivo</span><span class="p">:</span>
+    <span class="n">conteudo</span> <span class="o">=</span> <span class="n">arquivo</span><span class="p">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="n">conteudo</span><span class="p">)</span>
+
+<span class="c1"># Escrevendo arquivo
+</span><span class="n">com</span> <span class="n">abrir</span><span class="p">(</span><span class="s">"saida.txt"</span><span class="p">,</span> <span class="s">"w"</span><span class="p">)</span> <span class="n">como</span> <span class="n">arquivo</span><span class="p">:</span>
+    <span class="n">arquivo</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="s">"Olá, mundo!"</span><span class="p">)</span>
+
+<span class="c1"># Lendo linha por linha
+</span><span class="n">com</span> <span class="n">abrir</span><span class="p">(</span><span class="s">"dados.txt"</span><span class="p">,</span> <span class="s">"r"</span><span class="p">)</span> <span class="n">como</span> <span class="n">arquivo</span><span class="p">:</span>
+    <span class="n">para</span> <span class="n">linha</span> <span class="n">em</span> <span class="n">arquivo</span><span class="p">:</span>
+        <span class="n">imprimir</span><span class="p">(</span><span class="n">linha</span><span class="p">.</span><span class="n">strip</span><span class="p">())</span>
+</code></pre></div></div>
+
+<h3 id="funções-avançadas">Funções Avançadas</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Lambda (funções anônimas)
+</span><span class="n">dobro</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">dobro</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>  <span class="c1"># 10
+</span>
+<span class="c1"># Map - aplicar função a cada elemento
+</span><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">dobrados</span> <span class="o">=</span> <span class="n">lista</span><span class="p">(</span><span class="n">mapear</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span><span class="p">,</span> <span class="n">numeros</span><span class="p">))</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">dobrados</span><span class="p">)</span>  <span class="c1"># [2, 4, 6, 8, 10]
+</span>
+<span class="c1"># Filter - filtrar elementos
+</span><span class="n">pares</span> <span class="o">=</span> <span class="n">lista</span><span class="p">(</span><span class="n">filtrar</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="n">numeros</span><span class="p">))</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">pares</span><span class="p">)</span>  <span class="c1"># [2, 4]
+</span>
+<span class="c1"># Any - verifica se algum é True
+</span><span class="n">valores</span> <span class="o">=</span> <span class="p">[</span><span class="n">Falso</span><span class="p">,</span> <span class="n">Falso</span><span class="p">,</span> <span class="n">Verdadeiro</span><span class="p">,</span> <span class="n">Falso</span><span class="p">]</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">qualquer</span><span class="p">(</span><span class="n">valores</span><span class="p">))</span>  <span class="c1"># True
+</span>
+<span class="c1"># All - verifica se todos são True
+</span><span class="n">valores</span> <span class="o">=</span> <span class="p">[</span><span class="n">Verdadeiro</span><span class="p">,</span> <span class="n">Verdadeiro</span><span class="p">,</span> <span class="n">Verdadeiro</span><span class="p">]</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">todos</span><span class="p">(</span><span class="n">valores</span><span class="p">))</span>  <span class="c1"># True
+</span></code></pre></div></div>
 
 <hr />
 

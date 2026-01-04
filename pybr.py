@@ -46,16 +46,45 @@ class PyBRTranspiler:
 
         # Mapeamento de Funções Nativas Comuns (Opcional, mas útil)
         self.builtins_map = {
+            # Entrada/Saída
             'imprimir': 'print',
             'entrada': 'input',
-            'tamanho': 'len',
-            'intervalo': 'range',
+            
+            # Conversão de Tipos
             'inteiro': 'int',
+            'flutuante': 'float',
             'texto': 'str',
             'lista': 'list',
             'dicionario': 'dict',
+            'conjunto': 'set',
+            'tupla': 'tuple',
+            
+            # Manipulação
+            'tamanho': 'len',
+            'intervalo': 'range',
+            'tipo': 'type',
+            'enumerar': 'enumerate',
+            
+            # Matemática
+            'maximo': 'max',
+            'minimo': 'min',
+            'abs': 'abs',
+            'arredondar': 'round',
+            
+            # Ordenação/Iteração
+            'ordenar': 'sorted',
+            'reverter': 'reversed',
+            'filtrar': 'filter',
+            'mapear': 'map',
+            'qualquer': 'any',
+            'todos': 'all',
+            
+            # Arquivos e Sistema
             'abrir': 'open',
+            
+            # Utilidades
             'ajuda': 'help',
+            'dir': 'dir',
             'sair': 'exit'
         }
 
@@ -69,6 +98,23 @@ class PyBRTranspiler:
             if token_string in self.builtins_map:
                 return self.builtins_map[token_string]
         return token_string
+
+    def traduzir_fstrings(self, codigo_python):
+        """
+        Pós-processa o código para traduzir palavras PyBR dentro de f-strings.
+        Apenas traduz chamadas de função (palavra seguida de parênteses).
+        """
+        import re
+        
+        # Para cada função no builtins_map, substituir dentro de f-strings
+        for pybr, python in self.builtins_map.items():
+            # Padrão para encontrar a palavra como função (seguida de parênteses opcionalmente com espaços)
+            # Usa lookahead para garantir que só substitui antes de '('
+            padrao = r'\b' + re.escape(pybr) + r'(?=\s*\()'
+            substituicao = python
+            codigo_python = re.sub(padrao, substituicao, codigo_python)
+        
+        return codigo_python
 
     def transpilador(self, codigo_fonte_br):
         """
@@ -97,6 +143,10 @@ class PyBRTranspiler:
                 
             # Reconstrói o código Python a partir dos tokens modificados
             codigo_python = tokenize.untokenize(resultado).decode('utf-8')
+            
+            # Pós-processa para traduzir dentro de f-strings
+            codigo_python = self.traduzir_fstrings(codigo_python)
+            
             return codigo_python
             
         except tokenize.TokenError as e:
@@ -106,8 +156,9 @@ class PyBRTranspiler:
         """Traduz e executa o código."""
         codigo_python = self.transpilador(codigo_fonte_br)
         
-        # Cria um ambiente isolado para execução
-        ambiente_global = {}
+        # Cria um ambiente com builtins do Python disponíveis
+        import builtins
+        ambiente_global = {'__builtins__': builtins}
         
         try:
             exec(codigo_python, ambiente_global)

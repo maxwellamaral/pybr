@@ -280,6 +280,19 @@ class TestExercicios(unittest.TestCase):
         
         self.assertEqual(codigo, 0, f"Erro na execução: {stderr}")
         self.assertIn("212", stdout)  # 100°C = 212°F
+    
+    def test_23_funcoes_avancadas(self):
+        """Teste: 23-funcoes-avancadas.pybr"""
+        arquivo = self.exercicios_dir / "23-funcoes-avancadas.pybr"
+        codigo, stdout, stderr = self.executar_pybr(arquivo)
+        
+        self.assertEqual(codigo, 0, f"Erro na execução: {stderr}")
+        self.assertIn("FUNÇÕES LAMBDA", stdout)
+        self.assertIn("MAPEAR", stdout)
+        self.assertIn("FILTRAR", stdout)
+        self.assertIn("Dobro de 5: 10", stdout)
+        self.assertIn("Apenas pares:", stdout)
+        self.assertIn("QUALQUER e TODOS", stdout)
 
 
 class TestTranspilacaoExercicios(unittest.TestCase):

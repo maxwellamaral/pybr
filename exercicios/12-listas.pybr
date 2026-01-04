@@ -1,5 +1,5 @@
 # Exemplo 12: Trabalhando com Listas
-# Guardando múltiplos valores
+# Guardando múltiplos valores e usando funções úteis
 
 # Criando uma lista
 frutas = ["maçã", "banana", "laranja", "uva"]
@@ -25,3 +25,54 @@ imprimir(f"Removi banana: {frutas}")
 # Acessando por índice
 imprimir(f"\nPrimeira fruta: {frutas[0]}")
 imprimir(f"Última fruta: {frutas[-1]}")
+
+# === NOVAS FUNCIONALIDADES ===
+
+# Trabalhando com números
+imprimir("\n=== Funções com números ===")
+numeros = [15, 3, 8, 22, 10, 5, 18]
+
+imprimir(f"Lista de números: {numeros}")
+imprimir(f"Maior número: {maximo(numeros)}")
+imprimir(f"Menor número: {minimo(numeros)}")
+total = sum(numeros)
+imprimir(f"Soma total: {total}")
+imprimir(f"Média: {arredondar(total / tamanho(numeros), 2)}")
+
+# Ordenação e reversão
+imprimir("\n=== Ordenação e reversão ===")
+ordenados = lista(ordenar(numeros))
+imprimir(f"Números ordenados: {ordenados}")
+
+invertidos = lista(reverter(numeros))
+imprimir(f"Números invertidos: {invertidos}")
+
+# Ordenar frutas alfabeticamente
+frutas_ordenadas = lista(ordenar(frutas))
+imprimir(f"Frutas em ordem alfabética: {frutas_ordenadas}")
+
+# Enumeração
+imprimir("\n=== Usando enumerar ===")
+para indice, fruta em enumerar(frutas):
+    imprimir(f"Posição {indice}: {fruta}")
+
+# Verificações
+imprimir("\n=== Verificações ===")
+valores = [Verdadeiro, Falso, Verdadeiro]
+imprimir(f"Algum é verdadeiro? {qualquer(valores)}")
+imprimir(f"Todos são verdadeiros? {todos(valores)}")
+
+# Prática: Análise de notas
+imprimir("\n=== Análise de Notas ===")
+notas = [7.5, 8.0, 6.5, 9.0, 5.5]
+imprimir(f"Notas: {notas}")
+imprimir(f"Maior nota: {maximo(notas)}")
+imprimir(f"Menor nota: {minimo(notas)}")
+imprimir(f"Média: {arredondar(soma(notas) / tamanho(notas), 2)}")
+
+# Verificar se todas as notas são >= 6
+aprovacoes = [nota >= 6 para nota em notas]
+se todos(aprovacoes):
+    imprimir("Todas as notas são suficientes para aprovação!")
+senao:
+    imprimir("Há notas abaixo de 6")

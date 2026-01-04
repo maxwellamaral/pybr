@@ -43,10 +43,11 @@ Recomendamos seguir a ordem dos arquivos, começando pelo `01-ola-mundo.pybr` at
 - **18-classe-retangulo.pybr** - Cálculos geométricos
 - **19-classe-aluno.pybr** - Sistema escolar
 
-### Projetos Completos (20-22)
+### Projetos Completos (20-23)
 - **20-projeto-lista-tarefas.pybr** - Gerenciador de tarefas
 - **21-projeto-quiz.pybr** - Jogo de perguntas
 - **22-projeto-conversor-temperatura.pybr** - Conversor de temperaturas
+- **23-funcoes-avancadas.pybr** - Lambda, filtrar, mapear
 
 ## Modificando os Exemplos
 

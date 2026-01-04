@@ -106,16 +106,39 @@ class TestPyBRTranspiler(unittest.TestCase):
         import tokenize as tok
         
         testes = [
+            # Entrada/Saída
             ('imprimir', 'print'),
             ('entrada', 'input'),
-            ('tamanho', 'len'),
-            ('intervalo', 'range'),
+            # Conversão de Tipos
             ('inteiro', 'int'),
+            ('flutuante', 'float'),
             ('texto', 'str'),
             ('lista', 'list'),
             ('dicionario', 'dict'),
+            ('conjunto', 'set'),
+            ('tupla', 'tuple'),
+            # Manipulação
+            ('tamanho', 'len'),
+            ('intervalo', 'range'),
+            ('tipo', 'type'),
+            ('enumerar', 'enumerate'),
+            # Matemática
+            ('maximo', 'max'),
+            ('minimo', 'min'),
+            ('abs', 'abs'),
+            ('arredondar', 'round'),
+            # Ordenação/Iteração
+            ('ordenar', 'sorted'),
+            ('reverter', 'reversed'),
+            ('filtrar', 'filter'),
+            ('mapear', 'map'),
+            ('qualquer', 'any'),
+            ('todos', 'all'),
+            # Arquivos
             ('abrir', 'open'),
+            # Utilidades
             ('ajuda', 'help'),
+            ('dir', 'dir'),
             ('sair', 'exit'),
         ]
         
@@ -428,6 +451,102 @@ para i em intervalo(5):
 """
         saida = self.capturar_saida(codigo)
         self.assertEqual(saida.strip(), "0\n1\n3")
+
+    def test_execucao_conversao_tipos(self):
+        """Testa execução com conversões de tipos"""
+        codigo = """
+# Flutuante
+x = flutuante("3.14")
+imprimir(tipo(x).__name__)
+
+# Conjunto
+s = conjunto([1, 2, 2, 3])
+imprimir(tamanho(s))
+
+# Tupla
+t = tupla([1, 2, 3])
+imprimir(tamanho(t))
+"""
+        saida = self.capturar_saida(codigo)
+        linhas = saida.strip().split('\n')
+        self.assertEqual(linhas[0], "float")
+        self.assertEqual(linhas[1], "3")
+        self.assertEqual(linhas[2], "3")
+
+    def test_execucao_funcoes_matematicas(self):
+        """Testa execução com funções matemáticas"""
+        codigo = """
+# Máximo e mínimo
+imprimir(maximo(1, 5, 3))
+imprimir(minimo(1, 5, 3))
+
+# Arredondar
+imprimir(arredondar(3.7))
+
+# Valor absoluto
+imprimir(abs(-5))
+"""
+        saida = self.capturar_saida(codigo)
+        linhas = saida.strip().split('\n')
+        self.assertEqual(linhas[0], "5")
+        self.assertEqual(linhas[1], "1")
+        self.assertEqual(linhas[2], "4")
+        self.assertEqual(linhas[3], "5")
+
+    def test_execucao_ordenacao_e_reversao(self):
+        """Testa execução com ordenação e reversão"""
+        codigo = """
+numeros = [3, 1, 4, 1, 5]
+
+# Ordenar
+ordenados = ordenar(numeros)
+imprimir(lista(ordenados))
+
+# Reverter
+revertidos = lista(reverter([1, 2, 3]))
+imprimir(revertidos)
+"""
+        saida = self.capturar_saida(codigo)
+        linhas = saida.strip().split('\n')
+        self.assertIn("[1, 1, 3, 4, 5]", linhas[0])
+        self.assertIn("[3, 2, 1]", linhas[1])
+
+    def test_execucao_funcoes_iteracao(self):
+        """Testa execução com funções de iteração avançadas"""
+        codigo = """
+# Enumerar
+para i, valor em enumerar(['a', 'b', 'c']):
+    se i == 1:
+        imprimir(valor)
+
+# Qualquer
+imprimir(qualquer([Falso, Verdadeiro, Falso]))
+
+# Todos
+imprimir(todos([Verdadeiro, Verdadeiro, Verdadeiro]))
+"""
+        saida = self.capturar_saida(codigo)
+        linhas = saida.strip().split('\n')
+        self.assertEqual(linhas[0], "b")
+        self.assertEqual(linhas[1], "True")
+        self.assertEqual(linhas[2], "True")
+
+    def test_execucao_filtrar_mapear(self):
+        """Testa execução com filtrar e mapear"""
+        codigo = """
+# Filtrar números pares
+numeros = [1, 2, 3, 4, 5, 6]
+pares = lista(filtrar(lambda x: x % 2 == 0, numeros))
+imprimir(tamanho(pares))
+
+# Mapear (dobrar valores)
+dobrados = lista(mapear(lambda x: x * 2, [1, 2, 3]))
+imprimir(dobrados)
+"""
+        saida = self.capturar_saida(codigo)
+        linhas = saida.strip().split('\n')
+        self.assertEqual(linhas[0], "3")
+        self.assertIn("[2, 4, 6]", linhas[1])
 
     # ==================== TESTES DE CÓDIGO COMPLEXO ====================
 

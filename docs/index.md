@@ -15,7 +15,7 @@ PyBR é um transpilador que permite escrever código Python usando palavras-chav
 
 - **🗣️ Sintaxe em Português**: Use `se`, `senao`, `para`, `enquanto`, `imprimir()` e muito mais
 - **📚 Tutorial Completo**: Aprenda do zero com exemplos práticos
-- **🎮 22 Exercícios**: Práticas progressivas do básico ao avançado
+- **🎮 23 Exercícios**: Práticas progressivas do básico ao avançado
 - **💻 REPL Interativo**: Teste código em tempo real
 - **🚀 Fácil de Usar**: Execute arquivos `.pybr` diretamente
 
@@ -54,7 +54,7 @@ python pybr.py ola.pybr
 ## 📖 Documentação
 
 - **[Tutorial Completo](tutorial)** - Aprenda programação do zero
-- **[Exercícios Práticos](exercicios)** - 22 exercícios progressivos
+- **[Exercícios Práticos](exercicios)** - 23 exercícios progressivos
 - **[Referência da Linguagem](referencia)** - Documentação técnica completa
 
 ## 🎓 Para Quem é o PyBR?
@@ -547,19 +547,34 @@ enquanto Verdadeiro:
 | `tamanho()` | `len()` | Tamanho de sequência |
 | `intervalo()` | `range()` | Intervalo numérico |
 | `enumerar()` | `enumerate()` | Enumerar itens |
+| `maximo()` | `max()` | Valor máximo |
+| `minimo()` | `min()` | Valor mínimo |
 | `arredondar()` | `round()` | Arredondar número |
 | `tipo()` | `type()` | Tipo da variável |
 | `lista()` | `list()` | Criar lista |
 | `dicionario()` | `dict()` | Criar dicionário |
 | `conjunto()` | `set()` | Criar conjunto |
+| `tupla()` | `tuple()` | Criar tupla |
+| `ordenar()` | `sorted()` | Ordenar elementos |
+| `reverter()` | `reversed()` | Reverter ordem |
+| `filtrar()` | `filter()` | Filtrar elementos |
+| `mapear()` | `map()` | Mapear função |
+| `qualquer()` | `any()` | Algum é verdadeiro |
+| `todos()` | `all()` | Todos são verdadeiros |
 | `abrir()` | `open()` | Abrir arquivo |
+| `ajuda()` | `help()` | Ajuda sobre objeto |
+| `dir()` | `dir()` | Listar atributos |
+| `sair()` | `exit()` | Sair do programa |
+| `abs()` | `abs()` | Valor absoluto |
+
+**Total: 29 funções nativas traduzidas** - [Ver referência completa](referencia)
 
 ## 📊 Estatísticas do Projeto
 
-- ✅ **22 Exercícios** progressivos do básico ao avançado
-- ✅ **1800+ Linhas** de tutorial detalhado
-- ✅ **50+ Palavras-chave** traduzidas
-- ✅ **20+ Funções** built-in em português
+- ✅ **23 Exercícios** progressivos do básico ao avançado
+- ✅ **2000+ Linhas** de tutorial detalhado
+- ✅ **23 Palavras-chave** traduzidas (controle, exceções, definições)
+- ✅ **29 Funções** built-in em português
 - ✅ **100% Open Source** sob licença MIT
 
 ## 🎓 Material Didático
@@ -693,7 +708,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](../LICENSE) para
 - [🐛 Reportar Issues](https://github.com/maxwellamaral/pybr/issues)
 - [🤝 Contribuir](https://github.com/maxwellamaral/pybr/pulls)
 - [📖 Tutorial Completo](tutorial-completo)
-- [🎮 22 Exercícios](exercicios)
+- [🎮 23 Exercícios](exercicios)
 - [📚 Referência Completa](referencia)
 
 ## 🙏 Agradecimentos

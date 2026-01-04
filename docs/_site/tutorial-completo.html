@@ -1296,6 +1296,115 @@ python pybr.py exercicios/11-jogo-adivinhacao.pybr
     <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s">. </span><span class="si">{</span><span class="n">frutas</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
 </code></pre></div></div>
 
+<h3 id="funções-úteis-para-listas-e-números">Funções Úteis para Listas e Números:</h3>
+
+<p>PyBR oferece várias funções prontas que facilitam muito o trabalho com listas e números!</p>
+
+<h4 id="funções-matemáticas">Funções Matemáticas:</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Lista de números
+</span><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+
+<span class="c1"># Encontrar o maior valor
+</span><span class="n">maior</span> <span class="o">=</span> <span class="n">maximo</span><span class="p">(</span><span class="n">numeros</span><span class="p">)</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Maior número: </span><span class="si">{</span><span class="n">maior</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>  <span class="c1"># 15
+</span>
+<span class="c1"># Encontrar o menor valor
+</span><span class="n">menor</span> <span class="o">=</span> <span class="n">minimo</span><span class="p">(</span><span class="n">numeros</span><span class="p">)</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Menor número: </span><span class="si">{</span><span class="n">menor</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>  <span class="c1"># 2
+</span>
+<span class="c1"># Também funciona com múltiplos valores
+</span><span class="n">imprimir</span><span class="p">(</span><span class="n">maximo</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">30</span><span class="p">))</span>  <span class="c1"># 30
+</span><span class="n">imprimir</span><span class="p">(</span><span class="n">minimo</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">30</span><span class="p">))</span>  <span class="c1"># 5
+</span></code></pre></div></div>
+
+<h4 id="arredondamento-e-potências">Arredondamento e Potências:</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Arredondar números decimais
+</span><span class="n">valor</span> <span class="o">=</span> <span class="mf">3.7</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">arredondar</span><span class="p">(</span><span class="n">valor</span><span class="p">))</span>  <span class="c1"># 4
+</span>
+<span class="n">valor</span> <span class="o">=</span> <span class="mf">3.14159</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">arredondar</span><span class="p">(</span><span class="n">valor</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>  <span class="c1"># 3.14 (2 casas decimais)
+</span>
+<span class="c1"># Potenciação (usar operador **)
+</span><span class="n">resultado</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">**</span> <span class="mi">3</span>  <span class="c1"># 2 elevado a 3
+</span><span class="n">imprimir</span><span class="p">(</span><span class="n">resultado</span><span class="p">)</span>  <span class="c1"># 8
+</span>
+<span class="c1"># Valor absoluto (sempre positivo)
+</span><span class="n">imprimir</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">))</span>  <span class="c1"># 10
+</span><span class="n">imprimir</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>   <span class="c1"># 10
+</span></code></pre></div></div>
+
+<h4 id="ordenação-e-reversão">Ordenação e Reversão:</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Lista desordenada
+</span><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+
+<span class="c1"># Ordenar (do menor para o maior)
+</span><span class="n">numeros_ordenados</span> <span class="o">=</span> <span class="n">ordenar</span><span class="p">(</span><span class="n">numeros</span><span class="p">)</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">lista</span><span class="p">(</span><span class="n">numeros_ordenados</span><span class="p">))</span>  <span class="c1"># [1, 2, 3, 5, 8, 9]
+</span>
+<span class="c1"># Reverter a ordem
+</span><span class="n">numeros_invertidos</span> <span class="o">=</span> <span class="n">lista</span><span class="p">(</span><span class="n">reverter</span><span class="p">(</span><span class="n">numeros</span><span class="p">))</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">numeros_invertidos</span><span class="p">)</span>  <span class="c1"># [3, 9, 1, 8, 2, 5]
+</span>
+<span class="c1"># Funciona com textos também!
+</span><span class="n">nomes</span> <span class="o">=</span> <span class="p">[</span><span class="s">"Carlos"</span><span class="p">,</span> <span class="s">"Ana"</span><span class="p">,</span> <span class="s">"Bruno"</span><span class="p">]</span>
+<span class="n">nomes_ordenados</span> <span class="o">=</span> <span class="n">ordenar</span><span class="p">(</span><span class="n">nomes</span><span class="p">)</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">lista</span><span class="p">(</span><span class="n">nomes_ordenados</span><span class="p">))</span>  <span class="c1"># ['Ana', 'Bruno', 'Carlos']
+</span></code></pre></div></div>
+
+<h4 id="enumeração-índice--valor">Enumeração (índice + valor):</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Quando você precisa do índice E do valor
+</span><span class="n">frutas</span> <span class="o">=</span> <span class="p">[</span><span class="s">"maçã"</span><span class="p">,</span> <span class="s">"banana"</span><span class="p">,</span> <span class="s">"uva"</span><span class="p">]</span>
+
+<span class="n">para</span> <span class="n">indice</span><span class="p">,</span> <span class="n">fruta</span> <span class="n">em</span> <span class="n">enumerar</span><span class="p">(</span><span class="n">frutas</span><span class="p">):</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">indice</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s">º fruta: </span><span class="si">{</span><span class="n">fruta</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+
+<span class="c1"># Saída:
+# 1º fruta: maçã
+# 2º fruta: banana
+# 3º fruta: uva
+</span></code></pre></div></div>
+
+<h4 id="verificações-com-qualquer-e-todos">Verificações com qualquer() e todos():</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Verificar se ALGUM valor é True
+</span><span class="n">notas</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+<span class="n">tem_nota_alta</span> <span class="o">=</span> <span class="n">qualquer</span><span class="p">([</span><span class="n">nota</span> <span class="o">&gt;=</span> <span class="mi">9</span> <span class="n">para</span> <span class="n">nota</span> <span class="n">em</span> <span class="n">notas</span><span class="p">])</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">tem_nota_alta</span><span class="p">)</span>  <span class="c1"># Verdadeiro (existe uma nota 9)
+</span>
+<span class="c1"># Verificar se TODOS os valores são True
+</span><span class="n">todas_aprovadas</span> <span class="o">=</span> <span class="n">todos</span><span class="p">([</span><span class="n">nota</span> <span class="o">&gt;=</span> <span class="mi">6</span> <span class="n">para</span> <span class="n">nota</span> <span class="n">em</span> <span class="n">notas</span><span class="p">])</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">todas_aprovadas</span><span class="p">)</span>  <span class="c1"># Verdadeiro (todas &gt;= 6)
+</span></code></pre></div></div>
+
+<h4 id="exemplo-completo---análise-de-notas">Exemplo Completo - Análise de Notas:</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Notas de um aluno
+</span><span class="n">notas</span> <span class="o">=</span> <span class="p">[</span><span class="mf">7.5</span><span class="p">,</span> <span class="mf">8.0</span><span class="p">,</span> <span class="mf">6.5</span><span class="p">,</span> <span class="mf">9.0</span><span class="p">,</span> <span class="mf">7.0</span><span class="p">]</span>
+
+<span class="c1"># Análise completa
+</span><span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Notas: </span><span class="si">{</span><span class="n">notas</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Maior nota: </span><span class="si">{</span><span class="n">maximo</span><span class="p">(</span><span class="n">notas</span><span class="p">)</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Menor nota: </span><span class="si">{</span><span class="n">minimo</span><span class="p">(</span><span class="n">notas</span><span class="p">)</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+<span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">notas</span><span class="p">)</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Média: </span><span class="si">{</span><span class="n">arredondar</span><span class="p">(</span><span class="n">total</span> <span class="o">/</span> <span class="n">tamanho</span><span class="p">(</span><span class="n">notas</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+
+<span class="c1"># Verificar aprovação (média &gt;= 7)
+</span><span class="n">media</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">notas</span><span class="p">)</span> <span class="o">/</span> <span class="n">tamanho</span><span class="p">(</span><span class="n">notas</span><span class="p">)</span>
+<span class="n">se</span> <span class="n">media</span> <span class="o">&gt;=</span> <span class="mi">7</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"Aluno APROVADO! 🎉"</span><span class="p">)</span>
+<span class="n">senao</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="s">"Aluno em recuperação"</span><span class="p">)</span>
+
+<span class="c1"># Ordenar notas (da menor para maior)
+</span><span class="n">notas_ordenadas</span> <span class="o">=</span> <span class="n">ordenar</span><span class="p">(</span><span class="n">notas</span><span class="p">)</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Notas em ordem: </span><span class="si">{</span><span class="n">lista</span><span class="p">(</span><span class="n">notas_ordenadas</span><span class="p">)</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+</code></pre></div></div>
+
 <hr />
 
 <h2 id="organizando-o-código---funções">Organizando o Código - Funções</h2>
@@ -1411,6 +1520,153 @@ python pybr.py exercicios/11-jogo-adivinhacao.pybr
 </span><span class="n">fazer_cafe</span><span class="p">(</span><span class="s">"cappuccino"</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># Define tudo
 </span><span class="n">fazer_cafe</span><span class="p">(</span><span class="n">acucar</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># Café sem açúcar
 </span></code></pre></div></div>
+
+<hr />
+
+<h2 id="funções-avançadas---lambda-filtrar-e-mapear">Funções Avançadas - Lambda, Filtrar e Mapear</h2>
+
+<p>Agora vamos aprender sobre <strong>ferramentas poderosas</strong> para trabalhar com listas de forma eficiente!</p>
+
+<h3 id="funções-lambda-funções-anônimas">Funções Lambda (Funções Anônimas):</h3>
+
+<p>Lambda são <strong>funções pequenas</strong> que você cria rapidamente, sem precisar usar <code class="language-plaintext highlighter-rouge">definir</code>.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Função normal
+</span><span class="n">definir</span> <span class="n">dobro</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">retornar</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span>
+
+<span class="c1"># Mesma função usando lambda
+</span><span class="n">dobro_lambda</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span>
+
+<span class="c1"># Usando
+</span><span class="n">imprimir</span><span class="p">(</span><span class="n">dobro</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>        <span class="c1"># 10
+</span><span class="n">imprimir</span><span class="p">(</span><span class="n">dobro_lambda</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span> <span class="c1"># 10
+</span></code></pre></div></div>
+
+<p><strong>Quando usar lambda?</strong></p>
+<ul>
+  <li>Para funções simples de uma linha</li>
+  <li>Quando você precisa de uma função rápida e não vai reutilizar muito</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Mais exemplos
+</span><span class="n">quadrado</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
+<span class="n">eh_par</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">n</span><span class="p">:</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
+<span class="n">saudar</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">nome</span><span class="p">:</span> <span class="sa">f</span><span class="s">"Olá, </span><span class="si">{</span><span class="n">nome</span><span class="si">}</span><span class="s">!"</span>
+
+<span class="n">imprimir</span><span class="p">(</span><span class="n">quadrado</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>      <span class="c1"># 16
+</span><span class="n">imprimir</span><span class="p">(</span><span class="n">eh_par</span><span class="p">(</span><span class="mi">7</span><span class="p">))</span>        <span class="c1"># Falso
+</span><span class="n">imprimir</span><span class="p">(</span><span class="n">saudar</span><span class="p">(</span><span class="s">"Maria"</span><span class="p">))</span>  <span class="c1"># Olá, Maria!
+</span></code></pre></div></div>
+
+<h3 id="mapear---aplicar-função-a-todos-elementos">Mapear - Aplicar Função a Todos Elementos:</h3>
+
+<p>A função <code class="language-plaintext highlighter-rouge">mapear()</code> aplica uma função a <strong>cada elemento</strong> de uma lista.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Dobrar todos os números
+</span><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">dobrados</span> <span class="o">=</span> <span class="n">lista</span><span class="p">(</span><span class="n">mapear</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span><span class="p">,</span> <span class="n">numeros</span><span class="p">))</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">dobrados</span><span class="p">)</span>  <span class="c1"># [2, 4, 6, 8, 10]
+</span>
+<span class="c1"># Converter para maiúsculas
+</span><span class="n">nomes</span> <span class="o">=</span> <span class="p">[</span><span class="s">"ana"</span><span class="p">,</span> <span class="s">"joão"</span><span class="p">,</span> <span class="s">"maria"</span><span class="p">]</span>
+<span class="n">nomes_maiusculos</span> <span class="o">=</span> <span class="n">lista</span><span class="p">(</span><span class="n">mapear</span><span class="p">(</span><span class="k">lambda</span> <span class="n">n</span><span class="p">:</span> <span class="n">n</span><span class="p">.</span><span class="n">upper</span><span class="p">(),</span> <span class="n">nomes</span><span class="p">))</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">nomes_maiusculos</span><span class="p">)</span>  <span class="c1"># ['ANA', 'JOÃO', 'MARIA']
+</span>
+<span class="c1"># Calcular quadrados
+</span><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="n">quadrados</span> <span class="o">=</span> <span class="n">lista</span><span class="p">(</span><span class="n">mapear</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">**</span> <span class="mi">2</span><span class="p">,</span> <span class="n">numeros</span><span class="p">))</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">quadrados</span><span class="p">)</span>  <span class="c1"># [1, 4, 9, 16]
+</span></code></pre></div></div>
+
+<h3 id="filtrar---selecionar-elementos">Filtrar - Selecionar Elementos:</h3>
+
+<p>A função <code class="language-plaintext highlighter-rouge">filtrar()</code> <strong>seleciona apenas os elementos</strong> que atendem a uma condição.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Filtrar números pares
+</span><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+<span class="n">pares</span> <span class="o">=</span> <span class="n">lista</span><span class="p">(</span><span class="n">filtrar</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="n">numeros</span><span class="p">))</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">pares</span><span class="p">)</span>  <span class="c1"># [2, 4, 6, 8]
+</span>
+<span class="c1"># Filtrar números maiores que 5
+</span><span class="n">maiores_que_5</span> <span class="o">=</span> <span class="n">lista</span><span class="p">(</span><span class="n">filtrar</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">,</span> <span class="n">numeros</span><span class="p">))</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">maiores_que_5</span><span class="p">)</span>  <span class="c1"># [6, 7, 8]
+</span>
+<span class="c1"># Filtrar nomes com mais de 4 letras
+</span><span class="n">nomes</span> <span class="o">=</span> <span class="p">[</span><span class="s">"Ana"</span><span class="p">,</span> <span class="s">"João"</span><span class="p">,</span> <span class="s">"Maria"</span><span class="p">,</span> <span class="s">"José"</span><span class="p">]</span>
+<span class="n">nomes_longos</span> <span class="o">=</span> <span class="n">lista</span><span class="p">(</span><span class="n">filtrar</span><span class="p">(</span><span class="k">lambda</span> <span class="n">n</span><span class="p">:</span> <span class="n">tamanho</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">4</span><span class="p">,</span> <span class="n">nomes</span><span class="p">))</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">nomes_longos</span><span class="p">)</span>  <span class="c1"># ['Maria']
+</span></code></pre></div></div>
+
+<h3 id="combinando-filtrar-e-mapear">Combinando Filtrar e Mapear:</h3>
+
+<p>Você pode <strong>combinar</strong> essas funções para fazer coisas incríveis!</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Pegar números pares e dobrar seus valores
+</span><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+
+<span class="c1"># Primeiro filtra os pares, depois dobra
+</span><span class="n">pares</span> <span class="o">=</span> <span class="n">filtrar</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="n">numeros</span><span class="p">)</span>
+<span class="n">dobrados</span> <span class="o">=</span> <span class="n">lista</span><span class="p">(</span><span class="n">mapear</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span><span class="p">,</span> <span class="n">pares</span><span class="p">))</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">dobrados</span><span class="p">)</span>  <span class="c1"># [4, 8, 12, 16]
+</span>
+<span class="c1"># Ou em uma linha só:
+</span><span class="n">resultado</span> <span class="o">=</span> <span class="n">lista</span><span class="p">(</span><span class="n">mapear</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span><span class="p">,</span> <span class="n">filtrar</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="n">numeros</span><span class="p">)))</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="n">resultado</span><span class="p">)</span>  <span class="c1"># [4, 8, 12, 16]
+</span></code></pre></div></div>
+
+<h3 id="exemplo-prático---processamento-de-dados">Exemplo Prático - Processamento de Dados:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Lista de produtos com preços
+</span><span class="n">produtos</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span><span class="s">"nome"</span><span class="p">:</span> <span class="s">"Arroz"</span><span class="p">,</span> <span class="s">"preco"</span><span class="p">:</span> <span class="mi">20</span><span class="p">},</span>
+    <span class="p">{</span><span class="s">"nome"</span><span class="p">:</span> <span class="s">"Feijão"</span><span class="p">,</span> <span class="s">"preco"</span><span class="p">:</span> <span class="mi">8</span><span class="p">},</span>
+    <span class="p">{</span><span class="s">"nome"</span><span class="p">:</span> <span class="s">"Macarrão"</span><span class="p">,</span> <span class="s">"preco"</span><span class="p">:</span> <span class="mi">5</span><span class="p">},</span>
+    <span class="p">{</span><span class="s">"nome"</span><span class="p">:</span> <span class="s">"Carne"</span><span class="p">,</span> <span class="s">"preco"</span><span class="p">:</span> <span class="mi">35</span><span class="p">},</span>
+    <span class="p">{</span><span class="s">"nome"</span><span class="p">:</span> <span class="s">"Frango"</span><span class="p">,</span> <span class="s">"preco"</span><span class="p">:</span> <span class="mi">15</span><span class="p">}</span>
+<span class="p">]</span>
+
+<span class="c1"># Filtrar produtos com preço &lt;= 15
+</span><span class="n">baratos</span> <span class="o">=</span> <span class="n">lista</span><span class="p">(</span><span class="n">filtrar</span><span class="p">(</span><span class="k">lambda</span> <span class="n">p</span><span class="p">:</span> <span class="n">p</span><span class="p">[</span><span class="s">"preco"</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">15</span><span class="p">,</span> <span class="n">produtos</span><span class="p">))</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="s">"Produtos baratos:"</span><span class="p">)</span>
+<span class="n">para</span> <span class="n">produto</span> <span class="n">em</span> <span class="n">baratos</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"  - </span><span class="si">{</span><span class="n">produto</span><span class="p">[</span><span class="s">'nome'</span><span class="p">]</span><span class="si">}</span><span class="s">: R$ </span><span class="si">{</span><span class="n">produto</span><span class="p">[</span><span class="s">'preco'</span><span class="p">]</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+
+<span class="c1"># Aplicar desconto de 10% em todos os preços
+</span><span class="n">com_desconto</span> <span class="o">=</span> <span class="n">lista</span><span class="p">(</span><span class="n">mapear</span><span class="p">(</span><span class="k">lambda</span> <span class="n">p</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s">"nome"</span><span class="p">:</span> <span class="n">p</span><span class="p">[</span><span class="s">"nome"</span><span class="p">],</span>
+    <span class="s">"preco"</span><span class="p">:</span> <span class="n">arredondar</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="s">"preco"</span><span class="p">]</span> <span class="o">*</span> <span class="mf">0.9</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="p">},</span> <span class="n">produtos</span><span class="p">))</span>
+
+<span class="n">imprimir</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Preços com 10% de desconto:"</span><span class="p">)</span>
+<span class="n">para</span> <span class="n">produto</span> <span class="n">em</span> <span class="n">com_desconto</span><span class="p">:</span>
+    <span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"  - </span><span class="si">{</span><span class="n">produto</span><span class="p">[</span><span class="s">'nome'</span><span class="p">]</span><span class="si">}</span><span class="s">: R$ </span><span class="si">{</span><span class="n">produto</span><span class="p">[</span><span class="s">'preco'</span><span class="p">]</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="exemplo---análise-de-notas-de-alunos">Exemplo - Análise de Notas de Alunos:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Notas dos alunos
+</span><span class="n">notas</span> <span class="o">=</span> <span class="p">[</span><span class="mf">8.5</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mf">7.5</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">,</span> <span class="mf">9.0</span><span class="p">,</span> <span class="mf">6.5</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">,</span> <span class="mf">8.0</span><span class="p">]</span>
+
+<span class="c1"># Filtrar aprovados (nota &gt;= 6)
+</span><span class="n">aprovados</span> <span class="o">=</span> <span class="n">lista</span><span class="p">(</span><span class="n">filtrar</span><span class="p">(</span><span class="k">lambda</span> <span class="n">n</span><span class="p">:</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="mi">6</span><span class="p">,</span> <span class="n">notas</span><span class="p">))</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Notas aprovados: </span><span class="si">{</span><span class="n">aprovados</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Total aprovados: </span><span class="si">{</span><span class="n">tamanho</span><span class="p">(</span><span class="n">aprovados</span><span class="p">)</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+
+<span class="c1"># Filtrar reprovados (nota &lt; 6)
+</span><span class="n">reprovados</span> <span class="o">=</span> <span class="n">lista</span><span class="p">(</span><span class="n">filtrar</span><span class="p">(</span><span class="k">lambda</span> <span class="n">n</span><span class="p">:</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">6</span><span class="p">,</span> <span class="n">notas</span><span class="p">))</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Notas reprovados: </span><span class="si">{</span><span class="n">reprovados</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Total reprovados: </span><span class="si">{</span><span class="n">tamanho</span><span class="p">(</span><span class="n">reprovados</span><span class="p">)</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+
+<span class="c1"># Adicionar ponto extra para todos
+</span><span class="n">com_ponto_extra</span> <span class="o">=</span> <span class="n">lista</span><span class="p">(</span><span class="n">mapear</span><span class="p">(</span><span class="k">lambda</span> <span class="n">n</span><span class="p">:</span> <span class="n">minimo</span><span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">notas</span><span class="p">))</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Com ponto extra: </span><span class="si">{</span><span class="n">com_ponto_extra</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+
+<span class="c1"># Estatísticas
+</span><span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="se">\n</span><span class="s">Média geral: </span><span class="si">{</span><span class="n">arredondar</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">notas</span><span class="p">)</span> <span class="o">/</span> <span class="n">tamanho</span><span class="p">(</span><span class="n">notas</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Maior nota: </span><span class="si">{</span><span class="n">maximo</span><span class="p">(</span><span class="n">notas</span><span class="p">)</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+<span class="n">imprimir</span><span class="p">(</span><span class="sa">f</span><span class="s">"Menor nota: </span><span class="si">{</span><span class="n">minimo</span><span class="p">(</span><span class="n">notas</span><span class="p">)</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+</code></pre></div></div>
 
 <hr />
 

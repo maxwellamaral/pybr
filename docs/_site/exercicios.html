@@ -53,7 +53,7 @@
     <main id="content" class="main-content" role="main">
       <h1 id="-exercícios-práticos-pybr">💪 Exercícios Práticos PyBR</h1>
 
-<p>22 exercícios progressivos para você dominar programação do básico ao avançado!</p>
+<p>23 exercícios progressivos para você dominar programação do básico ao avançado!</p>
 
 <h2 id="-sobre-os-exercícios">📚 Sobre os Exercícios</h2>
 
@@ -75,10 +75,10 @@
 <strong>Tempo:</strong> 4-5 horas<br />
 <strong>Você vai aprender:</strong> Condicionais, laços, listas, funções</p>
 
-<h3 id="-nível-3-programação-avançada-exercícios-15-22">🔴 Nível 3: Programação Avançada (Exercícios 15-22)</h3>
-<p><strong>Objetivo:</strong> Criar projetos completos com OOP<br />
-<strong>Tempo:</strong> 5-6 horas<br />
-<strong>Você vai aprender:</strong> Classes, projetos reais, boas práticas</p>
+<h3 id="-nível-3-programação-avançada-exercícios-15-23">🔴 Nível 3: Programação Avançada (Exercícios 15-23)</h3>
+<p><strong>Objetivo:</strong> Criar projetos completos com OOP e programação funcional<br />
+<strong>Tempo:</strong> 6-7 horas<br />
+<strong>Você vai aprender:</strong> Classes, projetos reais, lambda, filtrar, mapear, boas práticas</p>
 
 <hr />
 
@@ -1003,6 +1003,74 @@
   <li>Crie gráficos de temperatura</li>
 </ul>
 
+<h3 id="23-funções-avançadas-lambda-filtrar-e-mapear-">23. Funções Avançadas: Lambda, Filtrar e Mapear 🚀</h3>
+<p><strong>Conceitos:</strong> Lambda, filtrar, mapear, qualquer, todos<br />
+<strong>Dificuldade:</strong> ⭐⭐⭐⭐⭐<br />
+<strong>Tempo:</strong> 40 minutos</p>
+
+<p>Domine ferramentas poderosas de processamento de dados!</p>
+
+<p><strong>Você vai aprender:</strong></p>
+<ul>
+  <li>✨ <strong>Lambda</strong> - Criar funções rápidas e anônimas</li>
+  <li>🔍 <strong>Filtrar</strong> - Selecionar elementos de listas</li>
+  <li>🔄 <strong>Mapear</strong> - Aplicar funções a todos elementos</li>
+  <li>✅ <strong>Qualquer/Todos</strong> - Verificações lógicas</li>
+</ul>
+
+<p><strong>Exemplos práticos:</strong></p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Lambda
+</span><span class="n">dobro</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span>
+
+<span class="c1"># Mapear - dobrar todos os números
+</span><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">dobrados</span> <span class="o">=</span> <span class="n">lista</span><span class="p">(</span><span class="n">mapear</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span><span class="p">,</span> <span class="n">numeros</span><span class="p">))</span>
+
+<span class="c1"># Filtrar - apenas números pares
+</span><span class="n">pares</span> <span class="o">=</span> <span class="n">lista</span><span class="p">(</span><span class="n">filtrar</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="n">numeros</span><span class="p">))</span>
+
+<span class="c1"># Combinar
+</span><span class="n">resultado</span> <span class="o">=</span> <span class="n">lista</span><span class="p">(</span><span class="n">mapear</span><span class="p">(</span>
+    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="n">filtrar</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="n">numeros</span><span class="p">)</span>
+<span class="p">))</span>
+</code></pre></div></div>
+
+<p><strong>Casos de uso real:</strong></p>
+<ul>
+  <li>📊 Análise de notas de alunos</li>
+  <li>💰 Processamento de preços e descontos</li>
+  <li>📝 Filtragem de dados</li>
+  <li>🔢 Transformação de listas</li>
+</ul>
+
+<p><strong>Funções utilizadas:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">lambda</code> - Funções anônimas</li>
+  <li><code class="language-plaintext highlighter-rouge">mapear()</code> - Transforma elementos</li>
+  <li><code class="language-plaintext highlighter-rouge">filtrar()</code> - Seleciona elementos</li>
+  <li><code class="language-plaintext highlighter-rouge">qualquer()</code> - Verifica se algum é True</li>
+  <li><code class="language-plaintext highlighter-rouge">todos()</code> - Verifica se todos são True</li>
+  <li><code class="language-plaintext highlighter-rouge">maximo()</code>, <code class="language-plaintext highlighter-rouge">minimo()</code>, <code class="language-plaintext highlighter-rouge">sum()</code> - Análise (sum é nativo)</li>
+  <li><code class="language-plaintext highlighter-rouge">arredondar()</code> - Formatação</li>
+</ul>
+
+<p><strong>O que você aprende:</strong></p>
+<ul>
+  <li>Programação funcional</li>
+  <li>Processamento eficiente de dados</li>
+  <li>Código mais limpo e expressivo</li>
+  <li>Técnicas avançadas de Python</li>
+</ul>
+
+<p><strong>Desafio extra:</strong></p>
+<ul>
+  <li>Crie um sistema de análise de vendas</li>
+  <li>Filtre e transforme dados de estudantes</li>
+  <li>Implemente um processador de textos</li>
+  <li>Desenvolva calculadora estatística</li>
+</ul>
+
 <hr />
 
 <h2 id="-como-fazer-os-exercícios">🚀 Como Fazer os Exercícios</h2>
@@ -1093,6 +1161,7 @@
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />20. Lista de Tarefas</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />21. Quiz</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />22. Conversor Temp</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />23. Funções Avançadas</li>
 </ul>
 
 <h3 id="conquistas-">Conquistas 🏆</h3>
@@ -1100,7 +1169,7 @@
 <ul>
   <li>🥉 <strong>Bronze</strong> - Complete os 6 exercícios básicos</li>
   <li>🥈 <strong>Prata</strong> - Complete até exercício 14</li>
-  <li>🥇 <strong>Ouro</strong> - Complete todos os 22 exercícios</li>
+  <li>🥇 <strong>Ouro</strong> - Complete todos os 23 exercícios</li>
   <li>💎 <strong>Diamante</strong> - Complete todos com desafios extras</li>
 </ul>
 
@@ -1112,7 +1181,7 @@
 R: Sim! Os exercícios são progressivos e cada um usa conceitos dos anteriores.</p>
 
 <p><strong>P: Quanto tempo leva para completar todos?</strong><br />
-R: Aproximadamente 12-15 horas, fazendo com calma e entendendo.</p>
+R: Aproximadamente 13-16 horas, fazendo com calma e entendendo.</p>
 
 <p><strong>P: E se eu travar em um exercício?</strong><br />
 R: Revise o <a href="tutorial">tutorial</a>, consulte a <a href="referencia">referência</a>, ou abra uma <a href="https://github.com/maxwellamaral/pybr/issues">issue</a>.</p>

@@ -5,7 +5,7 @@ title: Exercícios - PyBR
 
 # 💪 Exercícios Práticos PyBR
 
-22 exercícios progressivos para você dominar programação do básico ao avançado!
+23 exercícios progressivos para você dominar programação do básico ao avançado!
 
 ## 📚 Sobre os Exercícios
 
@@ -27,10 +27,10 @@ Os exercícios foram cuidadosamente desenvolvidos para ensinar programação de 
 **Tempo:** 4-5 horas  
 **Você vai aprender:** Condicionais, laços, listas, funções
 
-### 🔴 Nível 3: Programação Avançada (Exercícios 15-22)
-**Objetivo:** Criar projetos completos com OOP  
-**Tempo:** 5-6 horas  
-**Você vai aprender:** Classes, projetos reais, boas práticas
+### 🔴 Nível 3: Programação Avançada (Exercícios 15-23)
+**Objetivo:** Criar projetos completos com OOP e programação funcional  
+**Tempo:** 6-7 horas  
+**Você vai aprender:** Classes, projetos reais, lambda, filtrar, mapear, boas práticas
 
 ---
 
@@ -878,6 +878,65 @@ Conversor completo de temperaturas!
 - Implemente conversão em lote
 - Crie gráficos de temperatura
 
+### 23. Funções Avançadas: Lambda, Filtrar e Mapear 🚀
+**Conceitos:** Lambda, filtrar, mapear, qualquer, todos  
+**Dificuldade:** ⭐⭐⭐⭐⭐  
+**Tempo:** 40 minutos
+
+Domine ferramentas poderosas de processamento de dados!
+
+**Você vai aprender:**
+- ✨ **Lambda** - Criar funções rápidas e anônimas
+- 🔍 **Filtrar** - Selecionar elementos de listas
+- 🔄 **Mapear** - Aplicar funções a todos elementos
+- ✅ **Qualquer/Todos** - Verificações lógicas
+
+**Exemplos práticos:**
+```python
+# Lambda
+dobro = lambda x: x * 2
+
+# Mapear - dobrar todos os números
+numeros = [1, 2, 3, 4, 5]
+dobrados = lista(mapear(lambda x: x * 2, numeros))
+
+# Filtrar - apenas números pares
+pares = lista(filtrar(lambda x: x % 2 == 0, numeros))
+
+# Combinar
+resultado = lista(mapear(
+    lambda x: x * 2,
+    filtrar(lambda x: x % 2 == 0, numeros)
+))
+```
+
+**Casos de uso real:**
+- 📊 Análise de notas de alunos
+- 💰 Processamento de preços e descontos
+- 📝 Filtragem de dados
+- 🔢 Transformação de listas
+
+**Funções utilizadas:**
+- `lambda` - Funções anônimas
+- `mapear()` - Transforma elementos
+- `filtrar()` - Seleciona elementos
+- `qualquer()` - Verifica se algum é True
+- `todos()` - Verifica se todos são True
+- `maximo()`, `minimo()`, `sum()` - Análise (sum é nativo)
+- `arredondar()` - Formatação
+
+**O que você aprende:**
+- Programação funcional
+- Processamento eficiente de dados
+- Código mais limpo e expressivo
+- Técnicas avançadas de Python
+
+**Desafio extra:**
+- Crie um sistema de análise de vendas
+- Filtre e transforme dados de estudantes
+- Implemente um processador de textos
+- Desenvolva calculadora estatística
+
 ---
 
 ## 🚀 Como Fazer os Exercícios
@@ -954,12 +1013,13 @@ Conversor completo de temperaturas!
 - [ ] 20. Lista de Tarefas
 - [ ] 21. Quiz
 - [ ] 22. Conversor Temp
+- [ ] 23. Funções Avançadas
 
 ### Conquistas 🏆
 
 - 🥉 **Bronze** - Complete os 6 exercícios básicos
 - 🥈 **Prata** - Complete até exercício 14
-- 🥇 **Ouro** - Complete todos os 22 exercícios
+- 🥇 **Ouro** - Complete todos os 23 exercícios
 - 💎 **Diamante** - Complete todos com desafios extras
 
 ---
@@ -970,7 +1030,7 @@ Conversor completo de temperaturas!
 R: Sim! Os exercícios são progressivos e cada um usa conceitos dos anteriores.
 
 **P: Quanto tempo leva para completar todos?**  
-R: Aproximadamente 12-15 horas, fazendo com calma e entendendo.
+R: Aproximadamente 13-16 horas, fazendo com calma e entendendo.
 
 **P: E se eu travar em um exercício?**  
 R: Revise o [tutorial](tutorial), consulte a [referência](referencia), ou abra uma [issue](https://github.com/maxwellamaral/pybr/issues).
