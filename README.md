@@ -30,11 +30,19 @@ O transpilador utiliza o módulo `tokenize` do Python para analisar o código fo
 - `quebre` → `break`
 - `continue` → `continue`
 - `passar` → `pass`
+- `tente` → `try`
+- `exceto` → `except`
+- `finalmente` → `finally`
+- `levantar` → `raise`
+- `afirmar` → `assert`
+- `com` → `with`
 
 ### Definições
 - `definir` → `def`
 - `funcao` → `def` (alternativa)
 - `classe` → `class`
+- `lambda` → `lambda`
+- `global` → `global`
 - `importar` → `import`
 - `de` → `from`
 - `como` → `as`
@@ -50,14 +58,45 @@ O transpilador utiliza o módulo `tokenize` do Python para analisar o código fo
 - `Nulo` → `None`
 
 ### Funções Nativas
+
+#### Entrada/Saída
 - `imprimir()` → `print()`
 - `entrada()` → `input()`
-- `tamanho()` → `len()`
-- `intervalo()` → `range()`
+- `abrir()` → `open()`
+
+#### Conversão de Tipos
 - `inteiro()` → `int()`
+- `flutuante()` → `float()`
 - `texto()` → `str()`
 - `lista()` → `list()`
 - `dicionario()` → `dict()`
+- `conjunto()` → `set()`
+- `tupla()` → `tuple()`
+
+#### Manipulação
+- `tamanho()` → `len()`
+- `intervalo()` → `range()`
+- `tipo()` → `type()`
+- `enumerar()` → `enumerate()`
+
+#### Matemática
+- `maximo()` → `max()`
+- `minimo()` → `min()`
+- `abs()` → `abs()`
+- `arredondar()` → `round()`
+
+#### Ordenação/Iteração
+- `ordenar()` → `sorted()`
+- `reverter()` → `reversed()`
+- `filtrar()` → `filter()`
+- `mapear()` → `map()`
+- `qualquer()` → `any()`
+- `todos()` → `all()`
+
+#### Utilidades
+- `ajuda()` → `help()`
+- `dir()` → `dir()`
+- `sair()` → `exit()`
 
 ## Como Executar
 
