@@ -119,6 +119,7 @@ cachorro.falar()
 ## Estrutura do Projeto
 
 - `pybr.py` - Arquivo principal contendo o transpilador e REPL
+- `test_pybr.py` - Testes funcionais automatizados
 - `README.md` - Este arquivo
 - `LICENSE` - Licença do projeto
 - `extensao-vscode/` - Extensão VS Code para syntax highlighting
@@ -157,6 +158,80 @@ Copie a pasta `extensao-vscode` para o diretório de extensões do VS Code:
 - 📂 Suporte para arquivos `.pybr` e `.pybr.py`
 
 Para mais detalhes, consulte o [README da extensão](extensao-vscode/README.md).
+
+## Testes Funcionais
+
+O projeto inclui uma suíte completa de testes automatizados que validam todas as funcionalidades do transpilador PyBR.
+
+### Executar os Testes
+
+```bash
+# Executar todos os testes com relatório detalhado
+python test_pybr.py
+
+# Ou usar unittest diretamente com verbosidade
+python -m unittest test_pybr.py -v
+
+# Executar apenas uma classe de testes específica
+python -m unittest test_pybr.TestPyBRTranspiler -v
+
+# Executar um teste individual
+python -m unittest test_pybr.TestPyBRTranspiler.test_execucao_funcao -v
+```
+
+### Cobertura dos Testes
+
+A suíte de testes contém **40 testes** que cobrem:
+
+✅ **Tradução de Tokens** (11 testes)
+- Palavras-chave de controle de fluxo
+- Definições (def, class, import)
+- Operadores lógicos (e, ou, nao)
+- Constantes (Verdadeiro, Falso, Nulo)
+- Funções nativas (imprimir, entrada, tamanho, etc.)
+
+✅ **Transpilação** (9 testes)
+- Funções e classes
+- Estruturas condicionais
+- Loops (para, enquanto)
+- Tratamento de exceções
+- Preservação de strings e comentários
+
+✅ **Execução** (17 testes)
+- Comandos básicos
+- Estruturas de controle
+- Operadores lógicos
+- Listas e dicionários
+- Recursão e f-strings
+
+✅ **Exemplos Reais** (3 testes)
+- Fibonacci recursivo
+- Manipulação de listas
+- Algoritmos de busca
+
+### Resultado Esperado
+
+Quando todos os testes passam, você verá:
+
+```
+======================================================================
+Executando Testes Funcionais do PyBR
+======================================================================
+...
+----------------------------------------------------------------------
+Ran 40 tests in 0.0XXs
+
+OK
+
+======================================================================
+RESUMO DOS TESTES
+======================================================================
+Testes executados: 40
+Sucessos: 40
+Falhas: 0
+Erros: 0
+======================================================================
+```
 
 ## Limitações
 
