@@ -5,7 +5,12 @@ Autor: Maxwell Anderson Ielpo do Amaral
 
 import unittest
 import sys
+import os
 from io import StringIO
+
+# Adiciona o diretório raiz ao path para importar o módulo pybr
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from pybr import PyBRTranspiler
 
 

@@ -13,6 +13,9 @@ import os
 from io import StringIO
 from pathlib import Path
 
+# Adiciona o diretório raiz ao path para importar o módulo pybr
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 
 class TestExercicios(unittest.TestCase):
     """Testa a execução de todos os arquivos de exercícios"""
@@ -44,15 +47,22 @@ class TestExercicios(unittest.TestCase):
         cmd = [sys.executable, str(self.pybr_script), str(arquivo)]
         
         try:
+            # Sempre usa UTF-8 para capturar a saída corretamente
+            # Codifica a entrada em UTF-8 se fornecida
+            entrada_bytes = entrada.encode('utf-8') if entrada else None
+            
             resultado = subprocess.run(
                 cmd,
-                input=entrada,
+                input=entrada_bytes,
                 capture_output=True,
-                text=True,
-                encoding='utf-8',
                 timeout=timeout
             )
-            return resultado.returncode, resultado.stdout, resultado.stderr
+            
+            # Decodifica stdout e stderr com UTF-8
+            stdout = resultado.stdout.decode('utf-8', errors='replace')
+            stderr = resultado.stderr.decode('utf-8', errors='replace')
+            
+            return resultado.returncode, stdout, stderr
         except subprocess.TimeoutExpired:
             return -1, "", "Timeout excedido"
     
@@ -301,7 +311,6 @@ class TestTranspilacaoExercicios(unittest.TestCase):
     def test_todos_arquivos_transpilam(self):
         """Verifica se todos os .pybr podem ser transpilados"""
         # Importa as funções do pybr
-        sys.path.insert(0, '.')
         from pybr import PyBRTranspiler
         
         transpiler = PyBRTranspiler()
