@@ -8,16 +8,298 @@ Este guia foi criado especialmente para você que nunca programou antes e quer a
 
 ## Índice
 
-1. [O que é Programação?](#o-que-é-programação)
-2. [Seu Primeiro Programa](#seu-primeiro-programa)
-3. [Variáveis - A Memória do Computador](#variáveis---a-memória-do-computador)
-4. [Cálculos e Operações Matemáticas](#cálculos-e-operações-matemáticas)
-5. [Entrada e Saída de Dados](#entrada-e-saída-de-dados)
-6. [Tomando Decisões - Estruturas Condicionais](#tomando-decisões---estruturas-condicionais)
-7. [Repetindo Ações - Laços de Repetição](#repetindo-ações---laços-de-repetição)
-8. [Organizando o Código - Funções](#organizando-o-código---funções)
-9. [Criando Objetos - Classes](#criando-objetos---classes)
-10. [Projetos Práticos](#projetos-práticos)
+1. [Usando o Terminal - Guia para Iniciantes](#usando-o-terminal---guia-para-iniciantes)
+2. [Como Executar o PyBR](#como-executar-o-pybr)
+3. [O que é Programação?](#o-que-é-programação)
+4. [Seu Primeiro Programa](#seu-primeiro-programa)
+5. [Variáveis - A Memória do Computador](#variáveis---a-memória-do-computador)
+6. [Cálculos e Operações Matemáticas](#cálculos-e-operações-matemáticas)
+7. [Entrada e Saída de Dados](#entrada-e-saída-de-dados)
+8. [Tomando Decisões - Estruturas Condicionais](#tomando-decisões---estruturas-condicionais)
+9. [Repetindo Ações - Laços de Repetição](#repetindo-ações---laços-de-repetição)
+10. [Organizando o Código - Funções](#organizando-o-código---funções)
+11. [Criando Objetos - Classes](#criando-objetos---classes)
+12. [Projetos Práticos](#projetos-práticos)
+
+---
+
+## 💻 Usando o Terminal - Guia para Iniciantes
+
+Se você nunca usou o **Terminal** (também chamado de **Linha de Comando** ou **Prompt de Comando**), não se preocupe! É mais simples do que parece.
+
+### O que é o Terminal?
+
+O Terminal é uma interface de texto onde você digita comandos para o computador executar. É como conversar com o computador através de texto ao invés de clicar com o mouse.
+
+**Por que usar?** Programadores usam o Terminal porque é rápido, poderoso e permite automatizar tarefas!
+
+---
+
+### 🪟 No Windows
+
+#### Como Abrir o Terminal no Windows:
+
+**Opção 1: Pelo Menu Iniciar**
+1. Clique no botão **Iniciar** (ícone do Windows)
+2. Digite `cmd` ou `powershell`
+3. Pressione **Enter**
+
+**Opção 2: Atalho de Teclado**
+1. Pressione `Windows + R`
+2. Digite `cmd` ou `powershell`
+3. Pressione **Enter**
+
+**Opção 3: No VS Code**
+1. Abra o VS Code
+2. Pressione ``Ctrl + ` `` (acento grave)
+3. O terminal aparecerá na parte inferior
+
+#### Comandos Básicos no Windows:
+
+```bash
+# Ver onde você está (diretório atual)
+cd
+
+# Listar arquivos e pastas
+dir
+
+# Entrar em uma pasta
+cd nome_da_pasta
+
+# Voltar uma pasta acima
+cd ..
+
+# Ir para uma pasta específica (exemplo)
+cd C:\Users\SeuNome\Downloads
+
+# Limpar a tela
+cls
+
+# Ver conteúdo de um arquivo
+type arquivo.txt
+```
+
+#### Navegando até a Pasta do PyBR (Exemplo no Windows):
+
+```bash
+# Se você salvou na pasta Downloads
+cd C:\Users\SeuNome\Downloads\pybr
+
+# Ou se está no Desktop
+cd C:\Users\SeuNome\Desktop\pybr
+
+# Verificar se está na pasta certa (deve listar pybr.py)
+dir
+```
+
+---
+
+### 🍎 No Mac/Linux
+
+#### Como Abrir o Terminal no Mac:
+
+**Opção 1: Spotlight**
+1. Pressione `Command + Espaço`
+2. Digite `terminal`
+3. Pressione **Enter**
+
+**Opção 2: Finder**
+1. Abra **Finder**
+2. Vá em **Aplicativos** → **Utilitários** → **Terminal**
+
+#### Como Abrir o Terminal no Linux:
+
+**Opção 1: Atalho de Teclado**
+- Pressione `Ctrl + Alt + T`
+
+**Opção 2: Menu de Aplicativos**
+- Procure por "Terminal" no menu de aplicativos
+
+#### Comandos Básicos no Mac/Linux:
+
+```bash
+# Ver onde você está (diretório atual)
+pwd
+
+# Listar arquivos e pastas
+ls
+
+# Listar com detalhes
+ls -la
+
+# Entrar em uma pasta
+cd nome_da_pasta
+
+# Voltar uma pasta acima
+cd ..
+
+# Ir para sua pasta pessoal
+cd ~
+
+# Ir para uma pasta específica (exemplo)
+cd ~/Downloads/pybr
+
+# Limpar a tela
+clear
+
+# Ver conteúdo de um arquivo
+cat arquivo.txt
+```
+
+#### Navegando até a Pasta do PyBR (Exemplo no Mac/Linux):
+
+```bash
+# Se você salvou na pasta Downloads
+cd ~/Downloads/pybr
+
+# Ou se está no Desktop
+cd ~/Desktop/pybr
+
+# Verificar se está na pasta certa (deve listar pybr.py)
+ls
+```
+
+---
+
+### 📝 Dicas Importantes para Usar o Terminal
+
+#### 1. **Copiar e Colar no Terminal**
+
+**Windows (CMD):**
+- Copiar: Selecione o texto e pressione `Enter`
+- Colar: Clique com botão direito
+
+**Windows (PowerShell) e Mac/Linux:**
+- Copiar: `Ctrl + C` (Windows) ou `Command + C` (Mac)
+- Colar: `Ctrl + V` (Windows) ou `Command + V` (Mac)
+- No Linux: `Ctrl + Shift + C` e `Ctrl + Shift + V`
+
+#### 2. **Autocompletar com TAB**
+
+Digite o início de um nome de arquivo ou pasta e pressione **TAB** para completar automaticamente!
+
+```bash
+# Digite:
+cd Doc[TAB]
+
+# Completa para:
+cd Documents
+```
+
+#### 3. **Histórico de Comandos**
+
+Use as **setas ↑ ↓** do teclado para navegar pelos comandos que você já digitou.
+
+#### 4. **Cancelar um Comando**
+
+Se um programa travou ou você quer parar a execução:
+- Pressione `Ctrl + C`
+
+#### 5. **Caminho Absoluto vs Relativo**
+
+**Caminho Absoluto** - Especifica o caminho completo desde a raiz:
+```bash
+# Windows
+C:\Users\SeuNome\pybr\exercicios\01-ola-mundo.pybr
+
+# Mac/Linux
+/Users/SeuNome/pybr/exercicios/01-ola-mundo.pybr
+```
+
+**Caminho Relativo** - Relativo à pasta atual:
+```bash
+# Se você já está na pasta pybr
+exercicios/01-ola-mundo.pybr
+
+# Ou com ./ (mesma coisa)
+./exercicios/01-ola-mundo.pybr
+```
+
+---
+
+### 🚀 Executando Seu Primeiro Comando PyBR
+
+Agora que você sabe usar o Terminal, vamos executar um programa PyBR!
+
+**Passo a passo completo:**
+
+```bash
+# 1. Navegue até a pasta do PyBR (ajuste o caminho conforme necessário)
+cd caminho/para/pybr
+
+# 2. Verifique se está no lugar certo
+# Windows:
+dir
+# Mac/Linux:
+ls
+
+# Você deve ver: pybr.py, exercicios/, etc.
+
+# 3. Execute seu primeiro programa!
+python pybr.py exercicios/01-ola-mundo.pybr
+
+# 4. Ou inicie o modo interativo
+python pybr.py
+```
+
+**Resultado esperado:**
+```
+Olá, Mundo!
+Meu nome é João
+Estou aprendendo a programar!
+PyBR é demais!
+```
+
+---
+
+### ❓ Problemas Comuns e Soluções
+
+#### "python não é reconhecido como comando"
+
+**Solução:** Python não está instalado ou não está no PATH.
+
+1. Verifique se o Python está instalado:
+   ```bash
+   # Tente:
+   python --version
+   # Ou:
+   python3 --version
+   # Ou no Windows:
+   py --version
+   ```
+
+2. Se não funcionar, reinstale o Python de [python.org](https://www.python.org) marcando a opção **"Add Python to PATH"**
+
+#### "Não encontrou o arquivo pybr.py"
+
+**Solução:** Você não está na pasta correta.
+
+1. Use `cd` para navegar até a pasta onde está o PyBR
+2. Use `dir` (Windows) ou `ls` (Mac/Linux) para confirmar que vê o arquivo `pybr.py`
+
+#### "Permissão negada" (Mac/Linux)
+
+**Solução:** Alguns arquivos precisam de permissão de execução.
+
+```bash
+# Dê permissão de execução
+chmod +x pybr.py
+```
+
+---
+
+### 🎓 Resumo - Comandos Essenciais
+
+| Ação | Windows | Mac/Linux |
+|------|---------|-----------|
+| Onde estou? | `cd` | `pwd` |
+| Listar arquivos | `dir` | `ls` |
+| Entrar em pasta | `cd pasta` | `cd pasta` |
+| Voltar | `cd ..` | `cd ..` |
+| Limpar tela | `cls` | `clear` |
+| Executar PyBR | `python pybr.py arquivo.pybr` | `python pybr.py arquivo.pybr` |
+
+**Pronto!** Agora você sabe usar o Terminal e está pronto para começar a programar! 🎉
 
 ---
 
