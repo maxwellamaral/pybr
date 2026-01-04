@@ -1,0 +1,14 @@
+# Exemplo 4: Entrada e Saída de Dados
+# Interagindo com o usuário
+
+# Pedindo o nome do usuário
+nome = entrada("Digite seu nome: ")
+imprimir(f"Olá, {nome}!")
+
+# Pedindo a idade
+idade = inteiro(entrada("Digite sua idade: "))
+imprimir(f"Você tem {idade} anos")
+
+# Mostrando várias informações
+cidade = entrada("Em que cidade você mora? ")
+imprimir(f"{nome} tem {idade} anos e mora em {cidade}")

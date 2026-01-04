@@ -1,0 +1,20 @@
+# Exemplo 11: Jogo de Adivinhação
+# Usando laço ENQUANTO e condicionais
+
+numero_secreto = 42
+tentativas = 0
+
+imprimir("=== Jogo de Adivinhação ===")
+imprimir("Tente adivinhar o número entre 1 e 100!")
+
+enquanto Verdadeiro:
+    palpite = inteiro(entrada("\nSeu palpite: "))
+    tentativas = tentativas + 1
+    
+    se palpite == numero_secreto:
+        imprimir(f"Parabens! Voce acertou em {tentativas} tentativas!")
+        quebre
+    senaose palpite < numero_secreto:
+        imprimir("O numero secreto e MAIOR!")
+    senao:
+        imprimir("O numero secreto e MENOR!")

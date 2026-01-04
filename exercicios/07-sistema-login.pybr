@@ -1,0 +1,14 @@
+# Exemplo 7: Sistema de Login
+# Verificando usuário e senha
+
+usuario_correto = "admin"
+senha_correta = "1234"
+
+usuario = entrada("Digite o usuário: ")
+senha = entrada("Digite a senha: ")
+
+se usuario == usuario_correto e senha == senha_correta:
+    imprimir("[OK] Login realizado com sucesso!")
+    imprimir("Bem-vindo ao sistema!")
+senao:
+    imprimir("[ERRO] Usuário ou senha incorretos!")

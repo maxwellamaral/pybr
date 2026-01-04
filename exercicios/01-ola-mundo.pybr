@@ -1,0 +1,7 @@
+# Exemplo 1: Olá, Mundo!
+# Seu primeiro programa em PyBR
+
+imprimir("Olá, Mundo!")
+imprimir("Meu nome é João")
+imprimir("Estou aprendendo a programar!")
+imprimir("PyBR é demais!")

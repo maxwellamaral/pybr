@@ -1,0 +1,38 @@
+# Exemplo 17: Classe Conta Bancária
+# Sistema bancário simples
+
+classe ContaBancaria:
+    definir __init__(proprio, titular, saldo_inicial=0):
+        proprio.titular = titular
+        proprio.saldo = saldo_inicial
+    
+    definir depositar(proprio, valor):
+        proprio.saldo = proprio.saldo + valor
+        imprimir(f"Depósito de R$ {valor:.2f} realizado!")
+        proprio.mostrar_saldo()
+    
+    definir sacar(proprio, valor):
+        se valor > proprio.saldo:
+            imprimir("Saldo insuficiente!")
+        senao:
+            proprio.saldo = proprio.saldo - valor
+            imprimir(f"Saque de R$ {valor:.2f} realizado!")
+            proprio.mostrar_saldo()
+    
+    definir mostrar_saldo(proprio):
+        imprimir(f"Saldo atual de {proprio.titular}: R$ {proprio.saldo:.2f}")
+
+# Criando contas
+conta_joao = ContaBancaria("João", 1000)
+conta_maria = ContaBancaria("Maria", 500)
+
+# Operações
+imprimir("=== Conta do João ===")
+conta_joao.mostrar_saldo()
+conta_joao.depositar(500)
+conta_joao.sacar(200)
+
+imprimir("\n=== Conta da Maria ===")
+conta_maria.mostrar_saldo()
+conta_maria.sacar(600)  # Vai dar erro de saldo insuficiente
+conta_maria.depositar(200)

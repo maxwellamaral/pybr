@@ -1,0 +1,22 @@
+# Exemplo 5: Calculadora de IMC
+# Programa interativo completo
+
+imprimir("=== Calculadora de IMC ===")
+
+nome = entrada("Qual é seu nome? ")
+peso = float(entrada("Qual é seu peso em kg? "))
+altura = float(entrada("Qual é sua altura em metros? "))
+
+imc = peso / (altura ** 2)
+
+imprimir(f"\n{nome}, seu IMC é: {imc:.2f}")
+
+# Interpretando o resultado
+se imc < 18.5:
+    imprimir("Classificação: Abaixo do peso")
+senaose imc < 25:
+    imprimir("Classificação: Peso normal")
+senaose imc < 30:
+    imprimir("Classificação: Sobrepeso")
+senao:
+    imprimir("Classificação: Obesidade")

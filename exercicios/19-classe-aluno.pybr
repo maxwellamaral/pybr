@@ -1,0 +1,46 @@
+# Exemplo 19: Classe Aluno
+# Sistema escolar com notas e médias
+
+classe Aluno:
+    definir __init__(proprio, nome, matricula):
+        proprio.nome = nome
+        proprio.matricula = matricula
+        proprio.notas = []
+    
+    definir adicionar_nota(proprio, nota):
+        proprio.notas.append(nota)
+        imprimir(f"Nota {nota} adicionada para {proprio.nome}")
+    
+    definir calcular_media(proprio):
+        se tamanho(proprio.notas) == 0:
+            retornar 0
+        soma = sum(proprio.notas)
+        media = soma / tamanho(proprio.notas)
+        retornar media
+    
+    definir situacao(proprio):
+        media = proprio.calcular_media()
+        imprimir(f"\n=== Boletim de {proprio.nome} ===")
+        imprimir(f"Matrícula: {proprio.matricula}")
+        imprimir(f"Notas: {proprio.notas}")
+        imprimir(f"Média: {media:.2f}")
+        
+        se media >= 7:
+            imprimir("Status: APROVADO")
+        senaose media >= 5:
+            imprimir("Status: RECUPERACAO")
+        senao:
+            imprimir("Status: REPROVADO")
+
+# Usando a classe
+aluno1 = Aluno("Carlos Silva", "2024001")
+aluno1.adicionar_nota(8.5)
+aluno1.adicionar_nota(7.0)
+aluno1.adicionar_nota(9.0)
+aluno1.situacao()
+
+aluno2 = Aluno("Ana Santos", "2024002")
+aluno2.adicionar_nota(6.0)
+aluno2.adicionar_nota(5.5)
+aluno2.adicionar_nota(4.0)
+aluno2.situacao()

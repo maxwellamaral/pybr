@@ -1,0 +1,48 @@
+# Exemplo 6: Estruturas Condicionais
+# Tomando decisões no código
+
+# Estrutura SE simples
+idade = 18
+
+se idade >= 18:
+    imprimir("Você é maior de idade")
+    imprimir("Pode tirar carteira de motorista")
+
+# Estrutura SE-SENÃO
+idade = 15
+
+se idade >= 18:
+    imprimir("Você é maior de idade")
+senao:
+    imprimir("Você é menor de idade")
+
+# Estrutura SE-SENÃOSE-SENÃO
+nota = 75
+
+se nota >= 90:
+    imprimir("Conceito: A - Excelente!")
+senaose nota >= 70:
+    imprimir("Conceito: B - Bom!")
+senaose nota >= 50:
+    imprimir("Conceito: C - Regular")
+senao:
+    imprimir("Conceito: D - Insuficiente")
+
+# Operadores lógicos
+idade = 20
+tem_carteira = Verdadeiro
+
+se idade >= 18 e tem_carteira:
+    imprimir("Pode dirigir!")
+
+# Operador OU
+dia = "sábado"
+
+se dia == "sábado" ou dia == "domingo":
+    imprimir("É fim de semana!")
+
+# Operador NÃO
+chovendo = Falso
+
+se nao chovendo:
+    imprimir("Vamos ao parque!")

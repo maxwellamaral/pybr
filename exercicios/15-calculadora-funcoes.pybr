@@ -1,0 +1,38 @@
+# Exemplo 15: Calculadora com Funções
+# Programa completo usando funções
+
+definir somar(a, b):
+    retornar a + b
+
+definir subtrair(a, b):
+    retornar a - b
+
+definir multiplicar(a, b):
+    retornar a * b
+
+definir dividir(a, b):
+    se b == 0:
+        retornar "Erro: Divisão por zero!"
+    retornar a / b
+
+# Menu da calculadora
+imprimir("=== CALCULADORA ===")
+imprimir("1. Somar")
+imprimir("2. Subtrair")
+imprimir("3. Multiplicar")
+imprimir("4. Dividir")
+
+opcao = inteiro(entrada("\nEscolha uma opção: "))
+num1 = float(entrada("Digite o primeiro número: "))
+num2 = float(entrada("Digite o segundo número: "))
+
+se opcao == 1:
+    imprimir(f"Resultado: {somar(num1, num2)}")
+senaose opcao == 2:
+    imprimir(f"Resultado: {subtrair(num1, num2)}")
+senaose opcao == 3:
+    imprimir(f"Resultado: {multiplicar(num1, num2)}")
+senaose opcao == 4:
+    imprimir(f"Resultado: {dividir(num1, num2)}")
+senao:
+    imprimir("Opção inválida!")

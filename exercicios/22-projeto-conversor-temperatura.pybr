@@ -1,0 +1,56 @@
+# Projeto 3: Conversor de Temperaturas
+# Sistema completo de conversão entre escalas
+
+classe ConversorTemperatura:
+    definir celsius_para_fahrenheit(proprio, celsius):
+        fahrenheit = (celsius * 9/5) + 32
+        retornar fahrenheit
+    
+    definir fahrenheit_para_celsius(proprio, fahrenheit):
+        celsius = (fahrenheit - 32) * 5/9
+        retornar celsius
+    
+    definir celsius_para_kelvin(proprio, celsius):
+        kelvin = celsius + 273.15
+        retornar kelvin
+    
+    definir kelvin_para_celsius(proprio, kelvin):
+        celsius = kelvin - 273.15
+        retornar celsius
+    
+    definir menu(proprio):
+        enquanto Verdadeiro:
+            imprimir("\n=== CONVERSOR DE TEMPERATURA ===")
+            imprimir("1. Celsius para Fahrenheit")
+            imprimir("2. Fahrenheit para Celsius")
+            imprimir("3. Celsius para Kelvin")
+            imprimir("4. Kelvin para Celsius")
+            imprimir("5. Sair")
+            
+            opcao = entrada("\nEscolha: ")
+            
+            se opcao == "5":
+                imprimir("Até logo!")
+                quebre
+            
+            se opcao em ["1", "2", "3", "4"]:
+                valor = float(entrada("Digite a temperatura: "))
+                
+                se opcao == "1":
+                    resultado = proprio.celsius_para_fahrenheit(valor)
+                    imprimir(f"{valor}°C = {resultado:.2f}°F")
+                senaose opcao == "2":
+                    resultado = proprio.fahrenheit_para_celsius(valor)
+                    imprimir(f"{valor}°F = {resultado:.2f}°C")
+                senaose opcao == "3":
+                    resultado = proprio.celsius_para_kelvin(valor)
+                    imprimir(f"{valor}°C = {resultado:.2f}K")
+                senaose opcao == "4":
+                    resultado = proprio.kelvin_para_celsius(valor)
+                    imprimir(f"{valor}K = {resultado:.2f}°C")
+            senao:
+                imprimir("Opção inválida!")
+
+# Executando
+conversor = ConversorTemperatura()
+conversor.menu()

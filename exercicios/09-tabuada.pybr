@@ -1,0 +1,9 @@
+# Exemplo 9: Tabuada
+# Usando laço PARA para criar tabuada
+
+numero = inteiro(entrada("Digite um número para ver a tabuada: "))
+
+imprimir(f"\n=== Tabuada do {numero} ===")
+para i em intervalo(1, 11):
+    resultado = numero * i
+    imprimir(f"{numero} x {i} = {resultado}")

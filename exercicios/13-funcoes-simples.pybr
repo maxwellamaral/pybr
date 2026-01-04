@@ -1,0 +1,30 @@
+# Exemplo 13: Funções Simples
+# Organizando e reutilizando código
+
+# Função sem parâmetros
+definir saudar():
+    imprimir("Olá, seja bem-vindo!")
+    imprimir("Tenha um ótimo dia!")
+
+# Chamando a função
+saudar()
+saudar()
+
+# Função com parâmetro
+definir saudar_pessoa(nome):
+    imprimir(f"Olá, {nome}!")
+    imprimir("Como você está?")
+
+# Usando
+saudar_pessoa("Maria")
+saudar_pessoa("João")
+saudar_pessoa("Ana")
+
+# Função com múltiplos parâmetros
+definir calcular_media(nota1, nota2, nota3):
+    soma = nota1 + nota2 + nota3
+    media = soma / 3
+    imprimir(f"A média é: {media:.2f}")
+
+calcular_media(7.5, 8.0, 9.5)
+calcular_media(6.0, 7.0, 8.5)

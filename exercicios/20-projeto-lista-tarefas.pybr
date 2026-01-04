@@ -1,0 +1,53 @@
+# Projeto 1: Lista de Tarefas
+# Sistema completo para gerenciar tarefas
+
+classe GerenciadorTarefas:
+    definir __init__(proprio):
+        proprio.tarefas = []
+    
+    definir adicionar(proprio, tarefa):
+        proprio.tarefas.append(tarefa)
+        imprimir(f"[OK] Tarefa '{tarefa}' adicionada!")
+    
+    definir listar(proprio):
+        se tamanho(proprio.tarefas) == 0:
+            imprimir("Nenhuma tarefa na lista!")
+            retornar
+        
+        imprimir("\n=== MINHAS TAREFAS ===")
+        para i em intervalo(tamanho(proprio.tarefas)):
+            imprimir(f"{i + 1}. {proprio.tarefas[i]}")
+    
+    definir remover(proprio, numero):
+        se numero > 0 e numero <= tamanho(proprio.tarefas):
+            tarefa_removida = proprio.tarefas.pop(numero - 1)
+            imprimir(f"[OK] Tarefa '{tarefa_removida}' removida!")
+        senao:
+            imprimir("Numero invalido!")
+
+# Programa principal
+gerenciador = GerenciadorTarefas()
+
+enquanto Verdadeiro:
+    imprimir("\n=== MENU ===")
+    imprimir("1. Adicionar tarefa")
+    imprimir("2. Listar tarefas")
+    imprimir("3. Remover tarefa")
+    imprimir("4. Sair")
+    
+    opcao = entrada("\nEscolha uma opção: ")
+    
+    se opcao == "1":
+        tarefa = entrada("Digite a tarefa: ")
+        gerenciador.adicionar(tarefa)
+    senaose opcao == "2":
+        gerenciador.listar()
+    senaose opcao == "3":
+        gerenciador.listar()
+        numero = inteiro(entrada("Digite o número da tarefa para remover: "))
+        gerenciador.remover(numero)
+    senaose opcao == "4":
+        imprimir("Até logo!")
+        quebre
+    senao:
+        imprimir("Opção inválida!")

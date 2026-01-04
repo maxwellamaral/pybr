@@ -1,0 +1,27 @@
+# Exemplo 12: Trabalhando com Listas
+# Guardando múltiplos valores
+
+# Criando uma lista
+frutas = ["maçã", "banana", "laranja", "uva"]
+
+# Percorrendo a lista
+imprimir("=== Minhas frutas favoritas ===")
+para fruta em frutas:
+    imprimir(f"Eu gosto de {fruta}")
+
+# Com índice (posição)
+imprimir("\n=== Lista numerada ===")
+para i em intervalo(tamanho(frutas)):
+    imprimir(f"{i + 1}. {frutas[i]}")
+
+# Adicionando itens
+frutas.append("morango")
+imprimir(f"\nAdicionei morango: {frutas}")
+
+# Removendo itens
+frutas.remove("banana")
+imprimir(f"Removi banana: {frutas}")
+
+# Acessando por índice
+imprimir(f"\nPrimeira fruta: {frutas[0]}")
+imprimir(f"Última fruta: {frutas[-1]}")

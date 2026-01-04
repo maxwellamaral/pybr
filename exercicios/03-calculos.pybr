@@ -1,0 +1,44 @@
+# Exemplo 3: Cálculos e Operações Matemáticas
+# O computador como uma super calculadora
+
+# Operações básicas
+soma = 10 + 5
+imprimir(f"10 + 5 = {soma}")
+
+diferenca = 20 - 8
+imprimir(f"20 - 8 = {diferenca}")
+
+produto = 6 * 7
+imprimir(f"6 * 7 = {produto}")
+
+resultado = 15 / 3
+imprimir(f"15 / 3 = {resultado}")
+
+resultado_inteiro = 17 // 5
+imprimir(f"17 // 5 = {resultado_inteiro}")
+
+resto = 17 % 5
+imprimir(f"17 % 5 = {resto}")
+
+potencia = 2 ** 3
+imprimir(f"2 ** 3 = {potencia}")
+
+# Calculadora de compras
+imprimir("\n=== CALCULADORA DE COMPRAS ===")
+preco_arroz = 25.90
+preco_feijao = 8.50
+preco_acucar = 4.20
+
+total = preco_arroz + preco_feijao + preco_acucar
+imprimir(f"Total da compra: R$ {total:.2f}")
+
+desconto = total * 0.10
+total_com_desconto = total - desconto
+imprimir(f"Total com desconto: R$ {total_com_desconto:.2f}")
+
+# Ordem das operações
+resultado = 2 + 3 * 4
+imprimir(f"\n2 + 3 * 4 = {resultado}")
+
+resultado = (2 + 3) * 4
+imprimir(f"(2 + 3) * 4 = {resultado}")

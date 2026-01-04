@@ -1,0 +1,26 @@
+# Exemplo 10: Laço ENQUANTO (while)
+# Repetindo enquanto condição for verdadeira
+
+contador = 0
+
+enquanto contador < 5:
+    imprimir(f"Contador: {contador}")
+    contador = contador + 1
+
+imprimir("Fim da contagem!")
+
+# Exemplo: somando números até o usuário digitar 0
+imprimir("\n=== Somador de Números ===")
+imprimir("Digite números para somar (0 para parar)")
+
+soma = 0
+enquanto Verdadeiro:
+    numero = inteiro(entrada("Digite um número: "))
+    
+    se numero == 0:
+        quebre
+    
+    soma = soma + numero
+    imprimir(f"Soma atual: {soma}")
+
+imprimir(f"\nSoma total: {soma}")

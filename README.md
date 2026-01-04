@@ -6,6 +6,8 @@ PyBR é um transpilador que permite escrever código Python usando palavras-chav
 
 O transpilador utiliza o módulo `tokenize` do Python para analisar o código fonte, traduzindo apenas os tokens de identificadores (palavras-chave e nomes de funções) enquanto preserva strings, comentários e a estrutura do código.
 
+**🎓 Novo para programação?** Consulte nosso [Tutorial Completo para Iniciantes](tutorial-iniciantes.md) com exemplos práticos e 22 arquivos prontos para testar!
+
 ## Funcionalidades
 
 - **Palavras-chave em Português**: Use `se`, `senao`, `para`, `enquanto`, `definir`, `classe` etc.
@@ -117,10 +119,44 @@ cachorro = Animal("Rex")
 cachorro.falar()
 ```
 
+## 📚 Aprendendo a Programar com PyBR
+
+### Tutorial para Iniciantes
+
+Se você **nunca programou antes**, temos um guia completo feito especialmente para você! O arquivo [tutorial-iniciantes.md](tutorial-iniciantes.md) contém:
+
+- ✅ Explicação de todos os conceitos básicos de programação
+- ✅ Exemplos práticos e intuitivos
+- ✅ Analogias do mundo real para facilitar o entendimento
+- ✅ 22 arquivos `.pybr` prontos para executar na pasta `exercicios/`
+- ✅ Projetos completos: lista de tarefas, quiz, conversor de temperatura
+- ✅ Exercícios propostos em 3 níveis de dificuldade
+
+**Comece por aqui:** [Tutorial Completo para Iniciantes](tutorial-iniciantes.md)
+
+### Arquivos de Exemplo Prontos
+
+A pasta `exercicios/` contém 22 exemplos práticos organizados por dificuldade:
+
+```bash
+# Executar qualquer exemplo
+python pybr.py exercicios/01-ola-mundo.pybr
+python pybr.py exercicios/11-jogo-adivinhacao.pybr
+python pybr.py exercicios/20-projeto-lista-tarefas.pybr
+
+# Ver a lista completa
+ls exercicios/
+```
+
+Consulte o [README dos exercícios](exercicios/README.md) para a lista completa.
+
 ## Estrutura do Projeto
 
 - `pybr.py` - Arquivo principal contendo o transpilador e REPL
 - `test_pybr.py` - Testes funcionais automatizados
+- `test_exercicios.py` - Testes funcionais dos arquivos de exemplo
+- `tutorial-iniciantes.md` - **Tutorial completo para quem nunca programou antes** 📚
+- `exercicios/` - **22 arquivos de exemplo prontos para executar** 💻
 - `README.md` - Este arquivo
 - `LICENSE` - Licença do projeto
 - `extensao-vscode/` - Extensão VS Code para syntax highlighting
@@ -162,9 +198,9 @@ Para mais detalhes, consulte o [README da extensão](extensao-vscode/README.md).
 
 ## Testes Funcionais
 
-O projeto inclui uma suíte completa de testes automatizados que validam todas as funcionalidades do transpilador PyBR.
+O projeto inclui duas suítes completas de testes automatizados que validam todas as funcionalidades do transpilador PyBR e dos arquivos de exemplo.
 
-### Executar os Testes
+### Executar os Testes do Transpilador
 
 ```bash
 # Executar todos os testes com relatório detalhado
@@ -172,13 +208,16 @@ python test_pybr.py
 
 # Ou usar unittest diretamente com verbosidade
 python -m unittest test_pybr.py -v
-
-# Executar apenas uma classe de testes específica
-python -m unittest test_pybr.TestPyBRTranspiler -v
-
-# Executar um teste individual
-python -m unittest test_pybr.TestPyBRTranspiler.test_execucao_funcao -v
 ```
+
+### Executar os Testes dos Exercícios
+
+```bash
+# Testa todos os 22 arquivos de exemplo
+python test_exercicios.py
+```
+
+Este segundo conjunto de testes valida que todos os arquivos `.pybr` na pasta `exercicios/` estão funcionando corretamente, executando cada um deles e verificando suas saídas.
 
 ### Cobertura dos Testes
 

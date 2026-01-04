@@ -1,0 +1,32 @@
+# Exemplo 16: Classe Cachorro
+# Introdução à Programação Orientada a Objetos
+
+classe Cachorro:
+    # Método construtor - executado ao criar um cachorro
+    definir __init__(proprio, nome, raca):
+        proprio.nome = nome
+        proprio.raca = raca
+    
+    # Método - comportamento do cachorro
+    definir latir(proprio):
+        imprimir(f"{proprio.nome}: Au au!")
+    
+    definir apresentar(proprio):
+        imprimir(f"Olá! Meu nome é {proprio.nome} e sou um {proprio.raca}")
+
+# Criando objetos (instâncias) da classe
+rex = Cachorro("Rex", "Labrador")
+bob = Cachorro("Bob", "Poodle")
+luna = Cachorro("Luna", "Husky")
+
+# Usando os métodos
+rex.latir()
+rex.apresentar()
+
+imprimir()
+bob.latir()
+bob.apresentar()
+
+imprimir()
+luna.latir()
+luna.apresentar()

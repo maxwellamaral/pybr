@@ -1,0 +1,30 @@
+# Exemplo 18: Classe Retângulo
+# Cálculos geométricos com classes
+
+classe Retangulo:
+    definir __init__(proprio, largura, altura):
+        proprio.largura = largura
+        proprio.altura = altura
+    
+    definir calcular_area(proprio):
+        area = proprio.largura * proprio.altura
+        retornar area
+    
+    definir calcular_perimetro(proprio):
+        perimetro = 2 * (proprio.largura + proprio.altura)
+        retornar perimetro
+    
+    definir mostrar_info(proprio):
+        imprimir(f"=== Retângulo ===")
+        imprimir(f"Largura: {proprio.largura}")
+        imprimir(f"Altura: {proprio.altura}")
+        imprimir(f"Área: {proprio.calcular_area()}")
+        imprimir(f"Perímetro: {proprio.calcular_perimetro()}")
+
+# Criando retângulos
+ret1 = Retangulo(5, 3)
+ret2 = Retangulo(10, 7)
+
+ret1.mostrar_info()
+imprimir()
+ret2.mostrar_info()

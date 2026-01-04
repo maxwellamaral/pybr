@@ -1,0 +1,36 @@
+# Exemplo 2: Trabalhando com Variáveis
+# Aprenda a guardar e usar informações
+
+# Guardando um nome
+nome = "Maria"
+
+# Guardando uma idade
+idade = 25
+
+# Guardando um preço
+preco = 19.90
+
+# Usando as variáveis
+imprimir(nome)
+imprimir(idade)
+imprimir(preco)
+
+# Diferentes tipos de dados
+cidade = "São Paulo"
+quantidade = 10
+altura = 1.75
+esta_chovendo = Falso
+
+imprimir(f"{nome} mora em {cidade}")
+imprimir(f"Altura: {altura}m")
+imprimir(f"Está chovendo? {esta_chovendo}")
+
+# Mudando o valor de uma variável
+saldo = 100
+imprimir(f"Saldo inicial: {saldo}")
+
+saldo = 150
+imprimir(f"Novo saldo: {saldo}")
+
+saldo = saldo + 50
+imprimir(f"Saldo final: {saldo}")

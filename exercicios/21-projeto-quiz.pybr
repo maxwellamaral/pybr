@@ -1,0 +1,73 @@
+# Projeto 2: Jogo de Perguntas e Respostas
+# Quiz interativo com pontuação
+
+classe JogoQuiz:
+    definir __init__(proprio):
+        proprio.pontos = 0
+        proprio.perguntas = [
+            {
+                "pergunta": "Qual é a capital do Brasil?",
+                "opcoes": ["1. Rio de Janeiro", "2. São Paulo", "3. Brasília", "4. Salvador"],
+                "resposta": "3"
+            },
+            {
+                "pergunta": "Quanto é 5 + 7?",
+                "opcoes": ["1. 10", "2. 11", "3. 12", "4. 13"],
+                "resposta": "3"
+            },
+            {
+                "pergunta": "Qual é a cor do céu?",
+                "opcoes": ["1. Verde", "2. Azul", "3. Vermelho", "4. Amarelo"],
+                "resposta": "2"
+            },
+            {
+                "pergunta": "Quantos dias tem uma semana?",
+                "opcoes": ["1. 5", "2. 6", "3. 7", "4. 8"],
+                "resposta": "3"
+            },
+            {
+                "pergunta": "Qual é o planeta mais próximo do Sol?",
+                "opcoes": ["1. Terra", "2. Vênus", "3. Marte", "4. Mercúrio"],
+                "resposta": "4"
+            }
+        ]
+    
+    definir jogar(proprio):
+        imprimir("=== QUIZ - TESTE SEUS CONHECIMENTOS ===\n")
+        
+        para i em intervalo(tamanho(proprio.perguntas)):
+            pergunta = proprio.perguntas[i]
+            imprimir(f"\nPergunta {i + 1}: {pergunta['pergunta']}")
+            
+            para opcao em pergunta['opcoes']:
+                imprimir(opcao)
+            
+            resposta = entrada("\nSua resposta: ")
+            
+            se resposta == pergunta['resposta']:
+                imprimir("[OK] Correto!")
+                proprio.pontos = proprio.pontos + 1
+            senao:
+                imprimir("[X] Errado!")
+        
+        proprio.mostrar_resultado()
+    
+    definir mostrar_resultado(proprio):
+        total = tamanho(proprio.perguntas)
+        imprimir(f"\n=== RESULTADO FINAL ===")
+        imprimir(f"Você acertou {proprio.pontos} de {total} perguntas")
+        
+        percentual = (proprio.pontos / total) * 100
+        
+        se percentual == 100:
+            imprimir("Perfeito! Voce e um genio!")
+        senaose percentual >= 70:
+            imprimir("Muito bem! Bom desempenho!")
+        senaose percentual >= 50:
+            imprimir("Razoavel. Estude mais!")
+        senao:
+            imprimir("Precisa estudar mais!")
+
+# Iniciando o jogo
+jogo = JogoQuiz()
+jogo.jogar()

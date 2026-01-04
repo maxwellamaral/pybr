@@ -1,0 +1,24 @@
+# Exemplo 8: Laço PARA (for)
+# Repetindo ações um número definido de vezes
+
+# Contando de 0 a 4
+imprimir("Contando de 0 a 4:")
+para i em intervalo(5):
+    imprimir(i)
+
+# De 1 a 10
+imprimir("\nContando de 1 a 10:")
+para numero em intervalo(1, 11):
+    imprimir(numero)
+
+# De 0 a 10, pulando de 2 em 2
+imprimir("\nNúmeros pares de 0 a 10:")
+para numero em intervalo(0, 11, 2):
+    imprimir(numero)
+
+# Contagem regressiva
+imprimir("\nContagem regressiva:")
+para numero em intervalo(10, 0, -1):
+    imprimir(numero)
+
+imprimir("Lancamento!")

@@ -1,0 +1,35 @@
+# Exemplo 14: Funções com Retorno
+# Funções que devolvem valores
+
+definir somar(a, b):
+    resultado = a + b
+    retornar resultado
+
+definir subtrair(a, b):
+    retornar a - b
+
+definir multiplicar(a, b):
+    retornar a * b
+
+definir dividir(a, b):
+    se b == 0:
+        retornar "Erro: Divisão por zero!"
+    retornar a / b
+
+# Usando as funções
+total = somar(10, 5)
+imprimir(f"10 + 5 = {total}")
+
+imprimir(f"20 - 8 = {subtrair(20, 8)}")
+imprimir(f"6 * 7 = {multiplicar(6, 7)}")
+imprimir(f"15 / 3 = {dividir(15, 3)}")
+imprimir(f"10 / 0 = {dividir(10, 0)}")
+
+# Função com valores padrão
+definir fazer_cafe(tipo="normal", acucar=1):
+    imprimir(f"Fazendo café {tipo} com {acucar} colher(es) de açúcar")
+
+fazer_cafe()
+fazer_cafe("expresso")
+fazer_cafe("cappuccino", 2)
+fazer_cafe(acucar=0)
