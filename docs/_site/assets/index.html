@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Syntax Highlighting PyBR | PyBR - Python em Português</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Syntax Highlighting PyBR" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Aprenda a programar em Python usando palavras em português" />
+<meta property="og:description" content="Aprenda a programar em Python usando palavras em português" />
+<link rel="canonical" href="http://0.0.0.0:4000/assets/" />
+<meta property="og:url" content="http://0.0.0.0:4000/assets/" />
+<meta property="og:site_name" content="PyBR - Python em Português" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Syntax Highlighting PyBR" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Aprenda a programar em Python usando palavras em português","headline":"Syntax Highlighting PyBR","url":"http://0.0.0.0:4000/assets/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <!-- Syntax Highlighting PyBR -->
+    <link rel="stylesheet" href="/assets/css/prism-pybr.css">
+  </head>
+  <body class="light-theme">
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">Syntax Highlighting PyBR</h1>
+      <h2 class="project-tagline">Aprenda a programar em Python usando palavras em português</h2>
+      
+        <a href="https://github.com/maxwellamaral/pybr" class="btn">View on GitHub</a>
+      
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <p>Este diretório contém os arquivos de configuração para syntax highlighting da linguagem PyBR nas páginas do site.</p>
+
+<h2 id="arquivos">Arquivos</h2>
+
+<h3 id="javascript">JavaScript</h3>
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">prism-pybr.js</code></strong>: Definição da linguagem PyBR para Prism.js
+    <ul>
+      <li>Define todas as palavras-chave, built-ins, e padrões de sintaxe</li>
+      <li>Baseado nas definições do transpilador PyBR</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="css">CSS</h3>
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">prism-pybr.css</code></strong>: Estilos de coloração para código PyBR
+    <ul>
+      <li>Tema escuro (Monokai-inspired)</li>
+      <li>Tema claro (GitHub-inspired)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="como-usar">Como Usar</h2>
+
+<h3 id="em-arquivos-markdown">Em arquivos Markdown</h3>
+
+<p>Use blocos de código com a linguagem especificada como <code class="language-plaintext highlighter-rouge">python</code> ou <code class="language-plaintext highlighter-rouge">pybr</code>:</p>
+
+<p>```python
+definir ola_mundo():
+    imprimir(“Olá, Mundo!”)</p>
+
+<p>para i em intervalo(5):
+    se i % 2 == 0:
+        imprimir(f”{i} é par”)
+```</p>
+
+<h3 id="palavras-chave-destacadas">Palavras-Chave Destacadas</h3>
+
+<h4 id="controle-de-fluxo">Controle de Fluxo</h4>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">se</code>, <code class="language-plaintext highlighter-rouge">senao</code>, <code class="language-plaintext highlighter-rouge">senaose</code></li>
+  <li><code class="language-plaintext highlighter-rouge">para</code>, <code class="language-plaintext highlighter-rouge">enquanto</code></li>
+  <li><code class="language-plaintext highlighter-rouge">quebre</code>, <code class="language-plaintext highlighter-rouge">continue</code>, <code class="language-plaintext highlighter-rouge">retornar</code></li>
+  <li><code class="language-plaintext highlighter-rouge">tente</code>, <code class="language-plaintext highlighter-rouge">exceto</code>, <code class="language-plaintext highlighter-rouge">finalmente</code>, <code class="language-plaintext highlighter-rouge">levantar</code></li>
+  <li><code class="language-plaintext highlighter-rouge">passar</code>, <code class="language-plaintext highlighter-rouge">afirmar</code>, <code class="language-plaintext highlighter-rouge">com</code></li>
+</ul>
+
+<h4 id="definições">Definições</h4>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">definir</code>, <code class="language-plaintext highlighter-rouge">funcao</code>, <code class="language-plaintext highlighter-rouge">classe</code></li>
+  <li><code class="language-plaintext highlighter-rouge">global</code>, <code class="language-plaintext highlighter-rouge">importar</code>, <code class="language-plaintext highlighter-rouge">de</code>, <code class="language-plaintext highlighter-rouge">como</code>, <code class="language-plaintext highlighter-rouge">lambda</code></li>
+</ul>
+
+<h4 id="operadores-e-constantes">Operadores e Constantes</h4>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">e</code>, <code class="language-plaintext highlighter-rouge">ou</code>, <code class="language-plaintext highlighter-rouge">nao</code>, <code class="language-plaintext highlighter-rouge">em</code>, <code class="language-plaintext highlighter-rouge">eh</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Verdadeiro</code>, <code class="language-plaintext highlighter-rouge">Falso</code>, <code class="language-plaintext highlighter-rouge">Nulo</code></li>
+</ul>
+
+<h4 id="funções-built-in">Funções Built-in</h4>
+<ul>
+  <li><strong>Entrada/Saída</strong>: <code class="language-plaintext highlighter-rouge">imprimir</code>, <code class="language-plaintext highlighter-rouge">entrada</code></li>
+  <li><strong>Conversão</strong>: <code class="language-plaintext highlighter-rouge">inteiro</code>, <code class="language-plaintext highlighter-rouge">flutuante</code>, <code class="language-plaintext highlighter-rouge">texto</code>, <code class="language-plaintext highlighter-rouge">lista</code>, <code class="language-plaintext highlighter-rouge">dicionario</code>, <code class="language-plaintext highlighter-rouge">conjunto</code>, <code class="language-plaintext highlighter-rouge">tupla</code></li>
+  <li><strong>Manipulação</strong>: <code class="language-plaintext highlighter-rouge">tamanho</code>, <code class="language-plaintext highlighter-rouge">intervalo</code>, <code class="language-plaintext highlighter-rouge">tipo</code>, <code class="language-plaintext highlighter-rouge">enumerar</code></li>
+  <li><strong>Matemática</strong>: <code class="language-plaintext highlighter-rouge">maximo</code>, <code class="language-plaintext highlighter-rouge">minimo</code>, <code class="language-plaintext highlighter-rouge">abs</code>, <code class="language-plaintext highlighter-rouge">arredondar</code></li>
+  <li><strong>Iteração</strong>: <code class="language-plaintext highlighter-rouge">ordenar</code>, <code class="language-plaintext highlighter-rouge">reverter</code>, <code class="language-plaintext highlighter-rouge">filtrar</code>, <code class="language-plaintext highlighter-rouge">mapear</code>, <code class="language-plaintext highlighter-rouge">qualquer</code>, <code class="language-plaintext highlighter-rouge">todos</code></li>
+  <li><strong>Sistema</strong>: <code class="language-plaintext highlighter-rouge">abrir</code>, <code class="language-plaintext highlighter-rouge">ajuda</code>, <code class="language-plaintext highlighter-rouge">dir</code>, <code class="language-plaintext highlighter-rouge">sair</code></li>
+</ul>
+
+<h2 id="cores-do-tema-claro">Cores do Tema Claro</h2>
+
+<ul>
+  <li><strong>Comentários</strong>: Cinza (#6a737d)</li>
+  <li><strong>Strings</strong>: Azul escuro (#032f62)</li>
+  <li><strong>Keywords</strong>: Vermelho (#d73a49) - negrito</li>
+  <li><strong>Constantes</strong>: Azul (#005cc5) - negrito</li>
+  <li><strong>Built-ins</strong>: Roxo (#6f42c1) - negrito</li>
+  <li><strong>Funções</strong>: Roxo (#6f42c1)</li>
+  <li><strong>Classes</strong>: Roxo (#6f42c1) - negrito</li>
+  <li><strong>Números</strong>: Azul (#005cc5)</li>
+  <li><strong>Operadores</strong>: Vermelho (#d73a49)</li>
+</ul>
+
+<h2 id="cores-do-tema-escuro">Cores do Tema Escuro</h2>
+
+<ul>
+  <li><strong>Comentários</strong>: Cinza (#75715e) - itálico</li>
+  <li><strong>Strings</strong>: Amarelo (#e6db74)</li>
+  <li><strong>Keywords</strong>: Rosa (#f92672) - negrito</li>
+  <li><strong>Constantes</strong>: Roxo claro (#ae81ff) - negrito</li>
+  <li><strong>Built-ins</strong>: Ciano (#66d9ef) - negrito</li>
+  <li><strong>Funções</strong>: Verde (#a6e22e)</li>
+  <li><strong>Classes</strong>: Verde (#a6e22e) - negrito</li>
+  <li><strong>Números</strong>: Roxo claro (#ae81ff)</li>
+  <li><strong>Operadores</strong>: Rosa (#f92672)</li>
+</ul>
+
+<h2 id="customização">Customização</h2>
+
+<p>Para alterar as cores, edite o arquivo <code class="language-plaintext highlighter-rouge">prism-pybr.css</code>. O tema atual está configurado como “claro” através da classe <code class="language-plaintext highlighter-rouge">.light-theme</code> no body do HTML.</p>
+
+<p>Para usar o tema escuro, remova a classe <code class="language-plaintext highlighter-rouge">light-theme</code> do <code class="language-plaintext highlighter-rouge">&lt;body&gt;</code> em <code class="language-plaintext highlighter-rouge">_layouts/default.html</code>.</p>
+
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/maxwellamaral/pybr">pybr</a> is maintained by <a href="https://github.com/maxwellamaral">maxwellamaral</a>.</span>
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </main>
+
+    <!-- Prism.js Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <!-- PyBR Language Definition -->
+    <script src="/assets/js/prism-pybr.js"></script>
+    <!-- Auto-run Prism on load -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        Prism.highlightAll();
+      });
+    </script>
+  </body>
+</html>
