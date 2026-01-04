@@ -1,4 +1,7 @@
 # Aprenda a Programar com PyBR - Guia Completo para Iniciantes
+Autor: Maxwell Anderson Ielpo do Amaral
+
+Publicado em Janeiro de 2026
 
 ## Bem-vindo ao Mundo da Programação! 🚀
 
