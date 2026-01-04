@@ -121,6 +121,42 @@ cachorro.falar()
 - `pybr.py` - Arquivo principal contendo o transpilador e REPL
 - `README.md` - Este arquivo
 - `LICENSE` - Licença do projeto
+- `extensao-vscode/` - Extensão VS Code para syntax highlighting
+
+## Extensão VS Code
+
+Para melhorar a experiência de desenvolvimento, está disponível uma extensão para Visual Studio Code que fornece syntax highlighting completo para arquivos `.pybr`:
+
+### Instalação da Extensão
+
+**Opção 1: Via arquivo .vsix (Recomendado)**
+
+```bash
+# Instalar a extensão usando o arquivo empacotado
+code --install-extension extensao-vscode/pybr-language-1.0.0.vsix
+```
+
+Ou pela interface do VS Code:
+1. Abra a aba de Extensões (Ctrl+Shift+X)
+2. Clique nos três pontos `...` no topo
+3. Selecione "Install from VSIX..."
+4. Navegue até `extensao-vscode/pybr-language-1.0.0.vsix`
+
+**Opção 2: Copiar manualmente**
+
+Copie a pasta `extensao-vscode` para o diretório de extensões do VS Code:
+- **Windows**: `%USERPROFILE%\.vscode\extensions\pybr-language-1.0.0`
+- **macOS/Linux**: `~/.vscode/extensions/pybr-language-1.0.0`
+
+### Recursos da Extensão
+
+- 🎨 Syntax highlighting completo para palavras-chave em português
+- 📝 Snippets para estruturas comuns (funções, classes, loops, etc.)
+- ⚙️ Auto-fechamento de parênteses e aspas
+- 🔧 Indentação automática inteligente
+- 📂 Suporte para arquivos `.pybr` e `.pybr.py`
+
+Para mais detalhes, consulte o [README da extensão](extensao-vscode/README.md).
 
 ## Limitações
 
