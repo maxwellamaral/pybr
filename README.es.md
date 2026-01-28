@@ -43,6 +43,15 @@ para i en rango(5):
         imprimir(f"{i} es impar")
 ```
 
+## Contribuir con nuevos idiomas 🌍
+
+¡PyBR quiere hablar todos los idiomas y tú puedes ayudar! Añadir un nuevo idioma es extremadamente sencillo:
+
+1.  **Crea un archivo JSON**: En la carpeta `languages/`, crea un archivo con el código de tu idioma (ej: `jp.json`).
+2.  **Usa una plantilla**: Copia el contenido de [es.json](languages/es.json).
+3.  **Traduce las secciones**: `keywords`, `builtins` y `messages`.
+4.  **Envía un Pull Request**: ¡Ayuda a estudiantes de todo el mundo a aprender en su propio idioma!
+
 ## Contribuir
 
 ¡Las contribuciones son bienvenidas! Puedes añadir nuevos idiomas creando un archivo `.json` en la carpeta `languages/`.

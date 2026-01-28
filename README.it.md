@@ -43,6 +43,15 @@ per i in intervallo(5):
         stampa(f"{i} è dispari")
 ```
 
+## Contribuire con nuove lingue 🌍
+
+PyBR vuole parlare tutte le lingue e tu puoi aiutare! Aggiungere una nuova lingua è semplicissimo:
+
+1.  **Crea un file JSON**: Nella cartella `languages/`, crea un file con il codice della tua lingua (es: `ru.json`).
+2.  **Usa un template**: Copia il contenuto di [it.json](languages/it.json).
+3.  **Traduci le sezioni**: `keywords`, `builtins` e `messages`.
+4.  **Invia una Pull Request**: Aiuta gli studenti di tutto il mondo a imparare nella loro lingua!
+
 ## Contribuire
 
-I contributi sono benvenuti! Puoi aggiungere nuove lingue creando un file `.json` nella cartella `languages/`.
+I contributi sono benvenuti! Puoi aggiungere nuove lingue creando un file .json nella cartella languages/.

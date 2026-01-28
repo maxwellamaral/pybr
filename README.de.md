@@ -43,6 +43,15 @@ fuer i in bereich(5):
         drucke(f"{i} ist ungerade")
 ```
 
+## Neue Sprachen hinzufügen 🌍
+
+PyBR möchte alle Sprachen sprechen und du kannst helfen! Das Hinzufügen einer neuen Sprache ist ganz einfach:
+
+1.  **JSON-Datei erstellen**: Erstelle im Ordner `languages/` eine Datei mit deinem Sprachcode (z. B. `tr.json`).
+2.  **Vorlage verwenden**: Kopiere den Inhalt von [de.json](languages/de.json).
+3.  **Abschnitte übersetzen**: `keywords`, `builtins` und `messages`.
+4.  **Pull Request senden**: Hilf Schülern weltweit, in ihrer Muttersprache zu lernen!
+
 ## Beitragen
 
 Beiträge sind willkommen! Sie können neue Sprachen hinzufügen, indem Sie eine `.json`-Datei im Ordner `languages/` erstellen.

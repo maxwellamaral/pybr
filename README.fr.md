@@ -43,6 +43,15 @@ pour i dans intervalle(5):
         imprimer(f"{i} est impair")
 ```
 
+## Contribuer avec de nouvelles langues 🌍
+
+PyBR souhaite parler toutes les langues et vous pouvez aider ! Ajouter une nouvelle langue est très simple :
+
+1.  **Créez un fichier JSON** : Dans le dossier `languages/`, créez un fichier avec votre code de langue (ex : `ar.json`).
+2.  **Utilisez un modèle** : Copiez le contenu de [fr.json](languages/fr.json).
+3.  **Traduisez les sections** : `keywords`, `builtins` et `messages`.
+4.  **Envoyez une Pull Request** : Aidez les étudiants du monde entier à apprendre dans leur propre langue !
+
 ## Contribuer
 
 Les contributions sont les bienvenues ! Vous pouvez ajouter de nouvelles langues en créant un fichier `.json` dans le dossier `languages/`.

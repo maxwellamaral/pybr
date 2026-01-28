@@ -321,9 +321,23 @@ Erros: 0
 - Algumas funções avançadas podem não estar mapeadas
 - A tradução é feita em tempo de execução (não gera arquivos `.py`)
 
-## Contribuindo
+## Contribuindo com Novos Idiomas 🌍
 
-Contribuições são bem-vindas! Sinta-se livre para:
+O PyBR quer falar todas as línguas e você pode ajudar! Adicionar um novo idioma é extremamente simples e não exige conhecimentos profundos de programação:
+
+1.  **Crie um arquivo JSON**: Vá para a pasta `languages/` e crie um arquivo com o código da sua língua (ex: `jp.json` para japonês).
+2.  **Use um template**: Copie o conteúdo de [pt-br.json](languages/pt-br.json) ou [es.json](languages/es.json).
+3.  **Traduza três seções**:
+    -   `keywords`: As palavras-chave do Python (if, else, for).
+    -   `builtins`: As funções nativas (print, input, len).
+    -   `messages`: As mensagens de interface e erro do sistema.
+4.  **Envie um Pull Request**: Adicione sua tradução e ajude estudantes do mundo todo!
+
+---
+
+## Contribuindo no Geral
+
+Contribuições são sempre bem-vindas! Sinta-se livre para:
 - Adicionar novas traduções de funções nativas
 - Melhorar o sistema de detecção de blocos no REPL
 - Adicionar suporte para mais construções do Python
