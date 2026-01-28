@@ -110,7 +110,7 @@
             ["'(.*)'", "Chave '{}' não encontrada no dicionário"]
         ],
         "ValueError": [
-            ["invalid literal for (.*)\\(\\) with base (.*): '(.*)'", "Valor inválido para a função {}(): '{}'"],
+            ["invalid literal for (.*)\\(\\) with base (?:.*): '(.*)'", "Valor inválido para a função {}(): '{}'"],
             ["not enough values to unpack \\(expected (.*), got (.*)\\)", "Poucos valores para desempacotar (esperado {}, recebido {})"]
         ],
         "FileNotFoundError": [
