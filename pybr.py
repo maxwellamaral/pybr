@@ -115,7 +115,9 @@ class PyBRTranspiler:
                 prompt = "... " if dentro_de_bloco else ">>> "
                 linha = input(prompt)
 
-                if linha.strip() == "sair()":
+                # Busca o comando de saída localizado (mapeado para 'exit')
+                exit_cmd = next((k for k, v in self.builtins_map.items() if v == 'exit'), 'sair')
+                if linha.strip() == f"{exit_cmd}()":
                     break
                 
                 buffer.append(linha)

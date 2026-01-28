@@ -67,7 +67,7 @@
         "syntax_error": "Error de Sintaxis: {}",
         "execution_error": "Error de Ejecución: {}",
         "welcome": "Bienvenido al PyBR 1.0 (Python Brasileño/Internacional)",
-        "exit_help": "Escribe 'sair()' para terminar.",
+        "exit_help": "Escribe 'salir()' para terminar.",
         "interrupted": "Interrumpido.",
         "error": "Error: {}",
         "running_demo": "Ejecutando código de demostración interno...\n",
