@@ -43,6 +43,12 @@ per i in intervallo(5):
         stampa(f"{i} è dispari")
 ```
 
+## Limitazioni
+
+- Il transpiler traduce le parole chiave ma non i messaggi di errore di Python.
+- Alcune funzioni avanzate potrebbero non essere mappate.
+- La traduzione viene eseguita in runtime (non genera file `.py`).
+
 ## Contribuire con nuove lingue 🌍
 
 PyBR vuole parlare tutte le lingue e tu puoi aiutare! Aggiungere una nuova lingua è semplicissimo:

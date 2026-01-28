@@ -43,6 +43,12 @@ para i en rango(5):
         imprimir(f"{i} es impar")
 ```
 
+## Limitaciones
+
+- El transpiler traduce palabras clave pero no los mensajes de error de Python.
+- Algunas funciones avanzadas pueden no estar mapeadas.
+- La traducción se realiza en tiempo de ejecución (no genera archivos `.py`).
+
 ## Contribuir con nuevos idiomas 🌍
 
 ¡PyBR quiere hablar todos los idiomas y tú puedes ayudar! Añadir un nuevo idioma es extremadamente sencillo:

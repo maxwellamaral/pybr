@@ -43,6 +43,12 @@ fuer i in bereich(5):
         drucke(f"{i} ist ungerade")
 ```
 
+## Einschränkungen
+
+- Der Transpiler übersetzt Schlüsselwörter, aber keine Python-Fehlermeldungen.
+- Einige fortgeschrittene Funktionen sind möglicherweise nicht zugeordnet.
+- Die Übersetzung erfolgt zur Laufzeit (es werden keine `.py`-Dateien generiert).
+
 ## Neue Sprachen hinzufügen 🌍
 
 PyBR möchte alle Sprachen sprechen und du kannst helfen! Das Hinzufügen einer neuen Sprache ist ganz einfach:

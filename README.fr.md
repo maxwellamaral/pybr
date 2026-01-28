@@ -43,6 +43,12 @@ pour i dans intervalle(5):
         imprimer(f"{i} est impair")
 ```
 
+## Limitations
+
+- Le transpileur traduit les mots-clés mais pas les messages d'erreur de Python.
+- Certaines fonctions avancées peuvent ne pas être mappées.
+- La traduction est effectuée au moment de l'exécution (ne génère pas de fichiers `.py`).
+
 ## Contribuer avec de nouvelles langues 🌍
 
 PyBR souhaite parler toutes les langues et vous pouvez aider ! Ajouter une nouvelle langue est très simple :
