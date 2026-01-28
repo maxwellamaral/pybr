@@ -5,6 +5,11 @@ import os
 import json
 import argparse
 
+try:
+    import readline
+except ImportError:
+    readline = None
+
 class PyBRTranspiler:
     def __init__(self, lang='pt-br'):
         self.keywords = {}
@@ -107,6 +112,11 @@ class PyBRTranspiler:
         print(self.messages["exit_help"])
         print("="*50)
         
+        if readline:
+            # Configura o readline para permitir navegação no histórico
+            # No Linux/macOS, isso já habilita as setas automaticamente
+            pass
+
         buffer = []
         dentro_de_bloco = False
 
