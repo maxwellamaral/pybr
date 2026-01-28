@@ -317,7 +317,7 @@ Erros: 0
 
 ## Limitações
 
-- O transpilador traduz palavras-chave mas não mensagens de erro do Python
+- O transpilador traduz as mensagens de erro mais comuns do Python para o idioma selecionado
 - Algumas funções avançadas podem não estar mapeadas
 - A tradução é feita em tempo de execução (não gera arquivos `.py`)
 

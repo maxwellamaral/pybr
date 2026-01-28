@@ -45,7 +45,7 @@ per i in intervallo(5):
 
 ## Limitazioni
 
-- Il transpiler traduce le parole chiave ma non i messaggi di errore di Python.
+- Il transpiler traduce i messaggi di errore Python più comuni nella lingua selezionata.
 - Alcune funzioni avanzate potrebbero non essere mappate.
 - La traduzione viene eseguita in runtime (non genera file `.py`).
 

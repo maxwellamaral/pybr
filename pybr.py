@@ -4,6 +4,7 @@ import sys
 import os
 import json
 import argparse
+import re
 
 try:
     import readline
@@ -15,6 +16,8 @@ class PyBRTranspiler:
         self.keywords = {}
         self.builtins_map = {}
         self.messages = {}
+        self.errors = {}
+        self.error_patterns = {}
         self.lang = lang
         self.load_language(lang)
 
@@ -50,6 +53,8 @@ class PyBRTranspiler:
                 self.keywords = data.get('keywords', {})
                 self.builtins_map = data.get('builtins', {})
                 self.messages = data.get('messages', default_messages)
+                self.errors = data.get('errors', {})
+                self.error_patterns = data.get('error_patterns', {})
         except Exception as e:
             if not self.messages:
                 print(f"Erro ao carregar idioma: {e}")
@@ -73,7 +78,6 @@ class PyBRTranspiler:
         """
         Pós-processa o código para traduzir palavras PyBR dentro de f-strings.
         """
-        import re
         for pybr, python in self.builtins_map.items():
             padrao = r'\b' + re.escape(pybr) + r'(?=\s*\()'
             codigo_python = re.sub(padrao, python, codigo_python)
@@ -95,6 +99,37 @@ class PyBRTranspiler:
         except tokenize.TokenError as e:
             return self.messages["syntax_error"].format(e)
 
+    def translate_error(self, e):
+        """Traduz mensagens de erro do Python para o idioma selecionado."""
+        error_type = type(e).__name__
+        original_msg = str(e)
+        
+        # 1. Tenta tradução baseada em padrões (Regex) específica para o tipo de erro
+        if error_type in self.error_patterns:
+            for pattern, translation in self.error_patterns[error_type]:
+                match = re.search(pattern, original_msg)
+                if match:
+                    try:
+                        return translation.format(*match.groups())
+                    except:
+                        continue
+
+        # 2. Fallback para tradução simples de tipo (legado/genérico)
+        if error_type in self.errors:
+            template = self.errors[error_type]
+            try:
+                # Tenta extrair nomes ou valores entre aspas simples para o fallback
+                matches = re.findall(r"'(.*?)'", original_msg)
+                if matches and "{}" in template:
+                    return template.format(*matches)
+                elif "{}" in template:
+                    return template.format(original_msg)
+                return template
+            except:
+                pass
+        
+        return original_msg
+
     def executar(self, codigo_fonte_br):
         """Traduz e executa o código."""
         codigo_python = self.transpilador(codigo_fonte_br)
@@ -103,7 +138,8 @@ class PyBRTranspiler:
         try:
             exec(codigo_python, ambiente_global)
         except Exception as e:
-            print(self.messages["execution_error"].format(e))
+            error_msg = self.translate_error(e)
+            print(self.messages["error"].format(error_msg))
 
     def repl(self):
         """Inicia um shell interativo (Read-Eval-Print Loop)."""
@@ -150,7 +186,8 @@ class PyBRTranspiler:
                 buffer = []
                 dentro_de_bloco = False
             except Exception as e:
-                print(self.messages["error"].format(e))
+                error_msg = self.translate_error(e)
+                print(self.messages["error"].format(error_msg))
                 buffer = []
                 dentro_de_bloco = False
 

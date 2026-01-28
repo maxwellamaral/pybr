@@ -75,5 +75,49 @@
         "cli_description": "PyBR - Transpiler Python in Portoghese (e altre lingue)",
         "cli_help_file": "File .pybr da eseguire",
         "cli_help_lang": "Lingua per le parole chiave (es: pt-br, es, de, it)"
+    },
+    "errors": {
+        "NameError": "Nome '{}' non definito",
+        "TypeError": "Tipo di dato incompatibile: {}",
+        "SyntaxError": "Errore di sintassi: {}",
+        "ZeroDivisionError": "Divisione per zero non permessa",
+        "IndexError": "Indice fuori intervallo",
+        "KeyError": "Chiave '{}' non trovata",
+        "ValueError": "Valore non valido: {}",
+        "IndentationError": "Errore di indentazione",
+        "ModuleNotFoundError": "Modulo '{}' non trovato"
+    },
+    "error_patterns": {
+        "NameError": [
+            ["name '(.*)' is not defined", "Nome '{}' non definito"]
+        ],
+        "AttributeError": [
+            ["'(.*)' object has no attribute '(.*)'", "L'oggetto '{}' non ha l'attributo '{}'"]
+        ],
+        "TypeError": [
+            ["can only concatenate str \\(not \"(.*)\"\\) to str", "È possibile concatenare solo testo con testo (non '{}')"],
+            ["unsupported operand type\\(s\\) for (.*): '(.*)' and '(.*)'", "Operazione '{}' non supportata tra '{}' e '{}'"],
+            ["'(.*)' object is not callable", "L'oggetto '{}' non può essere chiamato come funzione"],
+            ["(.*)\\(\\) takes (.*) positional arguments? but (.*) (?:was|were) given", "La funzione {}() accetta {} argomento(i), ma ne sono stati forniti {}"]
+        ],
+        "ImportError": [
+            ["cannot import name '(.*)' from '(.*)'", "Impossibile importare '{}' da '{}'"]
+        ],
+        "IndexError": [
+            ["list index out of range", "Indice della lista fuori intervallo"]
+        ],
+        "KeyError": [
+            ["'(.*)'", "Chiave '{}' non trovata nel dizionario"]
+        ],
+        "ValueError": [
+            ["invalid literal for (.*)\\(\\) with base (.*): '(.*)'", "Valore non valido per la funzione {}(): '{}'"],
+            ["not enough values to unpack \\(expected (.*), got (.*)\\)", "Non ci sono abbastanza valori da spacchettare (attesi {}, ricevuti {})"]
+        ],
+        "FileNotFoundError": [
+            ["\\[Errno 2\\] No such file or directory: '(.*)'", "File o directory non trovata: '{}'"]
+        ],
+        "ZeroDivisionError": [
+            ["division by zero", "Divisione per zero non permessa"]
+        ]
     }
 }

@@ -75,5 +75,49 @@
         "cli_description": "PyBR - Python-Transpiler in Portugiesisch (und anderen Sprachen)",
         "cli_help_file": ".pybr-Datei zum Ausführen",
         "cli_help_lang": "Sprache für Schlüsselwörter (z. B. pt-br, es, de, it)"
+    },
+    "errors": {
+        "NameError": "Name '{}' ist nicht definiert",
+        "TypeError": "Inkompatibler Datentyp: {}",
+        "SyntaxError": "Syntaxfehler: {}",
+        "ZeroDivisionError": "Division durch Null ist nicht erlaubt",
+        "IndexError": "Index außerhalb des Bereichs",
+        "KeyError": "Schlüssel '{}' nicht gefunden",
+        "ValueError": "Ungültiger Wert: {}",
+        "IndentationError": "Einrückungsfehler",
+        "ModuleNotFoundError": "Modul '{}' wurde nicht gefunden"
+    },
+    "error_patterns": {
+        "NameError": [
+            ["name '(.*)' is not defined", "Name '{}' ist nicht definiert"]
+        ],
+        "AttributeError": [
+            ["'(.*)' object has no attribute '(.*)'", "Objekt '{}' hat kein Attribut '{}'"]
+        ],
+        "TypeError": [
+            ["can only concatenate str \\(not \"(.*)\"\\) to str", "Texte können nur mit Texten verknüpft werden (nicht '{}')"],
+            ["unsupported operand type\\(s\\) for (.*): '(.*)' and '(.*)'", "Operation '{}' wird zwischen '{}' und '{}' nicht unterstützt"],
+            ["'(.*)' object is not callable", "Das Objekt '{}' kann nicht als Funktion aufgerufen werden"],
+            ["(.*)\\(\\) takes (.*) positional arguments? but (.*) (?:was|were) given", "Funktion {}() akzeptiert {} Argument(e), aber {} wurde(n) übergeben"]
+        ],
+        "ImportError": [
+            ["cannot import name '(.*)' from '(.*)'", "Name '{}' konnte nicht aus '{}' importiert werden"]
+        ],
+        "IndexError": [
+            ["list index out of range", "Listenindex außerhalb des Bereichs"]
+        ],
+        "KeyError": [
+            ["'(.*)'", "Schlüssel '{}' wurde im Wörterbuch nicht gefunden"]
+        ],
+        "ValueError": [
+            ["invalid literal for (.*)\\(\\) with base (.*): '(.*)'", "Ungültiger Wert für Funktion {}(): '{}'"],
+            ["not enough values to unpack \\(expected (.*), got (.*)\\)", "Nicht genügend Werte zum Entpacken (erwartet {}, erhalten {})"]
+        ],
+        "FileNotFoundError": [
+            ["\\[Errno 2\\] No such file or directory: '(.*)'", "Datei oder Verzeichnis nicht gefunden: '{}'"]
+        ],
+        "ZeroDivisionError": [
+            ["division by zero", "Division durch Null ist nicht erlaubt"]
+        ]
     }
 }

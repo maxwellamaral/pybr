@@ -45,7 +45,7 @@ fuer i in bereich(5):
 
 ## Einschränkungen
 
-- Der Transpiler übersetzt Schlüsselwörter, aber keine Python-Fehlermeldungen.
+- Der Transpiler übersetzt die häufigsten Python-Fehlermeldungen in die gewählte Sprache.
 - Einige fortgeschrittene Funktionen sind möglicherweise nicht zugeordnet.
 - Die Übersetzung erfolgt zur Laufzeit (es werden keine `.py`-Dateien generiert).
 
