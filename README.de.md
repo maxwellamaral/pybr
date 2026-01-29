@@ -13,6 +13,10 @@ PyBR ist ein Transpiler, mit dem Sie Python-Code unter Verwendung von Schlüssel
 - **Mehrsprachige Unterstützung**: Wählen Sie Ihre Sprache mit der Flagge `--lang`.
 - **Interaktives REPL**: Interaktive Shell zum Testen von Code in Echtzeit.
 
+## 📚 Programmieren Lernen
+
+Neu beim Programmieren? Schauen Sie sich unser **[Einsteigerhandbuch](tutorial/tutorial-de.md)** an!
+
 ## Verwendung
 
 ### Beispiele

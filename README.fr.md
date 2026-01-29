@@ -27,6 +27,10 @@ python3 pybr.py examples/exemple_fr.pybr --lang fr
 
 - **REPL Interactif**: Shell interactif pour tester le code en temps réel.
 
+## 📚 Apprendre à Programmer
+
+Nouveau en programmation ? Consultez notre **[Guide pour Débutants](tutorial/tutorial-fr.md)** !
+
 ## Comment exécuter
 
 ### Mode Interactif (REPL)

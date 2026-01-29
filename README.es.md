@@ -13,6 +13,10 @@ PyBR es un transpilador que permite escribir código Python utilizando palabras 
 - **Soporte Multi-idioma**: Elige tu idioma con la bandera `--lang`.
 - **REPL Interactivo**: Shell interactivo para probar código en tiempo real.
 
+## 📚 Aprender a Programar
+
+¿Nuevo en la programación? ¡Consulte nuestra **[Guía para Principiantes](tutorial/tutorial-es.md)**!
+
 ## Cómo Ejecutar
 
 ### Modo Interactivo (REPL)
