@@ -23,7 +23,9 @@ Questa guida è stata creata appositamente per te che non hai mai programmato pr
 9. [Prendere Decisioni - Condizionali](#prendere-decisioni---condizionali)
 10. [Ripetere Azioni - Cicli](#ripetere-azioni---cicli)
 11. [Organizzare il Codice - Funzioni](#organizzare-il-codice---funzioni)
-12. [Creare Oggetti - Classi](#creare-oggetti---classi)
+12. [Funzioni Avanzate](#funzioni-avanzate)
+13. [Creare Oggetti - Classi](#creare-oggetti---classi)
+14. [Progetti Pratici](#progetti-pratici)
 
 ---
 
@@ -254,6 +256,34 @@ stampa(risultato)  # 30
 
 ---
 
+## Funzioni Avanzate
+
+### Lambda:
+Piccole funzioni anonime.
+
+```python
+doppio = lambda x: x * 2
+stampa(doppio(5))  # 10
+```
+
+### Mappa (map):
+
+```python
+numeri = [1, 2, 3, 4]
+quadrati = lista(mappa(lambda x: x ** 2, numeri))
+stampa(quadrati)  # [1, 4, 9, 16]
+```
+
+### Filtra (filter):
+
+```python
+numeri = [1, 2, 3, 4, 5, 6]
+pari = lista(filtra(lambda x: x % 2 == 0, numeri))
+stampa(pari)  # [2, 4, 6]
+```
+
+---
+
 ## Creare Oggetti - Classi
 
 Le classi sono "stampi" per creare oggetti.
@@ -274,6 +304,49 @@ rex.abbaiare()
 
 ---
 
+## Progetti Pratici
+
+### Progetto 1: Lista di Cose da Fare
+
+```python
+classe GestoreTask:
+    definisci __init__(proprio):
+        proprio.compiti = []
+    
+    definisci aggiungi(proprio, compito):
+        proprio.compiti.append(compito)
+        stampa(f"Compito aggiunto: {compito}")
+    
+    definisci elenca(proprio):
+        stampa("--- I Miei Compiti ---")
+        per i, compito in enumera(proprio.compiti):
+            stampa(f"{i + 1}. {compito}")
+
+gestore = GestoreTask()
+gestore.aggiungi("Imparare PyBR")
+gestore.aggiungi("Fare esercizi")
+gestore.elenca()
+```
+
+### Progetto 2: Convertitore di Temperatura
+
+```python
+definisci celsius_a_fahrenheit(c):
+    ritorna (c * 9/5) + 32
+
+temp_c = decimale(input("Temperatura in Celsius: "))
+temp_f = celsius_a_fahrenheit(temp_c)
+stampa(f"{temp_c}°C è uguale a {temp_f}°F")
+```
+
+---
+
+## Consigli Finali
+
+1. **Pratica ogni giorno**: La costanza è fondamentale.
+2. **Leggi gli errori**: Ti dicono cosa c'è che non va.
+3. **Commenta il codice**: Usa `#` per spiegare.
+
 ## Congratulazioni! 🎉
 
-Hai completato la guida base di PyBR in italiano. Continua a esercitarti!
+Hai completato la guida completa di PyBR in italiano. Ora sei un programmatore!

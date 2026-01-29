@@ -23,7 +23,9 @@ Ce guide a été créé spécialement pour vous qui n'avez jamais programmé aup
 9. [Prendre des Décisions - Conditionnelles](#prendre-des-décisions---conditionnelles)
 10. [Répéter des Actions - Boucles](#répéter-des-actions---boucles)
 11. [Organiser le Code - Fonctions](#organiser-le-code---fonctions)
-12. [Créer des Objets - Classes](#créer-des-objets---classes)
+12. [Fonctions Avancées](#fonctions-avancées)
+13. [Créer des Objets - Classes](#créer-des-objets---classes)
+14. [Projets Pratiques](#projets-pratiques)
 
 ---
 
@@ -145,7 +147,7 @@ il_pleut = Faux
 somme = 10 + 5
 imprimir(somme)  # Affiche : 15
 
-# SOUSTRACTION (-)
+# SOTTRAZIONE (-)
 difference = 20 - 8
 imprimir(difference)  # Affiche : 12
 
@@ -254,6 +256,34 @@ imprimer(resultat)  # 30
 
 ---
 
+## Fonctions Avancées
+
+### Lambda :
+Petites fonctions anonymes.
+
+```python
+double = lambda x: x * 2
+imprimer(double(5))  # 10
+```
+
+### Appliquer (map) :
+
+```python
+nombres = [1, 2, 3, 4]
+carres = liste(appliquer(lambda x: x ** 2, nombres))
+imprimer(carres)  # [1, 4, 9, 16]
+```
+
+### Filtrer (filter) :
+
+```python
+nombres = [1, 2, 3, 4, 5, 6]
+pairs = liste(filtrer(lambda x: x % 2 == 0, nombres))
+imprimer(pairs)  # [2, 4, 6]
+```
+
+---
+
 ## Créer des Objets - Classes
 
 Les classes sont des "moules" pour créer des objets.
@@ -274,6 +304,49 @@ rex.aboyer()
 
 ---
 
+## Projets Pratiques
+
+### Projet 1 : Liste de Tâches
+
+```python
+classe GestionnaireTaches:
+    definir __init__(soi):
+        soi.taches = []
+    
+    definir ajouter(soi, tache):
+        soi.taches.append(tache)
+        imprimer(f"Tâche ajoutée : {tache}")
+    
+    definir lister(soi):
+        imprimer("--- Mes Tâches ---")
+        pour i, tache dans enumerer(soi.taches):
+            imprimer(f"{i + 1}. {tache}")
+
+gestionnaire = GestionnaireTaches()
+gestionnaire.ajouter("Apprendre PyBR")
+gestionnaire.ajouter("Pratiquer Python")
+gestionnaire.lister()
+```
+
+### Projet 2 : Convertisseur de Température
+
+```python
+definir celsius_en_fahrenheit(c):
+    retourner (c * 9/5) + 32
+
+temp_c = flottant(saisir("Température en Celsius : "))
+temp_f = celsius_en_fahrenheit(temp_c)
+imprimer(f"{temp_c}°C est égal à {temp_f}°F")
+```
+
+---
+
+## Conseils Finaux
+
+1. **Pratiquez tous les jours** : La régularité est la clé.
+2. **Lisez les erreurs** : Elles vous disent ce qui ne va pas.
+3. **Commentez le code** : Utilisez `#` pour expliquer.
+
 ## Félicitations ! 🎉
 
-Vous avez terminé le guide de base de PyBR en français. Continuez à pratiquer !
+Vous avez terminé le guide complet de PyBR en français. Vous êtes maintenant un programmeur !

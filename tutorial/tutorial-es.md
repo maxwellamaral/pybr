@@ -23,7 +23,9 @@ Esta guía fue creada especialmente para ti que nunca has programado antes y qui
 9. [Tomando Decisiones - Estructuras Condicionales](#tomando-decisiones---estructuras-condicionales)
 10. [Repitiendo Acciones - Bucles](#repitiendo-acciones---bucles)
 11. [Organizando el Código - Funciones](#organizando-el-código---funciones)
-12. [Creando Objetos - Clases](#creando-objetos---clases)
+12. [Funciones Avanzadas - Lambda, Filtrar y Mapear](#funciones-avanzadas---lambda-filtrar-y-mapear)
+13. [Creando Objetos - Clases](#creando-objetos---clases)
+14. [Proyectos Prácticos](#proyectos-prácticos)
 
 ---
 
@@ -202,7 +204,7 @@ imprimir(f"Tu IMC es: {imc:.2f}")
 
 ## Tomando Decisiones - Estructuras Condicionales
 
-El programa toma decisiones con `si`, `sino_si` y `sino`.
+El programa toma decisiones con `si`, `si_no` (elif) y `sino`.
 
 ```python
 edad = 18
@@ -213,14 +215,14 @@ sino:
     imprimir("Eres menor de edad")
 ```
 
-### Ejemplo con SI-SINO_SI-SINO (if-elif-else):
+### Ejemplo con SI-SI_NO-SINO (if-elif-else):
 
 ```python
 nota = 75
 
 si nota >= 90:
     imprimir("¡Excelente!")
-sino_si nota >= 70:
+si_no nota >= 70:
     imprimir("¡Bien!")
 sino:
     imprimir("Necesitas mejorar")
@@ -284,6 +286,34 @@ imprimir(resultado)  # 30
 
 ---
 
+## Funciones Avanzadas - Lambda, Filtrar y Mapear
+
+### Funciones Lambda (Anónimas):
+Funciones pequeñas de una línea.
+
+```python
+doble = lambda x: x * 2
+imprimir(doble(5))  # 10
+```
+
+### Mapear (map) - Aplicar función a todos:
+
+```python
+numeros = [1, 2, 3, 4]
+cuadrados = lista(mapear(lambda x: x ** 2, numeros))
+imprimir(cuadrados)  # [1, 4, 9, 16]
+```
+
+### Filtrar (filter) - Seleccionar elementos:
+
+```python
+numeros = [1, 2, 3, 4, 5, 6]
+pares = lista(filtrar(lambda x: x % 2 == 0, numeros))
+imprimir(pares)  # [2, 4, 6]
+```
+
+---
+
 ## Creando Objetos - Clases
 
 Las clases son "moldes" para crear objetos.
@@ -304,6 +334,49 @@ rex.ladrar()
 
 ---
 
+## Proyectos Prácticos
+
+### Proyecto 1: Lista de Tareas
+
+```python
+clase GestorTareas:
+    definir __init__(propio):
+        propio.tareas = []
+    
+    definir agregar(propio, tarea):
+        propio.tareas.append(tarea)
+        imprimir(f"Tarea agregada: {tarea}")
+    
+    definir listar(propio):
+        imprimir("--- Mis Tareas ---")
+        para i, tarea en enumerar(propio.tareas):
+            imprimir(f"{i + 1}. {tarea}")
+
+gestor = GestorTareas()
+gestor.agregar("Aprender PyBR")
+gestor.agregar("Practicar Python")
+gestor.listar()
+```
+
+### Proyecto 2: Conversor de Temperatura
+
+```python
+definir celsius_a_fahrenheit(c):
+    retornar (c * 9/5) + 32
+
+temp_c = flotante(entrada("Temperatura en Celsius: "))
+temp_f = celsius_a_fahrenheit(temp_c)
+imprimir(f"{temp_c}°C es igual a {temp_f}°F")
+```
+
+---
+
+## Consejos Finales
+
+1. **Practica todos los días**: La constancia es clave.
+2. **Lee los errores**: Son pistas para arreglar tu código.
+3. **Comenta tu código**: Usa `#` para explicar qué hace tu programa.
+
 ## ¡Felicidades! 🎉
 
-Has completado la guía básica de PyBR en español. ¡Sigue practicando!
+Has completado la guía completa de PyBR en español. ¡Ahora eres un programador!

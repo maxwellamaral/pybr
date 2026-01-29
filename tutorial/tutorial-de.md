@@ -23,7 +23,9 @@ Dieser Leitfaden wurde speziell für Sie erstellt, wenn Sie noch nie zuvor progr
 9. [Entscheidungen treffen - Konditionale](#entscheidungen-treffen---konditionale)
 10. [Aktionen wiederholen - Schleifen](#aktionen-wiederholen---schleifen)
 11. [Code organisieren - Funktionen](#code-organisieren---funktionen)
-12. [Objekte erstellen - Klassen](#objekte-erstellen---klassen)
+12. [Fortgeschrittene Funktionen](#fortgeschrittene-funktionen)
+13. [Objekte erstellen - Klassen](#objekte-erstellen---klassen)
+14. [Praktische Projekte](#praktische-projekte)
 
 ---
 
@@ -182,7 +184,7 @@ drucke(f"Du bist {alter} Jahre alt")
 
 ## Entscheidungen treffen - Konditionale
 
-Das Programm trifft Entscheidungen mit `wenn`, `sonstfalls` und `sonst`.
+Das Programm trifft Entscheidungen mit `wenn`, `sonstfalls`, `sonst`.
 
 ```python
 alter = 18
@@ -254,6 +256,34 @@ drucke(ergebnis)  # 30
 
 ---
 
+## Fortgeschrittene Funktionen
+
+### Lambda-Funktionen:
+Kleine einzeilige Funktionen.
+
+```python
+doppelt = lambda x: x * 2
+drucke(doppelt(5))  # 10
+```
+
+### Abbilden (map):
+
+```python
+zahlen = [1, 2, 3, 4]
+quadrate = liste(abbilden(lambda x: x ** 2, zahlen))
+drucke(quadrate)  # [1, 4, 9, 16]
+```
+
+### Filtern (filter):
+
+```python
+zahlen = [1, 2, 3, 4, 5, 6]
+gerade = liste(filtern(lambda x: x % 2 == 0, zahlen))
+drucke(gerade)  # [2, 4, 6]
+```
+
+---
+
 ## Objekte erstellen - Klassen
 
 Klassen sind "Baupläne" für Objekte.
@@ -274,6 +304,49 @@ rex.bellen()
 
 ---
 
+## Praktische Projekte
+
+### Projekt 1: Aufgabenliste
+
+```python
+klasse AufgabenManager:
+    definiere __init__(selbst):
+        selbst.aufgaben = []
+    
+    definiere hinzufuegen(selbst, aufgabe):
+        selbst.aufgaben.append(aufgabe)
+        drucke(f"Aufgabe hinzugefügt: {aufgabe}")
+    
+    definiere auflisten(selbst):
+        drucke("--- Meine Aufgaben ---")
+        fuer i, aufgabe in aufzaehlen(selbst.aufgaben):
+            drucke(f"{i + 1}. {aufgabe}")
+
+manager = AufgabenManager()
+manager.hinzufuegen("PyBR lernen")
+manager.hinzufuegen("Python üben")
+manager.auflisten()
+```
+
+### Projekt 2: Temperaturrechner
+
+```python
+definiere celsius_in_fahrenheit(c):
+    rueckgabe (c * 9/5) + 32
+
+temp_c = gleitkommazahl(eingabe("Temperatur in Celsius: "))
+temp_f = celsius_in_fahrenheit(temp_c)
+drucke(f"{temp_c}°C ist gleich {temp_f}°F")
+```
+
+---
+
+## Abschließende Tipps
+
+1. **Üben Sie jeden Tag**: Beständigkeit ist der Schlüssel.
+2. **Lesen Sie Fehlermeldungen**: Sie helfen Ihnen, den Code zu korrigieren.
+3. **Kommentieren Sie Ihren Code**: Verwenden Sie `#`, um zu erklären.
+
 ## Herzlichen Glückwunsch! 🎉
 
-Sie haben den PyBR-Grundlagenleitfaden auf Deutsch abgeschlossen. Üben Sie weiter!
+Sie haben den PyBR-Grundlagenleitfaden abgeschlossen. Sie sind jetzt ein Programmierer!
