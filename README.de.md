@@ -16,6 +16,7 @@ PyBR ist ein Transpiler, mit dem Sie Python-Code unter Verwendung von Schlüssel
 ## 📚 Programmieren Lernen
 
 Neu beim Programmieren? Schauen Sie sich unser **[Einsteigerhandbuch](tutorial/tutorial-de.md)** an!
+    - Um die PDFs zu generieren: `python3 tutorial/gerar_pdf.py`
 
 ## Verwendung
 

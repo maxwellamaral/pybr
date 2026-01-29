@@ -30,6 +30,7 @@ python3 pybr.py examples/exemple_fr.pybr --lang fr
 ## 📚 Apprendre à Programmer
 
 Nouveau en programmation ? Consultez notre **[Guide pour Débutants](tutorial/tutorial-fr.md)** !
+    - Pour générer les PDF : `python3 tutorial/gerar_pdf.py`
 
 ## Comment exécuter
 

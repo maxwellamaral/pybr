@@ -16,6 +16,7 @@ PyBR es un transpilador que permite escribir código Python utilizando palabras 
 ## 📚 Aprender a Programar
 
 ¿Nuevo en la programación? ¡Consulte nuestra **[Guía para Principiantes](tutorial/tutorial-es.md)**!
+    - Para generar los PDFs: `python3 tutorial/gerar_pdf.py`
 
 ## Cómo Ejecutar
 

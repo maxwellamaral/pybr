@@ -16,6 +16,7 @@ PyBR è un transpiler che ti permette di scrivere codice Python usando parole ch
 ## 📚 Imparare a Programmare
 
 Nuovo alla programmazione? Consulta la nostra **[Guida per Principianti](tutorial/tutorial-it.md)**!
+    - Per generare i PDF: `python3 tutorial/gerar_pdf.py`
 
 ## Come eseguire
 

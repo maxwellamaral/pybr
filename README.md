@@ -214,6 +214,7 @@ Consulte o [README dos exercícios](exercicios/README.md) para a lista completa.
 - `pybr.py` - Arquivo principal contendo o transpilador e REPL
 - `tests/` - Testes funcionais automatizados (transpilador e exercícios)
 - `tutorial/` - **Tutorial completo em PDF e Markdown para quem nunca programou antes** 📚
+    - Para gerar os PDFs: `python3 tutorial/gerar_pdf.py`
 - `exercicios/` - **22 arquivos de exemplo prontos para executar** 💻
 - `README.md` - Este arquivo
 - `LICENSE` - Licença do projeto
