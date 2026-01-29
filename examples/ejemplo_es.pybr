@@ -1,0 +1,19 @@
+# Programa de ejemplo en PyBR (Español)
+definir saludo(nombre):
+    imprimir(f"¡Hola, {nombre}!")
+
+para i en rango(10):
+    si i % 2 == 0:
+        imprimir(f"{i} es par")
+    sino:
+        imprimir(f"{i} es impar")
+
+clase Animal:
+    definir __init__(propio, nombre):
+        propio.nombre = nombre
+    
+    definir hablar(propio):
+        imprimir(f"{propio.nombre} hace un sonido")
+
+perro = Animal("Rex")
+perro.hablar()

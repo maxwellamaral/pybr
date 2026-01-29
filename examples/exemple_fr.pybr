@@ -1,0 +1,19 @@
+# Exemple de programme en PyBR (Français)
+definir salutation(nom):
+    imprimer(f"Bonjour, {nom}!")
+
+pour i dans intervalle(10):
+    si i % 2 == 0:
+        imprimer(f"{i} est pair")
+    sinon:
+        imprimer(f"{i} est impair")
+
+classe Animal:
+    definir __init__(soi, nom):
+        soi.nom = nom
+    
+    definir parler(soi):
+        imprimer(f"{soi.nom} fait un bruit")
+
+chien = Animal("Rex")
+chien.parler()

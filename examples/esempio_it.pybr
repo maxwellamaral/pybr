@@ -1,0 +1,19 @@
+# Programma di esempio in PyBR (Italiano)
+definisci saluto(nome):
+    stampa(f"Ciao, {nome}!")
+
+per i in intervallo(10):
+    se i % 2 == 0:
+        stampa(f"{i} è pari")
+    altrimenti:
+        stampa(f"{i} è dispari")
+
+classe Animale:
+    definisci __init__(proprio, nome):
+        proprio.nome = nome
+    
+    definisci parlare(proprio):
+        stampa(f"{proprio.nome} fa un suono")
+
+cane = Animale("Rex")
+cane.parlare()

@@ -1,4 +1,4 @@
-# Programa de exemplo em PyBR
+# Programa de exemplo em PyBR (Português)
 definir saudacao(nome):
     imprimir(f"Olá, {nome}!")
 

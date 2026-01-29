@@ -11,6 +11,20 @@ PyBR est un transpileur qui vous permet d'écrire du code Python en utilisant de
 - **Mots-clés localisés**: Utilisez `si`, `sinon`, `pour`, `tant_que`, `definir`, `classe`, etc.
 - **Fonctions natives traduites**: `imprimer()`, `saisir()`, `taille()`, `intervalle()`, etc.
 - **Support multilingue**: Choisissez votre langue avec le drapeau `--lang`.
+### Exemples
+
+Vous pouvez trouver des exemples de code pour toutes les langues prises en charge dans le dossier `examples/` :
+
+- **Français** : `examples/exemple_fr.pybr`
+- **Portugais** : `examples/exemplo_pt.pybr`
+- ...
+
+Pour exécuter l'exemple en français :
+
+```bash
+python3 pybr.py examples/exemple_fr.pybr --lang fr
+```
+
 - **REPL Interactif**: Shell interactif pour tester le code en temps réel.
 
 ## Comment exécuter

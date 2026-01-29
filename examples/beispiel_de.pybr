@@ -1,0 +1,19 @@
+# Beispielprogramm in PyBR (Deutsch)
+definiere begruessung(name):
+    drucke(f"Hallo, {name}!")
+
+fuer i in bereich(10):
+    wenn i % 2 == 0:
+        drucke(f"{i} ist gerade")
+    sonst:
+        drucke(f"{i} ist ungerade")
+
+klasse Tier:
+    definiere __init__(selbst, name):
+        selbst.name = name
+    
+    definiere sprechen(selbst):
+        drucke(f"{selbst.name} macht ein Geräusch")
+
+hund = Tier("Rex")
+hund.sprechen()

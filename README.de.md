@@ -15,6 +15,20 @@ PyBR ist ein Transpiler, mit dem Sie Python-Code unter Verwendung von Schlüssel
 
 ## Verwendung
 
+### Beispiele
+
+Beispielcode für alle unterstützten Sprachen finden Sie im Ordner `examples/`:
+
+- **Deutsch**: `examples/beispiel_de.pybr`
+- **Portugiesisch**: `examples/exemplo_pt.pybr`
+- ...
+
+Um das deutsche Beispiel auszuführen:
+
+```bash
+python3 pybr.py examples/beispiel_de.pybr --lang de
+```
+
 ### Interaktiver Modus (REPL)
 
 Um die Shell auf Deutsch zu starten:

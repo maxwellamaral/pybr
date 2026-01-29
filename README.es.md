@@ -29,6 +29,20 @@ python pybr.py --lang es
 python pybr.py --lang es mi_programa.pybr
 ```
 
+### Ejemplos
+
+Puede encontrar ejemplos de código para todos los idiomas soportados en la carpeta `examples/`:
+
+- **Español**: `examples/ejemplo_es.pybr`
+- **Portugués**: `examples/exemplo_pt.pybr`
+- ...
+
+Para ejecutar el ejemplo en español:
+
+```bash
+python3 pybr.py examples/ejemplo_es.pybr --lang es
+```
+
 ### Ejemplo de Código (Español)
 
 ```python

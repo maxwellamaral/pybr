@@ -138,6 +138,22 @@ Crie um arquivo com código PyBR (ex: `meu_programa.pybr`) e execute:
 python pybr.py meu_programa.pybr
 ```
 
+### Exemplos
+
+Você pode encontrar exemplos de código para todos os idiomas suportados na pasta `examples/`:
+
+- **Português**: `examples/exemplo_pt.pybr`
+- **Espanhol**: `examples/ejemplo_es.pybr`
+- **Alemão**: `examples/beispiel_de.pybr`
+- **Italiano**: `examples/esempio_it.pybr`
+- **Francês**: `examples/exemple_fr.pybr`
+
+Para executar um exemplo (por exemplo, em em espanhol):
+
+```bash
+python3 pybr.py examples/ejemplo_es.pybr --lang es
+```
+
 ### Exemplo de Código PyBR
 
 ```python
